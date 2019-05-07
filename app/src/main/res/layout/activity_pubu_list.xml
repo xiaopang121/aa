@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+    <com.common.extend.pulltorefresh.PullToRefreshRecyclerView
+        android:id="@+id/pull_to_refresh_recycle"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:addStatesFromChildren="true"
+        android:layout_weight="1"
+        android:cacheColorHint="@color/transparent"
+        android:clickable="true"
+        android:divider="@color/transparent"
+        android:dividerHeight="4dp"
+        android:duplicateParentState="true"
+        android:fadingEdge="none"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:isScrollContainer="true"
+        android:listSelector="@color/transparent"
+        android:overScrollMode="never"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="@null"
+        android:scrollingCache="false">
+
+    </com.common.extend.pulltorefresh.PullToRefreshRecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:background="@color/B_black_20"
+        android:layout_alignParentTop="true"
+        android:layout_height="@dimen/common_bar_height">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:paddingLeft="@dimen/view_margin_15"
+            android:paddingRight="@dimen/view_margin_15"
+            android:background="?selectableItemBackground"
+            android:id="@+id/iv_left"
+            android:src="@drawable/ic_arrow_back_white_24dp"
+            android:layout_height="match_parent" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/tv_title"
+            android:singleLine="true"
+            android:layout_alignTop="@+id/iv_left"
+            android:layout_marginRight="@dimen/view_margin_60"
+            android:layout_marginLeft="@dimen/view_margin_60"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:text="消息发送成功,等待商家确认"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:layout_centerInParent="true"
+            android:focusableInTouchMode="true"
+            android:textColor="@color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="@dimen/big_small"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

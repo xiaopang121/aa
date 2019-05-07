@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2016 JustWayward Team
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?selectableItemBackground">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/view_margin_10"
+        android:id="@+id/lly_brand_content"
+        android:background="@drawable/shape_rect_f8f8f8"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+
+        <com.common.extend.roundedimageview.RoundedImageView
+            android:layout_width="@dimen/view_margin_70"
+            android:id="@+id/iv_renqi_image"
+            app:riv_corner_radius="@dimen/view_margin_10"
+            android:src="@drawable/ic_default_advert"
+            android:layout_height="@dimen/view_margin_70"
+            android:scaleType="fitXY"
+            android:layout_alignParentRight="true"
+          />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_alignTop="@+id/iv_renqi_image"
+            android:orientation="vertical"
+            android:layout_alignBottom="@+id/iv_renqi_image"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_alignTop="@+id/iv_renqi_image"
+                android:textColor="@color/yellow_color_pressed"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/tv_renqi_bang"
+                android:text="人气榜"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/B_black_50"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="List of popular"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textSize="10sp"
+                android:layout_height="match_parent"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/B_black_70"
+                android:gravity="center"
+                android:id="@+id/tv_renqi_name"
+                android:layout_centerVertical="true"
+                android:text="人气榜"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:layout_height="match_parent"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/B_black_50"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/tv_renqi_count"
+                android:layout_alignBottom="@+id/iv_renqi_image"
+                android:text="月销售"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:layout_height="match_parent"/>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

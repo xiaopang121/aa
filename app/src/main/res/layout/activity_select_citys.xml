@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/main_background"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/common_title_bar"
+        android:background="@color/theme_color_primary"
+        android:layout_height="@dimen/common_bar_height"
+        >
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="@dimen/view_margin_15"
+            android:paddingRight="@dimen/view_margin_15"
+            android:background="?selectableItemBackground"
+            android:id="@+id/iv_left"
+            android:layout_height="match_parent" />
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/rll_right_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:background="?selectableItemBackground"
+                android:paddingLeft="@dimen/view_margin_15"
+                android:paddingRight="@dimen/view_margin_15"
+                android:layout_alignParentRight="true"
+                android:id="@+id/iv_right"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:background="?selectableItemBackground"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:paddingLeft="@dimen/view_margin_5"
+                android:paddingRight="@dimen/view_margin_5"
+                android:layout_alignParentRight="true"
+                android:id="@+id/bt_right"/>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/tv_title"
+            android:layout_alignTop="@+id/rll_right_content"
+            android:layout_alignBottom="@+id/rll_right_content"
+            android:singleLine="true"
+            android:layout_marginRight="@dimen/view_margin_60"
+            android:layout_marginLeft="@dimen/view_margin_60"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:layout_centerInParent="true"
+            android:focusableInTouchMode="true"
+            android:textColor="@color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="@dimen/big_small"/>
+
+
+    </RelativeLayout>
+
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_margin_1"
+        android:orientation="vertical"
+        android:layout_below="@+id/common_title_bar"
+        android:background="@color/B_black_10">
+    </View>
+
+    <include layout="@layout/cp_view_search"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <ListView
+            android:id="@+id/listview_all_city"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:listSelector="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"/>
+
+        <TextView
+            android:id="@+id/tv_letter_overlay"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:background="@drawable/cp_overlay_bg"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            android:visibility="gone"/>
+
+        <com.insthub.cat.android.ui.widget.SideLetterBar
+            android:id="@+id/side_letter_bar"
+            android:layout_width="@dimen/side_letter_bar_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            tools:ignore="RtlHardcoded" />
+
+        <ListView
+            android:id="@+id/listview_search_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@android:color/white"
+            android:cacheColorHint="@android:color/transparent"
+            android:listSelector="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:visibility="gone"/>
+        <include layout="@layout/cp_view_no_search_result" />
+    </RelativeLayout>
+</LinearLayout>

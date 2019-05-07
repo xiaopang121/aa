@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/theme_color_primary"
+    android:orientation="vertical">
+
+    <com.common.android.fui.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bar_height"
+        />
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/main_bg"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_widthPercent="85%"
+            android:id="@+id/lly_top"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            app:layout_marginTopPercent="20%"
+            android:background="@drawable/shape_rect_10_white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:gravity="left|center"
+                android:id="@+id/tv_title2"
+                android:paddingLeft="@dimen/view_margin_5"
+                android:singleLine="true"
+                android:textColor="@color/B_black_70"
+                android:text="附近有人搜索服务,请赶紧联系他把"
+                android:layout_height="@dimen/view_margin_40" />
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/md_divider_black"
+                android:layout_height="@dimen/view_margin_1"></View>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:gravity="left|top"
+                android:padding="@dimen/view_margin_5"
+                android:textColor="@color/B_black_70"
+                android:text="附近有人搜索xx服务"
+                android:id="@+id/tv_content"
+                android:minHeight="@dimen/view_margin_80"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/md_divider_black"
+                android:layout_height="@dimen/view_margin_1"></View>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:minHeight="@dimen/view_margin_80"
+                android:padding="@dimen/view_margin_5"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:id="@+id/rv_image_list"
+                    android:minHeight="@dimen/view_margin_80"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_below="@+id/lly_top"
+            android:paddingRight="@dimen/view_margin_50"
+            android:paddingLeft="@dimen/view_margin_50"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout">
+
+
+            <ImageView
+                android:id="@+id/bt_chat"
+                style="@style/STYLE_LOGIN_SUMBIT_BUTTON"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/view_margin_30"
+                android:layout_marginBottom="@dimen/view_margin_15"
+                android:src="@drawable/ic_zaixian_lianxi"
+
+                />
+
+
+
+
+            <ImageView
+                android:id="@+id/bt_call"
+                style="@style/STYLE_LOGIN_SUMBIT_BUTTON"
+                android:layout_width="@dimen/view_margin_40"
+                android:background="@drawable/shape_circle_yellow"
+                android:layout_height="@dimen/view_margin_40"
+                android:layout_alignParentRight="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_call_normal"
+                android:layout_marginTop="@dimen/view_margin_30"
+                android:layout_marginBottom="@dimen/view_margin_15"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+
+
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+
+</LinearLayout>

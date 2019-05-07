@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color_primary"
+    android:orientation="vertical">
+
+
+    <com.common.android.fui.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bar_height"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/B_black_20"
+            android:paddingLeft="@dimen/view_margin_10"
+            android:paddingRight="@dimen/view_margin_10"
+            android:layout_height="@dimen/view_margin_30">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="请输入发票金额"
+                android:gravity="center_vertical"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/B_black_70"
+                android:layout_height="match_parent" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="@dimen/view_margin_45">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/B_black_70"
+                android:text="¥"
+                android:gravity="center"
+                android:paddingLeft="@dimen/view_margin_10"
+                android:paddingRight="@dimen/view_margin_10"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/B_black_70"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:hint="0"
+                android:background="@color/transparent"
+                android:gravity="left|center_vertical"
+                android:id="@+id/tv_input_money"
+                android:paddingLeft="@dimen/view_margin_10"
+                android:paddingRight="@dimen/view_margin_10"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/B_black_20"
+            android:padding="@dimen/view_margin_10"
+            android:layout_height="@dimen/view_margin_45">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="请选择发票抬头"
+                android:gravity="center_vertical"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/B_black_70"
+                android:layout_height="match_parent" />
+
+
+        </RelativeLayout>
+
+        <com.common.extend.pulltorefresh.PullToRefreshRecyclerView
+            android:id="@+id/pull_to_refresh_recycle"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:addStatesFromChildren="true"
+            android:cacheColorHint="@color/transparent"
+            android:clickable="true"
+            android:divider="@color/transparent"
+            android:dividerHeight="4dp"
+            android:background="@color/white"
+            android:duplicateParentState="true"
+            android:fadingEdge="none"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:isScrollContainer="true"
+            android:listSelector="@color/transparent"
+            android:overScrollMode="never"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbars="@null"
+            android:scrollingCache="false">
+
+        </com.common.extend.pulltorefresh.PullToRefreshRecyclerView>
+    </LinearLayout>
+
+</LinearLayout>

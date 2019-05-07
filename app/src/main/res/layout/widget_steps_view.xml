@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <!--step dots-->
+    <com.insthub.cat.android.ui.widget.StepsViewIndicator
+        android:id="@+id/steps_indicator_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_margin_30"/>
+    <!--step labels-->
+    <FrameLayout
+        android:id="@+id/labels_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

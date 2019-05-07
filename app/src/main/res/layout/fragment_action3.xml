@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_marginLeft="@dimen/view_margin_30"
+        android:layout_marginRight="@dimen/view_margin_30"
+        android:paddingTop="@dimen/view_margin_4"
+        android:paddingBottom="@dimen/view_margin_4"
+        android:layout_height="@dimen/view_margin_45">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical|right"
+            android:text="店铺名称:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+            android:textColor="@color/B_black_70" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/view_margin_5"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:background="@drawable/shape_rect_10_grey"
+            android:text=""
+            android:hint="请输入店铺名称"
+            android:paddingLeft="@dimen/view_margin_4"
+            android:paddingRight="@dimen/view_margin_4"
+            android:id="@+id/tv_shop_name"
+            android:layout_weight="1"
+            android:textColor="@color/B_black_70"
+            android:textAppearance="@style/TextAppearance.AppCompat.Inverse"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_marginLeft="@dimen/view_margin_30"
+        android:layout_marginRight="@dimen/view_margin_30"
+        android:paddingTop="@dimen/view_margin_4"
+        android:paddingBottom="@dimen/view_margin_4"
+        android:layout_height="@dimen/view_margin_45">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical|right"
+            android:text="商品原价:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+            android:textColor="@color/B_black_70" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/view_margin_5"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:background="@drawable/shape_rect_10_grey"
+            android:text=""
+            android:hint="请输入商品原价"
+            android:inputType="number"
+            android:paddingLeft="@dimen/view_margin_4"
+            android:paddingRight="@dimen/view_margin_4"
+            android:id="@+id/tv_goods_market_price"
+            android:layout_weight="1"
+            android:textColor="@color/B_black_70"
+            android:textAppearance="@style/TextAppearance.AppCompat.Inverse"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_marginLeft="@dimen/view_margin_30"
+        android:layout_marginRight="@dimen/view_margin_30"
+        android:paddingTop="@dimen/view_margin_4"
+        android:paddingBottom="@dimen/view_margin_4"
+        android:layout_height="@dimen/view_margin_45">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical|right"
+            android:text="商品现价:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+            android:textColor="@color/B_black_70" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/view_margin_5"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:background="@drawable/shape_rect_10_grey"
+            android:text=""
+            android:hint="请输入商品现价"
+            android:inputType="number"
+            android:paddingLeft="@dimen/view_margin_4"
+            android:paddingRight="@dimen/view_margin_4"
+            android:id="@+id/tv_goods_now_price"
+            android:layout_weight="1"
+            android:textColor="@color/B_black_70"
+            android:textAppearance="@style/TextAppearance.AppCompat.Inverse"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_marginLeft="@dimen/view_margin_30"
+        android:layout_marginRight="@dimen/view_margin_30"
+        android:paddingTop="@dimen/view_margin_4"
+        android:paddingBottom="@dimen/view_margin_4"
+        android:layout_height="@dimen/view_margin_45">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical|right"
+            android:text="开始时间:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+            android:textColor="@color/B_black_70" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/view_margin_5"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:background="@drawable/shape_rect_10_grey"
+            android:text=""
+            android:hint="请选择开始时间"
+            android:inputType="number"
+            android:paddingLeft="@dimen/view_margin_4"
+            android:paddingRight="@dimen/view_margin_4"
+            android:id="@+id/tv_start_time"
+            android:layout_weight="1"
+            android:textColor="@color/B_black_70"
+            android:textAppearance="@style/TextAppearance.AppCompat.Inverse"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_marginLeft="@dimen/view_margin_30"
+        android:layout_marginRight="@dimen/view_margin_30"
+        android:paddingTop="@dimen/view_margin_4"
+        android:paddingBottom="@dimen/view_margin_4"
+        android:layout_height="@dimen/view_margin_45">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical|right"
+            android:text="结束时间:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+            android:textColor="@color/B_black_70" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/view_margin_5"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:background="@drawable/shape_rect_10_grey"
+            android:text=""
+            android:hint="请选择结束时间"
+            android:paddingLeft="@dimen/view_margin_4"
+            android:paddingRight="@dimen/view_margin_4"
+            android:id="@+id/tv_end_time"
+            android:layout_weight="1"
+            android:textColor="@color/B_black_70"
+            android:textAppearance="@style/TextAppearance.AppCompat.Inverse"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_marginLeft="@dimen/view_margin_30"
+        android:layout_marginRight="@dimen/view_margin_30"
+        android:paddingTop="@dimen/view_margin_4"
+        android:paddingBottom="@dimen/view_margin_4"
+        android:layout_height="@dimen/view_margin_45">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical|right"
+            android:text="优惠数量:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+            android:textColor="@color/B_black_70" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/view_margin_5"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:background="@drawable/shape_rect_10_grey"
+            android:text=""
+            android:inputType="numberDecimal"
+            android:hint="请输入数量"
+            android:paddingLeft="@dimen/view_margin_4"
+            android:paddingRight="@dimen/view_margin_4"
+            android:id="@+id/tv_number"
+            android:layout_weight="1"
+            android:textColor="@color/B_black_70"
+            android:textAppearance="@style/TextAppearance.AppCompat.Inverse"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_marginLeft="@dimen/view_margin_30"
+        android:layout_marginRight="@dimen/view_margin_30"
+        android:paddingTop="@dimen/view_margin_4"
+        android:gravity="top"
+        android:paddingBottom="@dimen/view_margin_4"
+        android:layout_height="100dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_margin_45"
+
+                android:gravity="center_vertical|right"
+                android:text="其他说明:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:textColor="@color/B_black_70" />
+
+        </LinearLayout>
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/view_margin_5"
+            android:layout_height="wrap_content"
+            android:minHeight="100dp"
+            android:gravity="left|top"
+            android:background="@drawable/shape_rect_10_grey"
+            android:text=""
+            android:padding="@dimen/view_margin_5"
+            android:hint="最多200字"
+            android:paddingLeft="@dimen/view_margin_4"
+            android:paddingRight="@dimen/view_margin_4"
+            android:id="@+id/tv_extra"
+            android:layout_weight="1"
+            android:textColor="@color/B_black_70"
+            android:textAppearance="@style/TextAppearance.AppCompat.Inverse"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/login"
+        style="@style/STYLE_LOGIN_SUMBIT_BUTTON"
+        android:layout_below="@+id/lly_input_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/view_margin_30"
+        android:text="@string/login_sure" />
+
+
+</LinearLayout>

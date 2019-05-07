@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shape_rect_10_white2"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:id="@+id/tv_dialog_title"
+        android:layout_alignParentTop="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+        android:textColor="@color/B_black_70"
+        android:paddingTop="@dimen/view_margin_15"
+        android:paddingBottom="@dimen/view_margin_15"
+        android:gravity="center"
+        android:text="@string/title_gender_dialog"
+        />
+
+    <include layout="@layout/divide_v_black"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/rb_map_group"
+        android:layout_above="@+id/rll_button_view"
+        android:layout_below="@+id/tv_dialog_title"
+        android:layout_marginBottom="@dimen/view_margin_20"
+        android:layout_height="wrap_content">
+
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:button="@null"
+            android:paddingTop="@dimen/view_margin_5"
+            android:id="@+id/rll_man"
+            android:textColor="@color/B_black_70"
+            android:text="@string/title_gender_man"
+            android:drawablePadding="@dimen/view_margin_2"
+            android:drawableLeft="@drawable/ic_gener_man"/>
+
+
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"></View>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:button="@null"
+            android:paddingTop="@dimen/view_margin_5"
+            android:id="@+id/rll_femail"
+            android:textColor="@color/B_black_70"
+            android:text="@string/title_gender_femal"
+            android:drawablePadding="@dimen/view_margin_4"
+            android:drawableLeft="@drawable/ic_gender_femail"/>
+
+
+
+    </RadioGroup>
+
+
+
+
+
+
+</LinearLayout>

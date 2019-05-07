@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/theme_color_primary"
+    android:orientation="vertical">
+
+    <com.common.android.fui.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bar_height"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_margin_1"
+        android:background="@color/white"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/main_bg">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/text_size_10"
+            android:background="@color/theme_color_primary"
+            android:layout_height="120dp">
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/title_shop_total"
+                    android:textColor="@color/white"
+                    android:id="@+id/tv_money_title"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="¥0.00"
+                    android:textColor="@color/white"
+                    android:id="@+id/tv_money"
+                    android:layout_marginTop="@dimen/view_margin_10"
+                    android:layout_centerVertical="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rll_trading"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_45"
+            android:background="?selectableItemBackground">
+
+            <com.common.android.ftheme.widgets.TintTextView
+                style="@style/my_center_textview"
+                android:layout_width="match_parent"
+                android:textColor="@color/B_black_70"
+                android:paddingLeft="@dimen/view_margin_10"
+                android:drawableRight="@drawable/ic_keyboard_arrow_right__grey_24dp"
+                android:text="@string/title_shop_trading"/>
+
+
+
+        </RelativeLayout>
+
+        <include layout="@layout/divide_v_black"/>
+        <RelativeLayout
+            android:id="@+id/rll_traded"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_45"
+            android:background="?selectableItemBackground">
+
+            <com.common.android.ftheme.widgets.TintTextView
+                style="@style/my_center_textview"
+                android:layout_width="match_parent"
+                android:textColor="@color/B_black_70"
+                android:paddingLeft="@dimen/view_margin_10"
+                android:drawableRight="@drawable/ic_keyboard_arrow_right__grey_24dp"
+                android:text="@string/title_shop_traded"/>
+
+
+
+        </RelativeLayout>
+        <include layout="@layout/divide_v_black"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

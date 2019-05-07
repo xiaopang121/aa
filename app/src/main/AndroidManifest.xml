@@ -1,0 +1,1337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+          package="com.insthub.cat.android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.LOCATION_HARDWARE" />
+    <uses-permission android:name="android.permission.MANAGE_LOCATION_POLICY" />
+
+
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:name="com.insthub.cat.android.permission.RECEIVE_MSG"
+        android:protectionLevel="signature" />
+
+    <!-- 接受SDK消息广播权限， 第三方APP接入时，请将com.netease.nim.demo替换为自己的包名 -->
+    <uses-permission android:name="com.insthub.cat.android.permission.RECEIVE_MSG" />
+
+    <!-- 小米推送 -->
+    <permission
+        android:name="com.insthub.cat.android.permission.MIPUSH_RECEIVE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.insthub.cat.android.permission.MIPUSH_RECEIVE" />
+
+    <uses-sdk tools:overrideLibrary="com.huawei.android.hms.base,com.huawei.android.hms.push" />
+
+
+
+    <!-- 兼容flyme5.0以下版本，魅族内部集成pushSDK必填，不然无法收到消息-->
+    <uses-permission android:name="com.meizu.flyme.push.permission.RECEIVE" />
+    <permission android:name="com.insthub.cat.android.push.permission.MESSAGE"
+        android:protectionLevel="signature"/>
+    <uses-permission android:name="com.insthub.cat.android.push.permission.MESSAGE" />
+    <!--  兼容flyme3.0配置权限-->
+    <uses-permission android:name="com.meizu.c2dm.permission.RECEIVE" />
+    <permission android:name="com.insthub.cat.android.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="ccom.insthub.cat.android.permission.C2D_MESSAGE"/>
+
+
+
+
+    <!-- Required -->
+    <permission
+        android:name="com.insthub.cat.android.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- Required  一些系统要求的权限，如访问网络等-->
+    <uses-permission android:name="com.insthub.cat.android.permission.JPUSH_MESSAGE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+
+        <meta-data
+            android:name="Mob-AppKey"
+            android:value="1fc8818a0fdbc"/>
+
+        <meta-data
+            android:name="Mob-AppSecret"
+            android:value="754dc2397f0b61eba4626cdb3b1268cf"/>
+
+        <meta-data
+            android:name="WX_APPID"
+            android:value="wxf1c27bf4e6631d6a"/>
+
+
+
+        <activity
+            android:name=".ui.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="qifuxingqiuapp" android:host="app" android:path="/storedetail"/>
+                <data android:scheme="qifuxingqiuapp" android:host="app" android:path="/servicedetail"/>
+                <data android:scheme="qifuxingqiuapp" android:host="app" android:path="/jingjiadetail"/>
+                <data android:scheme="qifuxingqiuapp" android:host="app" android:path="/zhaobiaodetail"/>
+                <data android:scheme="qifuxingqiuapp" android:host="app" android:path="/zhengjidetail"/>
+            </intent-filter>
+
+
+
+        </activity>
+        <activity
+            android:name=".ui.activity.WxLoginActivity"
+            android:theme="@style/Transparent.Light"
+            android:windowSoftInputMode="adjustPan|adjustResize">
+
+        </activity>
+        <activity
+            android:name=".ui.activity.ServiceActivity"
+            android:theme="@style/Transparent.Light"
+            android:windowSoftInputMode="adjustPan|adjustResize">
+
+        </activity>
+
+
+
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:theme="@style/Transparent.Light"
+            android:windowSoftInputMode="adjustPan|adjustResize">
+
+        </activity>
+
+
+        <activity
+            android:name=".ui.activity.KanjiaMakeOrderActivity"
+            android:theme="@style/Transparent.Light"
+            android:windowSoftInputMode="adjustPan|adjustResize">
+
+        </activity>
+
+
+        <activity
+            android:name=".ui.activity.PintuanListActivity"
+            android:theme="@style/Transparent.Light"
+            android:windowSoftInputMode="adjustPan|adjustResize">
+
+        </activity>
+
+
+
+        <!--找回密码-->
+        <activity
+            android:name=".ui.activity.FindActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <activity
+            android:name=".ui.activity.FindModifyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+        <activity
+            android:name=".ui.activity.PhotoClipActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+
+
+        <!--注册-->
+        <activity
+            android:name=".ui.activity.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators2">
+
+        </activity>
+
+        <activity
+            android:name="karics.library.zxing.android.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <activity
+            android:name=".ui.activity.CommonWebActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+
+        <!--账户信息-->
+        <activity
+            android:name=".ui.activity.AccountActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+        <activity
+            android:name=".ui.activity.PersonDoPublishActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+        <activity
+            android:name=".ui.activity.AllPublishListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <activity
+            android:name=".ui.activity.EditInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+        <activity
+            android:name=".ui.activity.SelectCityActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+        <activity
+            android:name=".ui.activity.ShopPreviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <activity
+            android:name=".ui.activity.SelectStreatListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+        <activity
+            android:name=".ui.activity.SearchGroupDetialActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <!--意见反馈-->
+        <activity
+            android:name=".ui.activity.FeedBackActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <!--关于软件-->
+        <activity
+            android:name=".ui.activity.AboutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+        <!--修改密码-->
+        <activity
+            android:name=".ui.activity.ModifyPawActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <!--我的设置-->
+        <activity
+            android:name=".ui.activity.SettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <activity
+            android:name=".ui.activity.EditTaitouActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <activity
+            android:name=".ui.activity.TaitouListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <!--我的发票-->
+        <activity
+            android:name=".ui.activity.MyTicketActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators2">
+        </activity>
+        <!--发票详情-->
+        <activity
+            android:name=".ui.activity.TicketDetialActivity"
+
+            android:screenOrientation="landscape"
+            android:configChanges="screenSize|keyboardHidden|orientation"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+
+        <!--选择抬头-->
+        <activity
+            android:name=".ui.activity.SelectTaitouActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+        <!--选择抬头-->
+        <activity
+            android:name=".ui.activity.InfomationListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <activity
+            android:name=".ui.activity.PullListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+        <activity
+            android:name=".ui.activity.ShopCategoryListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+
+        <activity
+            android:name=".ui.activity.GuilderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <!--收藏-->
+
+        <activity
+            android:name=".ui.activity.CollectActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <!--IM系统消息-->
+        <activity
+            android:name=".ui.activity.SystemMsgListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+        <!--小鲸消息-->
+        <activity
+            android:name=".ui.activity.XjMsgListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+
+
+        <activity
+            android:name=".ui.activity.MyCouponListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+        <activity
+            android:name=".ui.activity.CouponCodeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+
+        <activity
+            android:name=".ui.activity.HistoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators2">
+        </activity>
+
+
+
+        <activity
+            android:name=".ui.activity.CommentListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators2">
+        </activity>
+
+
+
+        <activity
+            android:name=".ui.activity.ShowMakeOrderSuccessActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators2">
+        </activity>
+
+
+        <!--好友添加-->
+        <activity
+            android:name=".ui.activity.FriendAddActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+        <!--好友申请-->
+        <activity
+            android:name=".ui.activity.FriendApplyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <activity
+            android:name=".ui.activity.MiaoshaDetialActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+        <activity
+            android:name=".ui.activity.PingtuanDetialActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+        <activity
+            android:name=".ui.activity.PintuanMakeOrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <activity
+            android:name=".ui.activity.PintuanmoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+        <activity
+            android:name=".ui.activity.LuckdrawDetialActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+        <activity
+            android:name=".ui.activity.LuckdrawMakeOrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+
+
+        <activity
+            android:name=".ui.activity.MiaoshaMakeOrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <activity
+            android:name=".ui.activity.KanjiaTodoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+
+        <!--填写信息-->
+        <activity
+            android:name=".ui.activity.ShopOpen1Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+        <activity
+            android:name=".ui.activity.ShopGoodNessActvity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+        <activity
+            android:name=".ui.activity.ShopCategoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <activity
+            android:name=".ui.activity.MyVoucherListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators2">
+        </activity>
+
+
+
+        <activity
+            android:name=".ui.activity.TuiguangActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+
+
+
+        <!--充值-->
+        <activity
+            android:name=".ui.activity.RechargeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <activity
+            android:name=".ui.activity.ShopListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+        <activity
+            android:name=".ui.activity.ShopOauthActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+        <activity
+            android:name=".ui.activity.ScoreListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+        <activity
+            android:name=".ui.activity.MyWallettActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <activity
+            android:name=".ui.activity.WithdrawActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <activity
+            android:name=".ui.activity.AddBankcardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <activity
+            android:name=".ui.activity.MyShopOrderListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <activity
+            android:name=".ui.activity.XiaojingpushouActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators2">
+        </activity>
+        <activity
+            android:name=".ui.activity.ShopSearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <activity
+            android:name=".ui.activity.ShopDetialActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <activity
+            android:name=".ui.activity.ShopCommentListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+        <activity
+            android:name=".ui.activity.MessageInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+
+        <activity
+            android:name=".ui.activity.ShopOrderDetialActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <activity
+            android:name=".ui.activity.ShopBuyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <activity
+            android:name=".ui.activity.ShopMakeOrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <activity
+            android:name=".ui.activity.ShareActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+        <activity
+            android:name=".ui.activity.AddBankResultActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+
+
+        <activity
+            android:name=".ui.activity.ShopWithdrawActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <activity
+            android:name=".ui.activity.HombaoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+        <activity
+            android:name=".ui.activity.MessageXiaojingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+        <activity
+            android:name=".ui.activity.CommonAdviserActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <activity
+            android:name=".ui.activity.ShopTradingOrderListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <activity
+            android:name=".ui.activity.ShopTradedOrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators2">
+        </activity>
+
+
+        <activity
+            android:name=".ui.activity.ServiceChatActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+        <activity
+            android:name=".ui.activity.BankListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+        <activity
+            android:name=".ui.activity.ContactActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators2">
+        </activity>
+
+        <activity
+            android:name=".ui.activity.AddFriendActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+        <activity
+            android:name=".ui.activity.FriendDetialActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+
+        <activity
+            android:name=".ui.activity.AdvancedTeamJoinActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+
+        <activity
+            android:name=".ui.activity.SumbitOrderCommentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+        <activity
+            android:name=".ui.activity.ShopOpenImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+        <activity
+            android:name=".ui.activity.SetActionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+        <activity
+            android:name=".ui.activity.HomeButtomActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <activity
+            android:name=".ui.activity.ThemeActionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+        <activity
+            android:name=".ui.activity.KanjiaDetialActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+        <activity
+            android:name=".ui.activity.ShopManager2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+        <activity
+            android:name=".ui.activity.KanjiaOrderInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+        <activity
+            android:name=".ui.activity.KanjiaMakeOrderActivity2"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <activity
+            android:name=".ui.activity.H5SubpriceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <activity
+            android:name=".ui.activity.ShopPayProtectedActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+
+        <activity
+            android:name=".ui.activity.ShopOauthPayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <activity
+            android:name=".ui.activity.ShopCompanyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+
+        <activity
+            android:name=".ui.activity.ShopAddActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+
+        <!--充值协议-->
+
+        <!--退款说明-->
+
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="W88rEZpYNUPKevdzMjOTjUXNDprabhTs" />
+
+
+        <!--百度定位-->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+
+
+        <service android:name=".service.DownloadService"></service>
+
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.insthub.cat.android.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+
+
+
+
+
+        <service android:name="com.insthub.cat.android.service.DownloadService"></service>
+        <!-- Rich push 核心功能 since 2.0.6-->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:theme="@style/MyDialogStyle"
+            android:exported="false">
+        </activity>
+        <!-- Required SDK核心功能-->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.insthub.cat.android" />
+            </intent-filter>
+        </activity>
+
+        <!-- Required SDK 核心功能-->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:process=":mult"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+        <!-- since 3.0.9 Required SDK 核心功能-->
+        <provider
+            android:authorities="com.insthub.cat.android.DataProvider"
+            android:name="cn.jpush.android.service.DataProvider"
+            android:exported="false"
+            />
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+                <category android:name="com.insthub.cat.android" />
+            </intent-filter>
+
+        </service>
+        <!-- since 3.1.0 Required SDK 核心功能-->
+        <provider
+            android:authorities="com.insthub.cat.android.DownloadProvider"
+            android:name="cn.jpush.android.service.DownloadProvider"
+            android:exported="true"
+            />
+        <!-- Required SDK核心功能-->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />   <!--Required  显示通知栏 -->
+                <category android:name="com.insthub.cat.android" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能-->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" android:exported="false"/>
+
+        <!-- User defined.  For test only  用户自定义的广播接收器-->
+        <receiver
+            android:name="com.insthub.cat.android.receiver.MyReceiver"
+            android:exported="false"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!--Required  用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!--Required  用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!--Required  用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!--Required  用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /><!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.insthub.cat.android" />
+            </intent-filter>
+        </receiver>
+
+        <!-- User defined.  For test only  用户自定义接收消息器,3.0.7开始支持,目前新tag/alias接口设置结果会在该广播接收器对应的方法中回调-->
+        <receiver android:name="com.insthub.cat.android.receiver.MyJPushMessageReceiver">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.RECEIVE_MESSAGE" />
+                <category android:name="com.insthub.cat.android"></category>
+            </intent-filter>
+        </receiver>
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data android:name="JPUSH_CHANNEL" android:value="developer-default"/>
+        <meta-data android:name="JPUSH_APPKEY" android:value="5fc8eaac1378687dc5c5ba76" /> <!--  </>值来自开发者平台取得的AppKey-->
+
+
+
+
+
+
+
+
+        <!-- 网易云信-->
+
+        <meta-data
+            android:name="com.netease.nim.appKey"
+            android:value="a181a4dcb8860ccf29efa1e01937de4f" />
+
+
+        <!-- 全面屏配置 -->
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+
+
+        <!-- 云信后台服务，请使用独立进程。 -->
+        <service
+            android:name="com.netease.nimlib.service.NimService"
+            android:process=":core"/>
+
+        <!-- 云信后台辅助服务 -->
+        <service
+            android:name="com.netease.nimlib.service.NimService$Aux"
+            android:process=":core"/>
+
+        <!-- 云信后台辅助服务 -->
+        <service
+            android:name="com.netease.nimlib.job.NIMJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:process=":core"/>
+
+
+        <!-- 云信SDK的监视系统启动和网络变化的广播接收器，用户开机自启动以及网络变化时候重新登录 -->
+        <receiver
+            android:name="com.netease.nimlib.service.NimReceiver"
+            android:exported="false"
+            android:process=":core">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+
+        <!-- 云信进程间通信receiver -->
+        <receiver android:name="com.netease.nimlib.service.ResponseReceiver" />
+
+        <!-- 云信进程间通信service -->
+        <service android:name="com.netease.nimlib.service.ResponseService" />
+
+        <!-- 云信进程间通信provider -->
+        <!-- android:authorities="{包名}.ipc.provider", 请将com.netease.nim.demo替换为自己的包名 -->
+        <provider
+            android:name="com.netease.nimlib.ipc.NIMContentProvider"
+            android:authorities="com.insthub.cat.android.ipc.provider"
+            android:exported="false"
+            android:process=":core" />
+
+
+
+        <!-- 申明自定义通知的广播接收器，第三方APP集成时，action中的com.netease.nim.demo请替换为自己的包名 -->
+        <!-- 需要权限申明 <uses-permission android:name="com.netease.nim.demo.permission.RECEIVE_MSG"/> -->
+        <!--<receiver-->
+            <!--android:name=".receiver.CustomNotificationReceiver"-->
+            <!--android:enabled="true"-->
+            <!--android:exported="false">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.insthub.cat.android.ACTION.RECEIVE_CUSTOM_NOTIFICATION" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <!-- 小米推送配置 -->
+        <service
+            android:name="com.xiaomi.push.service.XMJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:process=":mixpush" />
+
+        <service
+            android:name="com.xiaomi.push.service.XMPushService"
+            android:enabled="true"
+            android:process=":mixpush" />
+
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.PingReceiver"
+            android:exported="false"
+            android:process=":mixpush">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name="com.xiaomi.mipush.sdk.MessageHandleService"
+            android:enabled="true" />
+
+        <receiver
+            android:name="com.netease.nimlib.mixpush.mi.MiPushReceiver"
+            android:exported="true">
+            <intent-filter android:priority="0x7fffffff">
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
+                <action android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+
+
+        <!-- 第三方相关 :接收Push消息（注册、Push消息、Push连接状态）广播 -->
+        <receiver android:name="com.netease.nimlib.mixpush.hw.HWPushReceiver">
+            <intent-filter android:priority="0x7fffffff">
+                <!-- 必须,用于接收token -->
+                <action android:name="com.huawei.android.push.intent.REGISTRATION" />
+                <!-- 必须，用于接收消息 -->
+                <action android:name="com.huawei.android.push.intent.RECEIVE" />
+                <!-- 可选，用于点击通知栏或通知栏上的按钮后触发onEvent回调 -->
+                <action android:name="com.huawei.android.push.intent.CLICK" />
+                <!-- 可选，查看push通道是否连接，不查看则不需要 -->
+                <action android:name="com.huawei.intent.action.PUSH_STATE" />
+            </intent-filter>
+            <meta-data
+                android:name="CS_cloud_ablitity"
+                android:value="successRateAnalytics" />
+        </receiver>
+
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent1106975596" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+
+
+
+        <!--竞价列表-->
+        <activity
+            android:name=".ui.activity.BidPriceListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+        <activity
+            android:name=".ui.activity.PublishBidActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <!--竞价详情-->
+        <activity
+            android:name=".ui.activity.BidDetialActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <activity
+            android:name=".ui.activity.BidMustActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+        <!--创新集-->
+        <activity
+            android:name=".ui.activity.InnovateListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <!--创新集-->
+        <activity
+            android:name=".ui.activity.ITDataActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <!--创新集-->
+        <activity
+            android:name=".ui.activity.TenderListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+        <!--创新集-->
+        <activity
+            android:name=".ui.activity.InnovateDetialActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+        <activity
+            android:name=".ui.activity.TenderDetialActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+        <activity
+            android:name=".ui.activity.IndexTuiguangActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+        <activity
+            android:name=".ui.activity.RuleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+        <activity
+            android:name=".ui.activity.IndexMenuMoreActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+        <activity
+            android:name=".ui.activity.LabelListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <activity
+            android:name=".ui.activity.RenqiDetialActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+        <activity
+            android:name=".ui.activity.MyOfferActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+        <activity
+            android:name=".ui.activity.MemberServiceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+        <activity
+            android:name=".ui.activity.MemberRechargeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+        <activity
+            android:name=".ui.activity.TenderPublishActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+        <activity
+            android:name=".ui.activity.InnovatePublishActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+        <activity
+            android:name=".ui.activity.ShowPdfActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+
+        <activity
+            android:name=".ui.activity.TenderMustActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+        <activity
+            android:name=".ui.activity.InnovateMustActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+
+
+        <activity
+            android:name=".ui.activity.SearchBidListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+        <activity
+            android:name=".ui.activity.OrderPayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+
+        <activity
+            android:name=".ui.activity.HomeActivityShareActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent.Light">
+        </activity>
+<!--chat-->
+
+    </application>
+
+</manifest>

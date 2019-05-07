@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="wrap_content"
+        android:id="@+id/root_view"
+    android:background="@color/theme_color_primary"
+        android:orientation="vertical">
+
+
+      <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/common_title_bar"
+            android:background="@color/white"
+            android:layout_height="@dimen/common_bar_height"
+            >
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/bt_left"
+                android:textColor="@color/B_black_70"
+                android:paddingLeft="@dimen/view_margin_5"
+                android:paddingRight="@dimen/view_margin_5"
+                android:background="?selectableItemBackground"
+                android:text="定位"
+                android:gravity="center"
+                android:drawablePadding="@dimen/view_margin_5"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:layout_height="match_parent"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:id="@+id/bt_right"
+                android:paddingLeft="@dimen/view_margin_15"
+                android:paddingRight="@dimen/view_margin_15"
+                android:scaleType="centerInside"
+                android:background="?selectableItemBackground"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:layout_height="match_parent"/>
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/view_margin_7"
+                android:layout_marginBottom="@dimen/view_margin_7"
+                android:layout_toRightOf="@+id/bt_left"
+                android:layout_toLeftOf="@+id/bt_right"
+                android:gravity="left|center"
+                android:id="@+id/tv_search"
+                android:singleLine="true"
+                android:background="@drawable/shape_rect_10_grey"
+                android:ellipsize="marquee"
+                android:layout_marginLeft="@dimen/view_margin_10"
+                android:layout_marginRight="@dimen/view_margin_10"
+                android:paddingLeft="@dimen/view_margin_10"
+                android:paddingRight="@dimen/view_margin_10"
+                android:focusable="true"
+                android:drawableLeft="@drawable/ic_search_gray_18dp"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:focusableInTouchMode="true"
+                android:text="财税金融"
+                android:textColor="@color/B_black_70"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:layout_alignBaseline="@+id/bt_left"
+                android:layout_alignBottom="@+id/bt_left"
+                android:layout_centerHorizontal="true" />
+
+
+        </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp">
+                <com.allure.lbanners.LMBanners
+                    android:id="@+id/banners"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="@android:color/transparent"
+                    ></com.allure.lbanners.LMBanners>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/rll_action_data"
+                    android:visibility="gone"
+                    android:background="@drawable/shape_circle_black"
+                    android:layout_margin="@dimen/view_margin_10"
+                    android:padding="@dimen/view_margin_3"
+                    android:layout_height="wrap_content">
+
+                    <com.common.extend.roundedimageview.RoundedImageView
+                        android:layout_width="25dp"
+                        android:id="@+id/action_head"
+                        app:riv_border_width="@dimen/view_margin_1"
+                        app:riv_border_color="@color/white"
+                        app:riv_oval="true"
+                        android:src="@drawable/ic_default_head"
+                        app:riv_corner_radius="@dimen/view_margin_70"
+                        android:layout_height="25dp" />
+
+                    <com.insthub.cat.android.ui.widget.MarqueTextView
+                        android:layout_width="100dp"
+                        android:layout_alignTop="@+id/action_head"
+                        android:id="@+id/tv_action_content"
+                        android:text=""
+                        android:ellipsize="marquee"
+                        android:singleLine="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:scrollHorizontally="true"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/white"
+
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/view_margin_5"
+                        android:layout_alignBottom="@+id/action_head"
+                        android:layout_toRightOf="@+id/action_head"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+            <include layout="@layout/divide_black"></include>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/view_margin_5">
+
+
+                <TextView
+                    android:id="@+id/tv_menu_taitou"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="?selectableItemBackground"
+                    android:clickable="true"
+                    android:padding="@dimen/view_margin_5"
+                    android:drawablePadding="@dimen/view_margin_10"
+                    android:drawableTop="@drawable/ic_taitou"
+                    android:gravity="center"
+                    android:text="抬头管理"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                    android:textColor="@color/B_black_70"/>
+
+
+                <TextView
+                    android:id="@+id/tv_menu_qrc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="?selectableItemBackground"
+                    android:clickable="true"
+                    android:drawablePadding="@dimen/view_margin_10"
+                    android:padding="@dimen/view_margin_5"
+                    android:drawableTop="@drawable/ic_scan_piao"
+                    android:gravity="center"
+                    android:text="扫码开票"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                    android:textColor="@color/B_black_70"/>
+
+                <TextView
+                    android:id="@+id/tv_menu_piao"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="?selectableItemBackground"
+                    android:clickable="true"
+                    android:padding="@dimen/view_margin_5"
+                    android:drawablePadding="@dimen/view_margin_10"
+                    android:drawableTop="@drawable/ic_user_piao"
+                    android:gravity="center"
+                    android:text="我的发票"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                    android:textColor="@color/B_black_70"/>
+
+
+                <TextView
+                    android:id="@+id/tv_menu_bushou"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="?selectableItemBackground"
+                    android:clickable="true"
+                    android:padding="@dimen/view_margin_5"
+                    android:drawablePadding="@dimen/view_margin_10"
+                    android:drawableTop="@drawable/ic_bushou"
+                    android:gravity="center"
+                    android:text="星客捕手"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                    android:textColor="@color/B_black_70"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/divide_v_black"></include>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_margin_3"
+                android:background="@color/md_divicer_color" />
+            <include layout="@layout/divide_v_black"></include>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/view_margin_50">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="3"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:src="@drawable/ic_bj_reprot"
+                        android:layout_centerInParent="true"
+                        android:scaleType="centerInside"
+                        android:layout_height="match_parent" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="@dimen/view_margin_1"
+                    android:background="@color/md_divider_black"
+                    android:layout_marginTop="@dimen/view_margin_10"
+                    android:layout_marginBottom="@dimen/view_margin_10"
+                    android:layout_height="wrap_content"></View>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+
+                    <com.insthub.cat.android.ui.widget.MarqueeView
+                        android:id="@+id/marqueeView"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/view_margin_50"
+                        android:background="@color/transparent"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        app:mvDirection="bottom_to_top"
+                        app:mvAnimDuration="1000"
+                        app:mvInterval="3000"
+                        app:mvTextColor="@color/B_black_70"
+                        app:mvSingleLine="true"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+            <include layout="@layout/divide_v_black"></include>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_margin_3"
+                android:background="@color/md_divicer_color" />
+            <include layout="@layout/divide_v_black"></include>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="@color/B_black_70"
+                android:text="- 今日主题 -"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/view_margin_5"
+                android:paddingBottom="@dimen/view_margin_5"/>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:padding="@dimen/view_margin_4"
+                android:id="@+id/rll_theme"
+                android:scrollbars="none"
+                android:layout_height="110dp">
+
+
+
+            </android.support.v7.widget.RecyclerView>
+            <include layout="@layout/divide_v_black"></include>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_margin_3"
+                android:background="@color/md_divicer_color" />
+            <include layout="@layout/divide_v_black"></include>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:scaleType="center"
+                android:id="@+id/iv_quan"
+                android:src="@drawable/ic_index_plan"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

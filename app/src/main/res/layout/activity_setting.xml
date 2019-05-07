@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/theme_color_primary"
+    android:orientation="vertical">
+
+    <com.common.android.fui.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bar_height"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/main_bg">
+
+
+
+    <include layout="@layout/divide_v_black" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_margin_10"/>
+
+    <include layout="@layout/divide_v_black"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+
+            android:id="@+id/rll_view_head"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_80"
+            android:clickable="true"
+            android:paddingLeft="@dimen/view_margin_10"
+            android:background="?selectableItemBackground">
+
+
+            <com.common.extend.roundedimageview.RoundedImageView
+                android:id="@+id/detail_head"
+                android:layout_width="@dimen/view_margin_60"
+                android:layout_height="@dimen/view_margin_60"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_default_head"
+                android:layout_centerVertical="true"
+                app:riv_corner_radius="45dp"
+                app:riv_border_color="@color/B_black_10"
+                app:riv_border_width="@dimen/view_margin_1"
+                android:layout_marginRight="@dimen/view_margin_5" />
+
+
+
+            <TextView
+                style="@style/my_center_textview"
+                android:layout_height="wrap_content"
+                android:id="@+id/user_nickname"
+                android:layout_toRightOf="@+id/detail_head"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/view_margin_10"
+                android:text="头像"/>
+
+            <com.common.android.ftheme.widgets.TintTextView
+                style="@style/my_center_textview"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:drawableRight="@drawable/ic_keyboard_arrow_right__grey_24dp"
+                app:drawableRightTint="@color/theme_color_primary" />
+
+
+        </RelativeLayout>
+
+
+        <include layout="@layout/divide_v_black"/>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/main_background"
+            android:layout_height="@dimen/view_margin_10"/>
+
+        <include layout="@layout/divide_v_black"/>
+
+        <RelativeLayout
+            android:id="@+id/rll_modifypwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_45"
+            android:background="?selectableItemBackground">
+
+            <com.common.android.ftheme.widgets.TintTextView
+                style="@style/my_center_textview"
+                android:layout_width="match_parent"
+                android:textColor="@color/B_black_70"
+                android:drawableLeft="@drawable/ic_modifypwd"
+                android:drawableRight="@drawable/ic_keyboard_arrow_right__grey_24dp"
+                app:drawableRightTint="@color/theme_color_primary"
+                android:text="修改密码"/>
+
+
+
+        </RelativeLayout>
+
+        <include layout="@layout/divide_v_black"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/main_background"
+            android:layout_height="@dimen/view_margin_10"/>
+
+        <include layout="@layout/divide_v_black"/>
+
+        <RelativeLayout
+            android:id="@+id/rll_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_45"
+            android:background="?selectableItemBackground">
+
+            <com.common.android.ftheme.widgets.TintTextView
+                style="@style/my_center_textview"
+                android:layout_width="match_parent"
+                android:textColor="@color/B_black_70"
+                android:drawableLeft="@drawable/ic_feedback"
+                app:drawableRightTint="@color/theme_color_primary"
+                android:drawableRight="@drawable/ic_keyboard_arrow_right__grey_24dp"
+                android:text="意见反馈"/>
+
+
+        </RelativeLayout>
+
+        <include layout="@layout/divide_v_black"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/main_background"
+            android:layout_height="@dimen/view_margin_10"/>
+
+        <include layout="@layout/divide_v_black"/>
+
+        <RelativeLayout
+            android:id="@+id/rll_clearcache"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_45"
+            android:background="?selectableItemBackground">
+
+            <com.common.android.ftheme.widgets.TintTextView
+                style="@style/my_center_textview"
+                android:layout_width="match_parent"
+                android:textColor="@color/B_black_70"
+                android:drawableLeft="@drawable/ic_clear_cache"
+                app:drawableRightTint="@color/theme_color_primary"
+                android:drawableRight="@drawable/ic_keyboard_arrow_right__grey_24dp"
+                android:text="清除缓存"/>
+
+        </RelativeLayout>
+        <include layout="@layout/divide_v_black"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/main_background"
+            android:layout_height="@dimen/view_margin_10"/>
+
+        <include layout="@layout/divide_v_black"/>
+        <RelativeLayout
+            android:id="@+id/rll_about"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_45"
+            android:background="?selectableItemBackground">
+
+            <com.common.android.ftheme.widgets.TintTextView
+                style="@style/my_center_textview"
+                android:layout_width="match_parent"
+                android:textColor="@color/B_black_70"
+                android:drawableLeft="@drawable/ic_about"
+                app:drawableLeftTint="@color/theme_color_primary"
+                app:drawableRightTint="@color/theme_color_primary"
+                android:drawableRight="@drawable/ic_keyboard_arrow_right__grey_24dp"
+                android:text="关于我们"/>
+
+        </RelativeLayout>
+        <include layout="@layout/divide_v_black"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/main_background"
+            android:layout_height="@dimen/view_margin_10"/>
+
+        <include layout="@layout/divide_v_black"/>
+
+        <RelativeLayout
+            android:id="@+id/rll_checkup"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_45"
+            android:background="?selectableItemBackground">
+
+            <com.common.android.ftheme.widgets.TintTextView
+                style="@style/my_center_textview"
+                android:layout_width="match_parent"
+                android:textColor="@color/B_black_70"
+                android:drawableLeft="@drawable/ic_check_version"
+                app:drawableRightTint="@color/theme_color_primary"
+                android:drawableRight="@drawable/ic_keyboard_arrow_right__grey_24dp"
+                android:text="检查更能"/>
+
+        </RelativeLayout>
+
+        <include layout="@layout/divide_v_black"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/main_background"
+            android:layout_height="@dimen/view_margin_10"/>
+
+        <include layout="@layout/divide_v_black"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rll_delete_user"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_45"
+            android:background="?selectableItemBackground">
+
+            <com.common.android.ftheme.widgets.TintTextView
+                style="@style/my_center_textview"
+                android:layout_width="match_parent"
+                android:textColor="@color/B_black_70"
+                android:drawableLeft="@drawable/ic_clear_cache"
+                app:drawableRightTint="@color/theme_color_primary"
+                android:drawableRight="@drawable/ic_keyboard_arrow_right__grey_24dp"
+                android:text="注销用户"/>
+
+        </RelativeLayout>
+        <include layout="@layout/divide_v_black"/>
+
+
+        <Button
+            android:id="@+id/bt_exit"
+            style="@style/STYLE_LOGIN_SUMBIT_BUTTON"
+            android:layout_below="@+id/lly_input_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/view_margin_60"
+            android:text="退出登录" />
+
+
+    </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

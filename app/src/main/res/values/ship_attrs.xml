@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="slideswitch">
+        <attr name="openColor" format="color" />
+        <attr name="closeColor" format="color" />
+        <attr name="isOpen" format="boolean" />
+        <attr name="shape">
+            <enum name="rect" value="1" />
+            <enum name="circle" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="RatingBar">
+        <!--尺寸值-->
+        <attr name="starImageSize" format="dimension" />
+        <!--星星间距-->
+        <attr name="starPadding" format="dimension" />
+        <!--星星总数-->
+        <attr name="starCount" format="integer" />
+        <!--空白的星星资源文件值-->
+        <attr name="starEmpty" format="reference" />
+        <!--满星资源文件值-->
+        <attr name="starFill" format="reference" />
+        <!--半星资源文件值-->
+        <attr name="starHalf" format="reference" />
+        <!--是否可点击boolean值-->
+        <attr name="clickable" format="boolean" />
+        <!--当前进度float值-->
+        <attr name="starStep" format="float" />
+        <!--每次进度方式的值，整星还是半星-->
+        <attr name="stepSize">
+            <enum name="Half" value="0" />
+            <enum name="Full" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SoftKeyView">
+        <attr name="softBoardBgColor" format="reference|color" />
+        <attr name="keyNormalBgColor" format="reference|color" />
+        <attr name="keyPressedBgColor" format="reference|color" />
+        <attr name="keyTextColor" format="reference|color" />
+        <attr name="keyTextSize" format="dimension" />
+        <attr name="keyborderColor" format="reference|color" />
+        <attr name="keyborderSize" format="dimension" />
+    </declare-styleable>
+
+    <!-- CircleImageView -->
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="border_overlay" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="pickerview">
+        <attr name="pickerview_gravity">
+            <enum name="center" value="17"/>
+            <enum name="left" value="3"/>
+            <enum name="right" value="5"/>
+        </attr>
+        <attr name="pickerview_textSize" format="dimension"/>
+        <attr name="pickerview_textColorOut" format="color"/>
+        <attr name="pickerview_textColorCenter" format="color"/>
+        <attr name="pickerview_dividerColor" format="color"/>
+        <attr name="pickerview_lineSpacingMultiplier" format="float"/>
+    </declare-styleable>
+
+
+
+    <declare-styleable name="ColorArcProgressBar">
+        <attr name="back_color" format="color"/>
+        <attr name="front_color1" format="color"/>
+        <attr name="front_color2" format="color"/>
+        <attr name="front_color3" format="color"/>
+        <attr name="back_width" format="dimension"/>
+        <attr name="front_width" format="dimension"/>
+        <attr name="is_need_title" format="boolean"/>
+        <attr name="is_need_content" format="boolean"/>
+        <attr name="is_need_unit" format="boolean"/>
+        <attr name="is_need_dial" format="boolean"/>
+        <attr name="string_title" format="string"/>
+        <attr name="string_unit" format="string"/>
+        <attr name="total_engle" format="integer"/>
+        <attr name="current_value" format="float"/>
+        <attr name="max_value" format="float"/>
+
+    </declare-styleable>
+
+    <!-- 是否开启抗锯齿 -->
+    <attr name="antiAlias" format="boolean" />
+    <!-- 圆弧起始角度，3点钟方向为0，顺时针递增，小于0或大于360进行取余 -->
+    <attr name="startAngle" format="float" />
+    <!-- 圆弧度数 -->
+    <attr name="sweepAngle" format="float" />
+    <!-- 设置动画时间 -->
+    <attr name="animTime" format="integer" />
+    <!-- 绘制内容的数值 -->
+    <attr name="maxValue" format="float" />
+    <attr name="value" format="float" />
+    <!-- 绘制内容的单位 -->
+    <attr name="unit" format="string|reference" />
+    <attr name="unitSize" format="dimension" />
+    <attr name="unitColor" format="color|reference" />
+    <!-- 绘制内容相应的提示语 -->
+    <attr name="hint" format="string|reference" />
+    <attr name="hintSize" format="dimension" />
+    <attr name="hintColor" format="color|reference" />
+    <!-- 精度，默认为0 -->
+    <attr name="precision" format="integer" />
+    <attr name="valueSize" format="dimension" />
+    <attr name="valueColor" format="color|reference" />
+    <!-- 圆弧颜色，设置多个可实现渐变 -->
+    <attr name="arcColor1" format="color|reference" />
+    <attr name="arcColor2" format="color|reference" />
+    <attr name="arcColor3" format="color|reference" />
+    <!-- 背景圆弧颜色，默认白色 -->
+    <attr name="bgArcColor" format="color|reference" />
+    <!-- 圆弧宽度 -->
+    <attr name="arcWidth" format="dimension" />
+    <!-- 圆弧颜色， -->
+    <attr name="arcColors" format="color|reference" />
+    <!-- 文字的偏移量。相对于圆半径而言，默认三分之一 -->
+    <attr name="textOffsetPercentInRadius" format="float" />
+
+    <!-- 圆形进度条 -->
+    <declare-styleable name="CircleProgressBar">
+        <attr name="antiAlias" />
+        <attr name="startAngle" />
+        <attr name="sweepAngle" />
+        <attr name="animTime" />
+        <attr name="maxValue" />
+        <attr name="value" />
+        <attr name="precision" />
+        <attr name="valueSize" />
+        <attr name="valueColor" />
+        <attr name="textOffsetPercentInRadius" />
+        <!-- 绘制内容相应的提示语 -->
+        <attr name="hint" />
+        <attr name="hintSize" />
+        <attr name="hintColor" />
+        <!-- 绘制内容的单位 -->
+        <attr name="unit" />
+        <attr name="unitSize" />
+        <attr name="unitColor" />
+        <!-- 圆弧宽度 -->
+        <attr name="arcWidth" />
+        <attr name="arcColors" />
+        <!-- 背景圆弧颜色 -->
+        <attr name="bgArcColor" />
+        <!-- 背景圆弧宽度 -->
+        <attr name="bgArcWidth" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="DropDownMenu">
+
+        <attr name="ddunderlineColor" format="color"/>
+        <attr name="dddividerColor" format="color"/>
+        <attr name="ddtextSelectedColor" format="color"/>
+        <attr name="ddtextUnselectedColor" format="color"/>
+        <attr name="ddmenuBackgroundColor" format="color"/>
+        <attr name="ddmaskColor" format="color"/>
+        <attr name="ddmenuTextSize" format="dimension"/>
+        <attr name="ddmenuSelectedIcon" format="reference"/>
+        <attr name="ddmenuUnselectedIcon" format="reference"/>
+        <attr name="ddmenuMenuHeightPercent" format="float"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="MarqueeViewStyle">
+        <attr name="mvInterval" format="integer|reference"/>
+        <attr name="mvAnimDuration" format="integer|reference"/>
+        <attr name="mvTextSize" format="dimension|reference"/>
+        <attr name="mvTextColor" format="color|reference"/>
+        <attr name="mvSingleLine" format="boolean"/>
+        <attr name="mvGravity">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+        <attr name="mvDirection">
+            <enum name="bottom_to_top" value="0"/>
+            <enum name="top_to_bottom" value="1"/>
+            <enum name="right_to_left" value="2"/>
+            <enum name="left_to_right" value="3"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="FlowLayout">
+        <attr name="flow" format="boolean" />
+        <attr name="childSpacing" format="enum|dimension">
+            <enum name="auto" value="-65536" />
+        </attr>
+        <attr name="childSpacingForLastRow" format="enum|dimension">
+            <enum name="auto" value="-65536" />
+            <enum name="align" value="-65537" />
+        </attr>
+        <attr name="rowSpacing" format="enum|dimension">
+            <enum name="auto" value="-65536" />
+        </attr>
+        <attr name="rtl" format="boolean" />
+        <attr name="lineSpacing" format="dimension" />
+        <attr name="maxLine" format="integer" />
+    </declare-styleable>
+
+
+    <style name="AppTheme.AppCompat.Dialog.Alert.Translate2" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowMinWidthMinor">100%</item>
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:maxWidth">1080px</item>
+    </style>
+
+    <declare-styleable name="StepsView">
+        <attr name="numOfSteps" format="integer" />
+        <attr name="completePosition" format="integer"/>
+        <attr name="labels" format="reference"/>
+        <attr name="barColor" format="reference"/>
+        <attr name="progressColor" format="reference"/>
+        <attr name="labelColor" format="reference"/>
+        <attr name="progressTextColor" format="reference"/>
+        <attr name="hideProgressText" format="boolean"/>
+        <attr name="labelSize" format="float"/>
+        <attr name="progressMargin" format="float"/>
+        <attr name="circleRadius" format="float"/>
+        <attr name="progressStrokeWidth" format="float"/>
+    </declare-styleable>
+</resources>

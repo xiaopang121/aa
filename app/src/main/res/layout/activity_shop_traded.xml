@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="match_parent"
+        android:background="@color/theme_color_primary"
+        android:orientation="vertical">
+
+
+    <com.common.android.fui.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bar_height"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="@dimen/view_margin_1"></View>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="41dp">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_45"
+            android:id="@+id/menu_categrary"
+            android:background="@color/white"
+            android:orientation="horizontal">
+            <RadioButton
+                style="@style/STYLE_COMMENT_RADIO"
+                android:text="@string/menu_shop_has_withdraw"
+                android:checked="true"
+                android:id="@+id/menu_has_process"/>
+
+
+            <View
+                android:layout_width="@dimen/view_margin_1"
+                android:layout_height="match_parent"
+                android:background="@color/B_black_10"/>
+
+            <RadioButton
+                style="@style/STYLE_COMMENT_RADIO"
+                android:text="@string/menu_shop_no_withdraw"
+                android:id="@+id/menu_no_process"/>
+
+        </RadioGroup>
+        <com.viewpagerindicator.UnderlinePageIndicator
+            android:layout_width="match_parent"
+            android:id="@+id/linepageIndicator"
+            android:layout_alignParentBottom="true"
+            android:layout_height="2dp" />
+
+    </RelativeLayout>
+
+     <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_1"
+            android:background="@color/md_divider_black"/>
+
+    <com.common.android.fui.widget.CustomViewPager
+        android:layout_width="match_parent"
+        android:id="@+id/viewpager"
+        android:background="@color/white"
+        android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</LinearLayout>

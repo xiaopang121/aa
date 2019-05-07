@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="wrap_content"
+        android:id="@+id/root_view"
+         android:background="@color/theme_color_primary"
+        android:orientation="vertical">
+
+
+      <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/common_title_bar"
+            android:layout_height="@dimen/common_bar_height"
+            >
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/bt_left"
+                android:textColor="@color/white"
+                android:paddingLeft="@dimen/view_margin_5"
+                android:paddingRight="@dimen/view_margin_5"
+                android:background="?selectableItemBackground"
+                android:text="定位"
+                android:gravity="center"
+                android:drawablePadding="@dimen/view_margin_5"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:layout_height="match_parent"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:id="@+id/bt_right"
+                android:paddingLeft="@dimen/view_margin_15"
+                android:paddingRight="@dimen/view_margin_15"
+                android:scaleType="centerInside"
+                android:background="?selectableItemBackground"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:layout_height="match_parent"/>
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/view_margin_10"
+                android:layout_marginBottom="@dimen/view_margin_10"
+                android:layout_toRightOf="@+id/bt_left"
+                android:gravity="left|center"
+                android:id="@+id/tv_search"
+                android:singleLine="true"
+                android:background="@drawable/shape_rect_40_white"
+                android:ellipsize="marquee"
+                android:layout_marginLeft="@dimen/view_margin_10"
+                android:layout_marginRight="@dimen/view_margin_10"
+                android:paddingLeft="@dimen/view_margin_10"
+                android:paddingRight="@dimen/view_margin_10"
+                android:focusable="true"
+                android:drawableLeft="@drawable/ic_search_gray_18dp"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:focusableInTouchMode="true"
+                android:text="财税金融"
+                android:textColor="@color/B_black_70"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:layout_alignBaseline="@+id/bt_left"
+                android:layout_alignBottom="@+id/bt_left"
+                android:layout_centerHorizontal="true" />
+
+
+        </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp">
+                <com.allure.lbanners.LMBanners
+                    android:id="@+id/banners"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:background="@android:color/transparent"
+                    ></com.allure.lbanners.LMBanners>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/rll_action_data"
+                    android:visibility="gone"
+                    android:background="@drawable/shape_circle_black"
+                    android:layout_margin="@dimen/view_margin_10"
+                    android:padding="@dimen/view_margin_3"
+                    android:layout_height="wrap_content">
+
+                    <com.common.extend.roundedimageview.RoundedImageView
+                        android:layout_width="25dp"
+                        android:id="@+id/action_head"
+                        app:riv_border_width="@dimen/view_margin_1"
+                        app:riv_border_color="@color/white"
+                        app:riv_oval="true"
+                        android:src="@drawable/ic_default_head"
+                        app:riv_corner_radius="@dimen/view_margin_70"
+                        android:layout_height="25dp" />
+
+                    <com.insthub.cat.android.ui.widget.MarqueTextView
+                        android:layout_width="100dp"
+                        android:layout_alignTop="@+id/action_head"
+                        android:id="@+id/tv_action_content"
+                        android:text=""
+                        android:ellipsize="marquee"
+                        android:singleLine="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:scrollHorizontally="true"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/white"
+
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/view_margin_5"
+                        android:layout_alignBottom="@+id/action_head"
+                        android:layout_toRightOf="@+id/action_head"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+            <include layout="@layout/divide_black"></include>
+
+
+            <!--首页菜单-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/view_margin_10"
+                    android:id="@+id/rv_index_menu"
+                    android:scrollbars="none"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+            <!--首页精选-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/view_margin_45">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                    android:textColor="@color/yellow_color_pressed"
+                    android:text="精选店铺"
+                    android:drawablePadding="@dimen/view_margin_10"
+                    android:drawableLeft="@drawable/ic_jx_arrow_left"
+                    android:drawableRight="@drawable/ic_jx_arrow_right"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+            <include layout="@layout/divide_v_black"></include>
+            <!--首页人气-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/view_margin_10"
+                    android:id="@+id/rv_renqi"
+                    android:scrollbars="none"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+
+
+            <!--首页精选-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/view_margin_45">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                    android:textColor="@color/yellow_color_pressed"
+                    android:text="精选服务"
+                    android:drawablePadding="@dimen/view_margin_10"
+                    android:drawableLeft="@drawable/ic_jx_arrow_left"
+                    android:drawableRight="@drawable/ic_jx_arrow_right"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+            <include layout="@layout/divide_v_black"></include>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/view_margin_10"
+                    android:id="@+id/rv_jinxuan"
+                    android:scrollbars="none"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+
+
+            <include layout="@layout/divide_v_black"></include>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_margin_3"
+                android:visibility="gone"
+                android:background="@color/md_divicer_color" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:scaleType="center"
+                android:id="@+id/iv_quan"
+                android:visibility="gone"
+                android:src="@drawable/ic_index_plan"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

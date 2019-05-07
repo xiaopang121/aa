@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/view_margin_10"
+        android:layout_marginRight="@dimen/view_margin_10"
+        android:layout_marginBottom="@dimen/view_margin_10"
+        android:layout_marginTop="@dimen/view_margin_20"
+        android:orientation="vertical"
+        android:background="@drawable/shape_rect_10_white2"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+            android:textColor="@color/B_black_70"
+            android:gravity="center"
+            android:padding="@dimen/view_margin_15"
+            android:text="拼团列表"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/md_divider_black"
+            android:layout_height="@dimen/view_margin_1"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/recycleview"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="@dimen/view_margin_30"
+        android:padding="@dimen/view_margin_5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/ic_close"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_clean"
+        android:layout_height="@dimen/view_margin_30" />
+
+
+</RelativeLayout>

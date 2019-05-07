@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <style name="AppTheme.AppCompat.Dialog.Alert" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowMinWidthMinor">100%</item>
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:maxWidth">1080px</item>
+        <item name="android:windowIsFloating">true</item>
+        <!-- 设置未浮动窗口 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 设置无边框 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 设置无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 设置完全透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 设置屏幕变暗 -->
+        <item name="android:windowIsTranslucent">true</item>
+
+        <item name="android:backgroundDimAmount">0.4</item>
+
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="AppTheme.AppCompat.Dialog.Alert.Translate" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowMinWidthMinor">100%</item>
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:background">@color/theme_color_primary</item>
+        <item name="android:maxWidth">1080px</item>
+
+    </style>
+</resources>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2016 JustWayward Team
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/view_margin_10"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/my_center_textview"
+            android:id="@+id/item_shop_name"
+            android:gravity="left|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/B_black_85"
+            android:text="电话号码" />
+
+
+        <TextView
+            style="@style/my_center_textview"
+            android:id="@+id/item_shop_categary"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@color/B_black_50"
+            android:layout_marginTop="@dimen/view_margin_5"
+            android:layout_below="@+id/item_shop_name"
+            android:gravity="left|center_vertical"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:maxWidth="150dp"
+            android:text="商业纠纷" />
+
+
+        <TextView
+            style="@style/my_center_textview"
+            android:id="@+id/item_shop_state"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@color/B_black_50"
+            android:layout_marginLeft="@dimen/view_margin_10"
+            android:layout_toRightOf="@+id/item_shop_categary"
+            android:layout_marginTop="@dimen/view_margin_5"
+            android:layout_below="@+id/item_shop_name"
+            android:gravity="left|center_vertical"
+            android:layout_width="wrap_content"
+            android:text="正在营业" />
+
+
+
+        <TextView
+            style="@style/my_center_textview"
+            android:id="@+id/item_shop_time"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@color/B_black_50"
+            android:layout_marginLeft="@dimen/view_margin_10"
+            android:layout_toRightOf="@+id/item_shop_state"
+            android:layout_marginTop="@dimen/view_margin_5"
+            android:layout_below="@+id/item_shop_name"
+            android:gravity="left|center_vertical"
+            android:layout_width="wrap_content"
+            android:text="14:12" />
+
+
+
+    </RelativeLayout>
+    <include layout="@layout/divide_v_black"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_margin_40"
+        android:background="@color/white">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:text="修改"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:layout_marginTop="@dimen/view_margin_5"
+            android:layout_marginBottom="@dimen/view_margin_5"
+            android:id="@+id/bt_shop_modify"
+            android:textColor="@color/white"
+            android:layout_marginRight="@dimen/view_margin_15"
+            android:background="@drawable/select_login"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:text="删除"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:layout_marginTop="@dimen/view_margin_5"
+            android:layout_marginBottom="@dimen/view_margin_5"
+            android:id="@+id/bt_shop_delete"
+            android:textColor="@color/white"
+            android:layout_toLeftOf="@+id/bt_shop_modify"
+            android:layout_marginRight="@dimen/view_margin_15"
+            android:background="@drawable/select_rect_gary_10"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</LinearLayout>

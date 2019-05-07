@@ -1,0 +1,88 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- dialog 样式 -->
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <!-- 设置未浮动窗口 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 设置无边框 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 设置无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 设置完全透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 设置屏幕变暗 -->
+        <item name="android:windowIsTranslucent">true</item>
+
+        <item name="android:backgroundDimAmount">0.4</item>
+
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+
+    <!-- Base application theme. 5.0主题  和 5。0以前的主题 在于 属性需要添加  android ，5.0以后 不需要 ，不然无法识别 -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:screenOrientation">portrait</item>
+    </style>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="Transparent.Light" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="Transparent.Light_LANDSCAPE" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+
+    </style>
+
+
+    <style name="Transparent.Light2" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowDisablePreview">true</item>
+
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppThemeDay" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="AppThemeNight" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#E91E63</item>
+        <item name="colorPrimaryDark">#E91E63</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+
+
+    <style name="SwipeBackLayout">
+        <item name="edge_size">50dip</item>
+        <item name="shadow_left">@drawable/shadow_left</item>
+        <item name="shadow_right">@drawable/shadow_right</item>
+        <item name="shadow_bottom">@drawable/shadow_bottom</item>
+    </style>
+
+
+
+
+</resources>

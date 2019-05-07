@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/theme_color_primary"
+    android:orientation="vertical">
+
+    <com.common.android.fui.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bar_height"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/main_bg">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_margin="@dimen/view_margin_15"
+            android:gravity="left|top"
+            android:padding="@dimen/view_margin_5"
+            android:hint="请在此输入您宝贵意见"
+            android:background="@drawable/shape_rect_10_grey"
+            android:text=""
+            android:maxLength="200"
+            android:minLines="7"
+            android:paddingLeft="@dimen/view_margin_4"
+            android:paddingRight="@dimen/view_margin_4"
+            android:id="@+id/tv_content"
+            android:textColor="@color/B_black_70"
+            android:textAppearance="@style/TextAppearance.AppCompat.Inverse"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@color/B_black_50"
+            android:text="0/200"
+            android:id="@+id/tv_size"
+            android:layout_marginBottom="@dimen/view_margin_5"
+            android:layout_marginRight="@dimen/view_margin_5"
+            android:layout_alignRight="@+id/tv_content"
+            android:layout_alignBottom="@+id/tv_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

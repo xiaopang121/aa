@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/iv_hongbao"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_hongbao_bg"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="开票成功，点击领取红包"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+        android:singleLine="true"
+        android:layout_alignLeft="@+id/iv_hongbao"
+        android:layout_alignRight="@+id/iv_hongbao"
+        android:gravity="center"
+        android:layout_alignTop="@+id/iv_hongbao"
+        android:layout_marginTop="@dimen/view_margin_70"
+        android:layout_height="wrap_content" />
+
+
+
+    <ImageView
+        android:layout_width="30dp"
+        android:id="@+id/iv_close"
+        android:layout_alignTop="@+id/iv_hongbao"
+        android:layout_alignRight="@+id/iv_hongbao"
+        android:layout_marginRight="-15dp"
+        android:layout_marginTop="-15dp"
+        android:src="@drawable/ic_red_close"
+        android:layout_height="30dp" />
+
+</RelativeLayout>

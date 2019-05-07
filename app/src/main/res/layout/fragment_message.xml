@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.MessageFragment.Fragment_message"
+    android:background="@color/theme_color_primary"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/common_title_bar"
+        android:layout_gravity="center"
+        android:background="@color/theme_color_primary"
+        android:layout_height="@dimen/common_bar_height"
+        >
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/rll_left_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:paddingLeft="@dimen/view_margin_15"
+                android:paddingRight="@dimen/view_margin_15"
+                android:background="?selectableItemBackground"
+                android:id="@+id/iv_left"
+                android:visibility="gone"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:background="?selectableItemBackground"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:paddingLeft="@dimen/view_margin_5"
+                android:paddingRight="@dimen/view_margin_5"
+                android:layout_alignParentRight="true"
+                android:id="@+id/bt_left"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/rll_right_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="?selectableItemBackground"
+                android:paddingLeft="@dimen/view_margin_1"
+                android:paddingRight="@dimen/view_margin_15"
+                android:layout_alignParentRight="true"
+                android:id="@+id/iv_right"/>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:text="通讯录"
+                android:gravity="center"
+                android:background="?selectableItemBackground"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:paddingLeft="@dimen/view_margin_5"
+                android:paddingRight="@dimen/view_margin_5"
+                android:layout_toLeftOf="@+id/iv_right"
+                android:id="@+id/bt_right"/>
+
+        </RelativeLayout>
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/tv_title"
+            android:layout_alignTop="@+id/rll_right_content"
+            android:layout_alignBottom="@+id/rll_right_content"
+            android:singleLine="true"
+            android:layout_marginRight="@dimen/view_margin_60"
+            android:layout_marginLeft="@dimen/view_margin_60"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:text="@string/menu_msg"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:layout_centerInParent="true"
+            android:focusableInTouchMode="true"
+            android:textColor="@color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="@dimen/big_small"/>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <!--小鲸捕手-->
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:id="@+id/rll_xiaojing_view"
+                    android:layout_height="71dp"
+                    android:background="?selectableItemBackground"
+                    >
+
+
+                    <RelativeLayout
+                        android:id="@+id/portrait_panel"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true">
+
+                        <ImageView
+                            android:id="@+id/iv_xiaojing"
+                            android:layout_width="@dimen/avatar_size_default"
+                            android:layout_height="@dimen/avatar_size_default"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_xiaojing_bushou"
+                            android:layout_centerInParent="true"
+                            />
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/tv_xiaojing_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/portrait_panel"
+                        android:layout_gravity="center_vertical"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="星客捕手"
+                        android:textColor="#333333"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_xiaojing_msg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_xiaojing_name"
+                        android:layout_gravity="center|left"
+                        android:ellipsize="end"
+                        android:gravity="bottom"
+                        android:layout_marginBottom="8dp"
+                        android:layout_toRightOf="@id/portrait_panel"
+                        android:layout_alignBottom="@id/portrait_panel"
+                        android:singleLine="true"
+                        android:text="附近有人在搜索咨询服务，快去联系他吧！"
+                        android:textColor="#333333"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        />
+                    <TextView
+                        android:id="@+id/tab_xj_msg_label"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/view_margin_10"
+                        android:background="@drawable/nim_g_unread_badge"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/view_margin_1"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/B_black_10"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@id/portrait_panel" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="fill_parent"
+                    android:id="@+id/rll_system_view"
+                    android:layout_height="70dp"
+                    android:background="?selectableItemBackground"
+                    >
+
+
+                    <RelativeLayout
+                        android:id="@+id/auth_panel"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true">
+
+                        <ImageView
+                            android:id="@+id/img_head"
+                            android:layout_width="@dimen/view_margin_50"
+                            android:layout_height="@dimen/view_margin_50"
+                            android:layout_centerVertical="true"
+                            android:layout_centerInParent="true"
+                            android:contentDescription="@string/empty"
+                            android:scaleType="fitStart"
+                            android:src="@drawable/icon_verify_remind" />
+
+
+
+                    </RelativeLayout>
+
+
+
+
+                    <TextView
+                        android:id="@+id/tv_func_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_toRightOf="@+id/auth_panel"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="验证提醒"
+                        android:textColor="#333333"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tab_new_msg_label"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/view_margin_10"
+                        android:background="@drawable/nim_g_unread_badge"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp"
+                        />
+
+                    <View
+                        android:id="@+id/bottomLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/view_margin_1"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/B_black_10"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@id/auth_panel" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/main_bg">
+
+                    <com.insthub.cat.android.ui.extend.PullToRefreshRecyclerViewExtends
+                        android:id="@+id/pull_to_refresh_recycle"
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:addStatesFromChildren="true"
+                        android:cacheColorHint="@color/transparent"
+                        android:clickable="true"
+                        android:divider="@color/transparent"
+                        android:dividerHeight="4dp"
+                        android:duplicateParentState="true"
+                        android:fadingEdge="none"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:isScrollContainer="true"
+                        android:listSelector="@color/transparent"
+                        android:overScrollMode="never"
+                        android:scrollbarStyle="insideOverlay"
+                        android:scrollbars="@null"
+                        android:scrollingCache="false">
+
+                    </com.insthub.cat.android.ui.extend.PullToRefreshRecyclerViewExtends>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+        </android.support.percent.PercentRelativeLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

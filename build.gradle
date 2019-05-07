@@ -1,0 +1,61 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+configurations.all {
+    resolutionStrategy.force 'com.android.support:support-annotations:25.3.1'
+}
+buildscript {
+    repositories {
+        google()
+        maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+        mavenCentral()
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+        jcenter()
+    }
+    // google()
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.2'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+        maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+        maven { url "https://jitpack.io" }
+//        maven { url "https://maven.google.com"}//需要添加的仓库地址
+//        maven {
+//            url 'https://maven.google.com/'
+//            name 'Google'
+//        }
+
+        jcenter()
+
+        google()
+    }
+}
+
+
+ext {
+    compileSdkVersion = 27
+    buildToolsVersion = '27.0.3'
+    minSdkVersion = 19
+    targetSdkVersion = 26
+    appTargetSdkVersion = 26
+    versionCode = 3125
+    versionName = '3.1.2.5'
+    sdkSourceCompatibility = 1.7
+    sdkTargetCompatibility = 1.7
+    appSourceCompatibility = 1.7
+    appTargetCompatibility = 1.7
+
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+

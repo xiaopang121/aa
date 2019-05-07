@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.common.android.fui.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bar_height"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/theme_color_primary">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/view_margin_10"
+            android:padding="@dimen/view_margin_10"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+
+
+            <com.common.extend.roundedimageview.RoundedImageView
+                android:id="@+id/iv_head"
+                android:layout_width="@dimen/view_margin_50"
+                android:layout_height="@dimen/view_margin_50"
+                android:src="@mipmap/ic_launcher"
+                app:riv_corner_radius="45dp"
+                app:riv_border_color="@color/white"
+                app:riv_border_width="@dimen/view_margin_1"
+                />
+            <TextView android:layout_width="wrap_content"
+                      android:layout_toRightOf="@+id/iv_head"
+                      android:layout_alignTop="@+id/iv_head"
+                         android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                         android:textColor="@color/B_black_70"
+                     android:text="张宇"
+                    android:id="@+id/tv_name"
+                      android:layout_marginLeft="@dimen/view_margin_10"
+                      android:layout_height="wrap_content"/>
+            <TextView android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/iv_head"
+
+                android:layout_marginTop="@dimen/view_margin_10"
+                 android:layout_below="@+id/tv_name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/B_black_70"
+                android:text="我发现了一家幼稚服务，一起来砍价优惠拿服务吧"
+                android:layout_marginLeft="@dimen/view_margin_10"
+                android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/view_margin_20"
+                android:layout_below="@+id/iv_head"
+                android:padding="@dimen/view_margin_10"
+                android:background="@color/B_black_10"
+                android:layout_height="wrap_content">
+
+
+                <com.common.extend.roundedimageview.RoundedImageView
+                    android:id="@+id/shop_head"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@mipmap/ic_launcher"
+                    app:riv_corner_radius="0dp"
+                    app:riv_border_color="@color/white"
+                    app:riv_border_width="@dimen/view_margin_1"
+                    />
+                <TextView android:layout_width="wrap_content"
+                    android:layout_toRightOf="@+id/shop_head"
+                    android:layout_alignTop="@+id/shop_head"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                    android:textColor="@color/B_black_70"
+                    android:text="张宇"
+                    android:id="@+id/tv_shop_name"
+                    android:layout_marginLeft="@dimen/view_margin_10"
+                    android:layout_height="wrap_content"/>
+                <TextView android:layout_width="wrap_content"
+                    android:layout_toRightOf="@+id/shop_head"
+                    android:layout_marginTop="@dimen/view_margin_5"
+                    android:layout_below="@+id/tv_shop_name"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:id="@+id/tv_shop_service"
+                    android:textColor="@color/B_black_70"
+                    android:text="我发现了一家幼稚服务，一起来砍价优惠拿服务吧"
+                    android:layout_marginLeft="@dimen/view_margin_10"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+                <TextView android:layout_width="wrap_content"
+                    android:layout_toRightOf="@+id/shop_head"
+                    android:layout_marginTop="@dimen/view_margin_5"
+                    android:layout_alignBottom="@+id/shop_head"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:id="@+id/tv_shop_money"
+                    android:textColor="@color/theme_color_primary"
+                    android:text="--"
+                    android:layout_marginLeft="@dimen/view_margin_10"
+                    android:layout_height="wrap_content"/>
+
+
+
+                <TextView android:layout_width="wrap_content"
+                    android:layout_toRightOf="@+id/tv_shop_money"
+                    android:layout_marginTop="@dimen/view_margin_5"
+                    android:layout_alignBottom="@+id/shop_head"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:id="@+id/tv_shop_old_money"
+                    android:visibility="invisible"
+                    android:textColor="@color/B_black_50"
+                    android:text="--"
+                    android:layout_marginLeft="@dimen/view_margin_15"
+                    android:layout_height="wrap_content"/>
+
+
+
+                <TextView android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/view_margin_5"
+                    android:layout_alignBottom="@+id/shop_head"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:id="@+id/tv_order_size"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/B_black_70"
+                    android:text="--"
+                    android:gravity="center_vertical"
+                    android:drawableRight="@drawable/ic_keyboard_arrow_right__grey_24dp"
+                    android:layout_marginLeft="@dimen/view_margin_10"
+                    android:textSize="10sp"
+                    android:layout_height="wrap_content"/>
+
+
+            </android.support.percent.PercentRelativeLayout>
+
+
+        </android.support.percent.PercentRelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/view_margin_20"
+            android:gravity="center_horizontal"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:id="@+id/tv_kan_state"
+                android:layout_marginLeft="@dimen/view_margin_20"
+                android:layout_marginRight="@dimen/view_margin_20"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/white"
+                android:text=""/>
+
+
+
+            <ProgressBar
+                android:id="@+id/project_progress1"
+                style="@style/STYLE_PROGRESS_BAR_Horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/view_margin_10"
+                android:progress="0"
+                android:max="100"
+                android:layout_height="@dimen/view_margin_10"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:layout_marginTop="@dimen/view_margin_10"
+                android:id="@+id/tv_count_down"
+                android:layout_marginLeft="@dimen/view_margin_20"
+                android:layout_marginRight="@dimen/view_margin_20"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:textColor="@color/white"
+                android:text="还剩下"/>
+
+
+            <Button
+                android:id="@+id/bt_cut"
+                style="@style/STYLE_YELLOW_SUMBIT_BUTTON"
+                android:layout_marginTop="@dimen/view_margin_60"
+                android:text="分享给好友，多砍一刀" />
+
+
+        </LinearLayout>
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="@color/yellow_color_normal"
+            android:text="需要付款0元"
+            android:id="@+id/tv_pay"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+            android:background="@color/white"
+            android:layout_height="@dimen/view_margin_45" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

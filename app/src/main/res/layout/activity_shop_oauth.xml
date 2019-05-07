@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/theme_color_primary"
+    android:orientation="vertical">
+
+    <com.common.android.fui.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bar_height"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_margin_1"
+        android:background="@color/white"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/gray_light">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:padding="@dimen/view_margin_5"
+            android:background="@color/B_black_10"
+            android:text="上传营业执照"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@color/B_black_70"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:padding="@dimen/view_margin_10"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/shape_dash_grey_bg"
+                android:id="@+id/iv_upload_img"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_camera_alt_grey"
+                android:layout_height="80dp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:padding="@dimen/view_margin_5"
+            android:background="@color/B_black_10"
+            android:text="上传法人身份证（手持身份证）"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@color/B_black_70"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:padding="@dimen/view_margin_10"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/rll_front"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/shape_dash_grey_bg"
+                    android:id="@+id/iv_front_img"
+                    android:scaleType="centerInside"
+                    android:layout_height="80dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/tv_front"
+                    android:text="正面"
+                    android:drawableTop="@drawable/ic_add_circle_outline_grey"
+                    android:scaleType="centerInside"
+                    android:drawablePadding="@dimen/view_margin_5"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/view_margin_15"
+                android:id="@+id/rll_back"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/shape_dash_grey_bg"
+                    android:id="@+id/iv_back_img"
+                    android:scaleType="centerInside"
+                    android:layout_height="80dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/tv_back"
+                    android:text="反面"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:drawablePadding="@dimen/view_margin_5"
+                    android:drawableTop="@drawable/ic_add_circle_outline_grey"
+                    android:scaleType="centerInside"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/view_margin_5"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/view_margin_10"
+            android:layout_height="@dimen/view_margin_45">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="缴纳店铺保证金"
+                android:textColor="@color/B_black_70"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="(优先获得客户资源)"
+                android:textColor="@color/B_black_50"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/view_margin_2"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:layout_height="50dp">
+
+            <Button
+                android:id="@+id/bt_pay"
+                style="@style/STYLE_LOGIN_SUMBIT_BUTTON"
+                android:layout_below="@+id/lly_input_bar"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:paddingLeft="@dimen/view_margin_20"
+                android:paddingRight="@dimen/view_margin_20"
+                android:layout_margin="@dimen/view_margin_5"
+                android:text="点击缴纳" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

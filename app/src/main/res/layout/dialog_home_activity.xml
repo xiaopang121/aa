@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+
+
+
+    <ImageView android:layout_width="300dp"
+               android:layout_height="300dp"
+               android:id="@+id/iv_acitivty"
+               android:scaleType="fitXY"
+               android:layout_centerInParent="true"
+               android:minHeight="200dp"
+               />
+
+    <ImageView android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/iv_close"
+        android:src="@drawable/icon_clean"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/view_margin_40"
+        android:layout_marginBottom="@dimen/view_margin_40"
+        android:scaleType="centerInside"/>
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:id="@+id/tv_join"
+        android:gravity="center"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_join_activity"
+        android:layout_below="@+id/iv_acitivty"
+        android:layout_marginTop="@dimen/view_margin_40"
+        android:layout_centerHorizontal="true"
+        android:layout_height="@dimen/view_margin_40" />
+
+</RelativeLayout>

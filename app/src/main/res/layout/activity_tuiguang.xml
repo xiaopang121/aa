@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/theme_color_primary"
+    android:orientation="vertical">
+
+    <com.common.android.fui.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bar_height"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/main_bg">
+
+        <com.common.extend.pulltorefresh.PullToRefreshRecyclerView
+            android:id="@+id/pull_to_refresh_recycle"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:addStatesFromChildren="true"
+            android:layout_weight="1"
+            android:cacheColorHint="@color/transparent"
+            android:clickable="true"
+            android:padding="@dimen/view_margin_5"
+            android:divider="@color/transparent"
+            android:dividerHeight="4dp"
+            android:duplicateParentState="true"
+            android:fadingEdge="none"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:isScrollContainer="true"
+            android:listSelector="@color/transparent"
+            android:overScrollMode="never"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbars="@null"
+            android:scrollingCache="false">
+
+        </com.common.extend.pulltorefresh.PullToRefreshRecyclerView>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/view_margin_10"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/B_black_70"
+                android:text="@string/title_prompt"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/view_margin_20"
+                android:layout_marginRight="@dimen/view_margin_20"
+                android:layout_marginTop="@dimen/view_margin_5"
+                android:background="@drawable/shape_rect_10_white"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_mobile"
+                    style="@style/login_edittext"
+                    android:layout_weight="1"
+                    android:inputType="phone"
+                    android:hint="请输入您的联系电话"
+                    android:textColor="@color/B_black_70" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_sumbit"
+                style="@style/STYLE_LOGIN_SUMBIT_BUTTON"
+                android:layout_below="@+id/lly_input_bar"
+                android:layout_centerHorizontal="true"
+                android:layout_width="120dp"
+                android:layout_marginTop="@dimen/view_margin_30"
+                android:layout_marginBottom="@dimen/view_margin_30"
+                android:text="@string/title_sure" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

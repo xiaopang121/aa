@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/theme_color_primary"
+    android:orientation="vertical">
+
+    <com.common.android.fui.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bar_height"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@color/white">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+            android:textColor="@color/B_black_70"
+            android:gravity="center"
+            android:id="@+id/tv_time"
+            android:padding="@dimen/view_margin_10"
+            android:background="@color/B_black_20"
+            android:layout_marginTop="@dimen/view_margin_15"
+            android:text="23:56:12"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/view_margin_10"
+            android:layout_height="60dp">
+
+            <View
+                android:layout_width="1dp"
+                android:id="@+id/center_view2"
+                android:layout_centerInParent="true"
+                android:layout_height="1dp"></View>
+
+            <com.common.extend.roundedimageview.RoundedImageView
+                android:id="@+id/iv_pinzhu_head"
+                android:layout_width="@dimen/view_margin_50"
+                android:layout_height="@dimen/view_margin_50"
+                android:src="@drawable/ic_default_head"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/center_view2"
+                android:layout_marginRight="@dimen/view_margin_15"
+                app:riv_border_color="@color/transparent"
+                app:riv_border_width="@dimen/view_margin_5"
+                app:riv_corner_radius="45dip" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="@dimen/view_margin_2"
+                android:layout_alignTop="@+id/iv_pinzhu_head"
+                android:layout_alignLeft="@+id/iv_pinzhu_head"
+                android:layout_marginTop="-5dp"
+                android:text="拼主"
+                android:paddingLeft="@dimen/view_margin_4"
+                android:paddingRight="@dimen/view_margin_4"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/white"
+                android:background="@drawable/shape_rect_10_red"
+                android:layout_marginLeft="-10dp"
+                android:textSize="10sp"
+                android:layout_height="wrap_content" />
+
+
+            <com.common.extend.roundedimageview.RoundedImageView
+                android:id="@+id/iv_pinother_head"
+                android:layout_toRightOf="@+id/center_view2"
+                android:layout_marginLeft="@dimen/view_margin_15"
+                android:layout_width="@dimen/view_margin_50"
+                android:layout_height="@dimen/view_margin_50"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_other_head"
+                app:riv_border_color="@color/transparent"
+                app:riv_border_width="@dimen/view_margin_5"
+                app:riv_corner_radius="45dip" />
+
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/B_black_70"
+            android:gravity="center"
+            android:id="@+id/tv_invite_title"
+            android:paddingTop="@dimen/view_margin_10"
+            android:paddingBottom="@dimen/view_margin_10"
+            android:text="还差1人，赶快邀请好友来拼团吧"
+            android:layout_height="wrap_content" />
+
+
+
+        <Button
+            android:id="@+id/bt_join"
+            style="@style/STYLE_LOGIN_SUMBIT_BUTTON"
+            android:layout_below="@+id/lly_input_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/view_margin_20"
+            android:layout_marginBottom="@dimen/view_margin_20"
+            android:text="邀请好友拼团" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_1"
+            android:background="@color/md_divider_black"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_10"
+            android:background="@color/md_divider_black"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_1"
+            android:background="@color/md_divider_black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="@dimen/view_margin_10"
+            android:paddingRight="@dimen/view_margin_10"
+            android:layout_height="@dimen/view_margin_45">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical|left"
+                android:textColor="@color/B_black_70"
+                android:text="商品名称："
+                android:singleLine="true"
+                android:paddingLeft="@dimen/view_margin_10"
+                android:paddingRight="@dimen/view_margin_10"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical|left"
+                android:textColor="@color/B_black_70"
+                android:text=""
+                android:id="@+id/tv_product_name"
+                android:singleLine="true"
+                android:paddingLeft="@dimen/view_margin_10"
+                android:paddingRight="@dimen/view_margin_10"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_1"
+            android:background="@color/md_divider_black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="@dimen/view_margin_10"
+            android:paddingRight="@dimen/view_margin_10"
+            android:layout_height="@dimen/view_margin_45">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical|left"
+                android:textColor="@color/B_black_70"
+                android:text="拼团规则："
+                android:singleLine="true"
+                android:paddingLeft="@dimen/view_margin_10"
+                android:paddingRight="@dimen/view_margin_10"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical|left"
+                android:textColor="@color/B_black_70"
+                android:text="人满拼成，人不满退款"
+                android:id="@+id/tv_service"
+                android:singleLine="true"
+                android:paddingLeft="@dimen/view_margin_10"
+                android:paddingRight="@dimen/view_margin_10"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_1"
+            android:background="@color/md_divider_black"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

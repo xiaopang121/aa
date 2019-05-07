@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/theme_color_primary"
+    android:orientation="vertical">
+
+    <com.common.android.fui.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bar_height"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/main_bg"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/view_margin_10"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="@color/B_black_70"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:gravity="center"
+                android:text="神东哈拉沟矿-DSJJ20180925/001-2018年职工生日礼物竞价"
+                android:id="@+id/tv_bid_title"
+                android:layout_height="wrap_content" />
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/view_margin_15"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/B_black_50"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/tv_date_time"
+                    android:text="日期：无"
+                    android:layout_height="wrap_content" />
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/white"
+                        android:text="南京"
+                        android:padding="@dimen/view_margin_5"
+                        android:background="@drawable/shape_rect_10_blue"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/tv_city"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/white"
+                        android:text="竞价"
+                        android:padding="@dimen/view_margin_5"
+                        android:layout_marginLeft="@dimen/view_margin_10"
+                        android:layout_marginRight="@dimen/view_margin_10"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/tv_type"
+                        android:background="@drawable/shape_rect_10_org"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/white"
+                        android:text="能源化工"
+                        android:padding="@dimen/view_margin_5"
+                        android:background="@drawable/shape_rect_10_green"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/tv_categary"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/view_margin_10"
+                android:layout_marginBottom="@dimen/view_margin_10"
+                android:layerType="software"
+                android:background="@drawable/shape_black_dash_line"
+                android:layout_height="@dimen/view_margin_3"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/view_margin_20"
+                android:layout_marginRight="@dimen/view_margin_20"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/ic_report_bg">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/color_f19149"
+                    android:text="立即报名"
+                    android:layout_alignParentRight="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:gravity="center"
+                    android:id="@+id/tv_enroll"
+                    android:layout_gravity="center_vertical|right"
+                    android:padding="@dimen/view_margin_5"
+                    android:background="@drawable/shape_rect_10_white"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                    android:textColor="@color/white"
+                    android:id="@+id/tv_last_day"
+                    android:layout_alignTop="@+id/tv_enroll"
+                    android:layout_alignBottom="@+id/tv_enroll"
+                    android:text="距离报名截止还剩下9天1小时"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="详细需求"
+                android:layout_marginTop="@dimen/view_margin_10"
+                android:background="@drawable/ic_title_bg"
+                android:textColor="@color/white"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="@dimen/view_margin_15"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="@color/B_black_70"
+                android:layout_marginTop="@dimen/view_margin_10"
+                android:text="无"
+                android:id="@+id/tv_detial"
+                android:minHeight="@dimen/view_margin_60"
+                android:layout_marginBottom="@dimen/view_margin_10"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="服务商要求"
+                android:background="@drawable/ic_title_bg"
+                android:textColor="@color/white"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="@dimen/view_margin_15"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_margin_40">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="3"
+                    android:textColor="@color/B_black_70"
+                    android:gravity="center_vertical"
+                    android:text="报价要求："
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/str_default_nodata"
+                    android:id="@+id/tv_bjyq"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/color_f19149"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_margin_40">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="3"
+                    android:textColor="@color/B_black_70"
+                    android:gravity="center_vertical"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:text="交易方式："
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/str_default_nodata"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/color_f19149"
+                    android:id="@+id/tv_tran_type"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_margin_40">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="3"
+                    android:textColor="@color/B_black_70"
+                    android:gravity="center_vertical"
+                    android:text="支付方式："
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/color_f19149"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_default_nodata"
+                    android:id="@+id/tv_pay_type"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_margin_40">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="3"
+                    android:textColor="@color/B_black_70"
+                    android:gravity="center_vertical"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:text="发票要求："
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@color/color_f19149"
+                    android:text="@string/str_default_nodata"
+                    android:id="@+id/tv_invoite_type"
+                    android:gravity="center_vertical"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_margin_40">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="3"
+                    android:textColor="@color/B_black_70"
+                    android:gravity="center_vertical"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:text="证照要求："
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:id="@+id/tv_business_license"
+                    android:text="@string/str_default_nodata"
+                    android:textColor="@color/color_f19149"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="任务地址"
+
+                android:background="@drawable/ic_title_bg"
+                android:textColor="@color/white"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="@dimen/view_margin_15"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="@color/B_black_70"
+                android:layout_marginTop="@dimen/view_margin_10"
+                android:text="@string/str_default_nodata"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:lines="2"
+                android:id="@+id/tv_task_info"
+                android:layout_marginBottom="@dimen/view_margin_10"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="任务文档"
+                android:background="@drawable/ic_title_bg"
+                android:textColor="@color/white"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="@dimen/view_margin_15"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:id="@+id/recycler_view"
+                    android:minHeight="100dp"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/view_margin_10"
+        android:paddingRight="@dimen/view_margin_10"
+        android:background="@color/white"
+        android:id="@+id/lly_buttom_view"
+        android:paddingTop="@dimen/view_margin_5"
+        android:paddingBottom="@dimen/view_margin_5"
+        android:layout_height="@dimen/view_margin_50">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="在线咨询"
+            android:layout_weight="1"
+            android:id="@+id/tv_must_ask"
+            android:textColor="@color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+            android:gravity="center"
+            android:background="@drawable/selector_blue"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="立即竞价"
+            android:layout_weight="1"
+            android:id="@+id/tv_must_bid"
+            android:layout_marginLeft="@dimen/view_margin_15"
+            android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+            android:gravity="center"
+            android:background="@drawable/selector_orieign"
+            android:textColor="@color/white"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/theme_color_primary"
+    android:orientation="vertical">
+
+    <com.common.android.fui.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bar_height"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/main_bg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingTop="@dimen/view_margin_10"
+            android:paddingBottom="@dimen/view_margin_10"
+            android:paddingLeft="@dimen/view_margin_10"
+            android:paddingRight="@dimen/view_margin_10"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:layout_alignParentLeft="true"
+                android:text="技术服务费："
+                android:layout_centerVertical="true"
+                android:id="@+id/tv_title1"
+                android:textColor="@color/B_black_85"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/view_margin_10"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:id="@+id/ic_service_money"
+                android:text="¥380.0/年"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_title1"
+                android:textColor="@color/yellow_color_pressed"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="center|left"
+                android:layout_alignParentRight="true"
+
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:id="@+id/ic_service_bond2333"
+
+                android:text="立即续费"
+                android:textColor="@color/white"
+                android:background="@drawable/selector_circle_yellow"
+                android:paddingTop="@dimen/view_margin_5"
+                android:paddingBottom="@dimen/view_margin_5"
+                android:paddingLeft="@dimen/view_margin_10"
+                android:paddingRight="@dimen/view_margin_10"
+                android:layout_height="wrap_content" />
+
+
+
+
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_1"
+            android:background="@color/B_black_10"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="@dimen/view_margin_10"
+            android:paddingBottom="@dimen/view_margin_10"
+            android:paddingLeft="@dimen/view_margin_10"
+            android:paddingRight="@dimen/view_margin_10"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:layout_alignParentLeft="true"
+                android:text="技术服务费有效期："
+                android:textColor="@color/B_black_85"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/view_margin_10"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:id="@+id/item_save_time"
+                android:text="付款成功"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_1"
+            android:background="@color/B_black_10"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingTop="@dimen/view_margin_10"
+            android:paddingBottom="@dimen/view_margin_10"
+            android:paddingLeft="@dimen/view_margin_10"
+            android:paddingRight="@dimen/view_margin_10"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:layout_alignParentLeft="true"
+                android:text="服务保证金："
+                android:layout_centerVertical="true"
+                android:id="@+id/tv_title2"
+                android:textColor="@color/B_black_85"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="center|left"
+                android:layout_toRightOf="@+id/tv_title2"
+                android:paddingLeft="@dimen/view_margin_10"
+                android:layout_centerVertical="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:id="@+id/ic_service_bond"
+                android:textColor="@color/yellow_color_pressed"
+                android:text="付款成功"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="center|left"
+                android:layout_toRightOf="@+id/ic_service_bond"
+                android:paddingLeft="@dimen/view_margin_10"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:text="(可退还)"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="center|left"
+                android:layout_alignParentRight="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:id="@+id/ic_service_bond2"
+                android:textColor="@color/white"
+                android:background="@drawable/selector_circle_yellow"
+                android:paddingTop="@dimen/view_margin_5"
+                android:paddingBottom="@dimen/view_margin_5"
+                android:paddingLeft="@dimen/view_margin_10"
+                android:paddingRight="@dimen/view_margin_10"
+                android:text="成为诚信商户"
+                android:layout_height="wrap_content" />
+
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/root_view"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/theme_color_primary"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/iv_head_bg"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_renqi_bg"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/common_title_bar"
+                android:gravity="center_vertical"
+                android:layout_height="@dimen/view_margin_50">
+
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/B_black_70"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/iv_back"
+                    android:scaleType="centerInside"
+                    android:layout_marginRight="@dimen/view_margin_10"
+                    android:src="@drawable/ic_new_close"
+                    android:background="@drawable/shape_circle_tran_20"
+                    android:paddingRight="@dimen/view_margin_15"
+                    android:paddingTop="@dimen/view_margin_6"
+                    android:paddingBottom="@dimen/view_margin_6"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/white"
+                    android:id="@+id/tv_collect"
+                    android:text="收藏"
+                    android:layout_alignTop="@+id/iv_back"
+                    android:layout_alignBottom="@+id/iv_back"
+                    android:drawablePadding="@dimen/view_margin_5"
+                    android:scaleType="centerInside"
+                    android:layout_toLeftOf="@+id/iv_back"
+                    android:layout_marginRight="@dimen/view_margin_10"
+                    android:drawableLeft="@drawable/ic_collect_smaill_normal"
+                    android:background="@drawable/shape_circle_tran_20"
+                    android:paddingRight="@dimen/view_margin_15"
+                    android:paddingTop="@dimen/view_margin_5"
+                    android:paddingBottom="@dimen/view_margin_5"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                    android:textColor="@color/white"
+                    android:singleLine="true"
+                    android:layout_alignBottom="@+id/iv_back"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignTop="@+id/iv_back"
+                    android:text=""
+                    android:id="@+id/tv_shop_name"
+                    android:maxLength="10"
+                    android:layout_marginLeft="@dimen/view_margin_10"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/white"
+                    android:singleLine="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/tv_shop_name"
+                    android:layout_alignLeft="@+id/tv_shop_name"
+                    android:text="收藏人数0"
+                    android:drawablePadding="@dimen/view_margin_3"
+                    android:drawableLeft="@drawable/ic_heart_pressed"
+                    android:id="@+id/tv_collect_size"
+                    android:textSize="10sp"
+                    android:layout_marginLeft="@dimen/view_margin_10"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/view_margin_10"
+                android:layout_alignParentBottom="true"
+                android:layout_height="@dimen/view_margin_40">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="首页"
+                    android:id="@+id/tv_index"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/yellow_color_pressed"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    android:paddingRight="@dimen/view_margin_15"
+                    android:layout_height="match_parent" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="服务"
+                    android:id="@+id/tv_service"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    android:textColor="@color/white"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:paddingRight="@dimen/view_margin_15"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:id="@+id/viewPager"
+            android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

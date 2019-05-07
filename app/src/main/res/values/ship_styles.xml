@@ -1,0 +1,613 @@
+<resources>
+
+
+
+    <style name="dialog2" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <!-- 设置未浮动窗口 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 设置无边框 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 设置无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 设置完全透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 设置屏幕变暗 -->
+        <item name="android:windowIsTranslucent">true</item>
+
+        <item name="android:backgroundDimAmount">0.1</item>
+
+        <item name="android:windowFullscreen">false</item>
+
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+    </style>
+
+
+    <!-- Base application theme. -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:screenOrientation">portrait</item>
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+
+    </style>
+
+    <style name="MatchWrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="WrapWrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="STYLE_HOME_RADIO">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/view_margin_3</item>
+        <item name="android:textSize">@dimen/micro</item>
+        <item name="android:textColor">@color/selector_home_raido_textcolor</item>
+        <item name="android:drawablePadding">@dimen/view_margin_1</item>
+    </style>
+
+    <style name="STYLE_ACCOUNT_STREAM_RADIO">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/view_margin_2</item>
+        <item name="android:textSize">@dimen/micro</item>
+        <item name="android:textColor">@color/common_tab_text_color</item>
+        <item name="android:drawablePadding">@dimen/view_margin_1</item>
+    </style>
+
+
+    <style name="STYLE_TEXT_BASE">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="STYLE_Transaction_TOTAL" parent="STYLE_TEXT_BASE">
+
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Inverse</item>
+
+    </style>
+
+
+    <style name="STYLE_PROGRESS_BAR_Horizontal" parent="Base.Widget.AppCompat.ProgressBar.Horizontal">
+
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/drawable_progress</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:mirrorForRtl">true</item>
+    </style>
+
+
+    <style name="STYLE_PROGRESS_BAR_Horizontal2" parent="Base.Widget.AppCompat.ProgressBar.Horizontal">
+
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/drawable_progress2</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:mirrorForRtl">true</item>
+    </style>
+
+
+    <style name="STYLE_DISCOVER_MENU_ITEM">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/view_margin_5</item>
+        <item name="android:textColor">@color/B_black_50</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Caption</item>
+        <item name="android:drawablePadding">@dimen/view_margin_5</item>
+        <item name="android:background">?selectableItemBackground</item>
+    </style>
+
+
+    <style name="STYLE_DISCOVER_MENU_TITLE">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:padding">@dimen/view_margin_5</item>
+        <item name="android:textColor">@color/B_black_50</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Caption</item>
+        <item name="android:drawablePadding">@dimen/view_margin_5</item>
+    </style>
+
+    <style name="mine_textview_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/mine_photo_height</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:drawableLeft">@drawable/ic_service_mic_normal</item>
+        <item name="android:drawableRight">@drawable/ic_keyboard_arrow_right__grey_24dp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Inverse
+        </item>
+        <item name="android:paddingLeft">@dimen/view_margin_10</item>
+        <item name="android:drawablePadding">@dimen/view_margin_10</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:background">?selectableItemBackground</item>
+    </style>
+
+    <style name="mine_textview_style_2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/mine_photo_height</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:drawableRight">@drawable/ic_keyboard_arrow_right__grey_24dp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Small.Inverse
+        </item>
+        <item name="android:paddingLeft">@dimen/view_margin_10</item>
+        <item name="android:drawablePadding">@dimen/view_margin_10</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:background">?selectableItemBackground</item>
+    </style>
+
+    <!--我的界面-->
+    <style name="mine_textview_1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Inverse</item>
+        <item name="android:textColor">@color/white</item>
+
+        <item name="android:background">?selectableItemBackground</item>
+    </style>
+
+
+    <style name="STYLE_USER_TEXT">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingTop">@dimen/view_margin_4</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Inverse</item>
+        <item name="android:textColor">@color/B_black_70</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">?selectableItemBackground</item>
+    </style>
+
+
+    <!--定期项目item-->
+    <style name="style_regular_peoject_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Inverse</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:layout_margin">@dimen/view_margin_3</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <!--设置界面-->
+    <style name="setting_textview_style">
+        <item name="android:layout_marginLeft">@dimen/view_margin_15</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/mine_photo_height</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:drawableRight">@drawable/ic_keyboard_arrow_right__grey_24dp</item>
+    </style>
+    <!--登陆输入框-->
+    <style name="login_edittext">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/view_margin_45</item>
+        <item name="android:paddingLeft">@dimen/view_margin_5</item>
+        <item name="android:paddingRight">@dimen/view_margin_5</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">@dimen/view_margin_10</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Inverse</item>
+        <item name="android:background">@drawable/shape_rect_10_white</item>
+
+    </style>
+
+    <!--登录按钮，暂时不用-->
+    <style name="button_login">
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Small.Inverse
+        </item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:padding">@dimen/view_margin_10</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/view_margin_40</item>
+        <item name="android:layout_marginRight">@dimen/view_margin_40</item>
+        <item name="android:background">@drawable/select_yellow</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!--登录界面显示-->
+    <style name="login_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/view_margin_10</item>
+        <item name="android:textColor">@color/theme_color_blue</item>
+        <item name="android:background">?selectableItemBackground</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Inverse</item>
+    </style>
+
+
+
+    <!--黄色通用按钮-->
+    <style name="STYLE_LOGIN_SUMBIT_BUTTON" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Inverse</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/view_margin_45</item>
+        <item name="android:layout_marginRight">@dimen/view_margin_20</item>
+        <item name="android:layout_marginLeft">@dimen/view_margin_20</item>
+        <item name="android:background">@drawable/select_login</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!--黄色通用按钮-->
+    <style name="STYLE_CHECK_SUMBIT_BUTTON" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Inverse</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/view_margin_45</item>
+        <item name="android:paddingLeft">@dimen/view_margin_20</item>
+        <item name="android:paddingRight">@dimen/view_margin_20</item>
+        <item name="android:background">@drawable/select_check</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#b10f0f</item>
+    </style>
+
+
+
+    <style name="STYLE_INDEX_RADIO">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/view_margin_3</item>
+        <item name="android:textSize">@dimen/micro</item>
+        <item name="android:textColor">@color/common_index_text_color</item>
+        <item name="android:drawablePadding">@dimen/view_margin_1</item>
+    </style>
+
+
+    <style name="STYLE_COMMENT_RADIO">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/view_margin_3</item>
+        <item name="android:textSize">@dimen/micro</item>
+        <item name="android:textColor">@color/comment_index_text_color</item>
+        <item name="android:drawablePadding">@dimen/view_margin_1</item>
+    </style>
+
+
+    <style name="STYLE_CONTACT_RADIO">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/view_margin_3</item>
+        <item name="android:textSize">@dimen/micro</item>
+        <item name="android:background">@drawable/selector_contact_raido</item>
+        <item name="android:textColor">@color/contact_index_text_color</item>
+        <item name="android:drawablePadding">@dimen/view_margin_1</item>
+    </style>
+
+    <style name="STYLE_DISTANCE_RADIO">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/selector_distance_raido</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/view_margin_5</item>
+        <item name="android:paddingBottom">@dimen/view_margin_5</item>
+        <item name="android:layout_marginLeft">@dimen/view_margin_5</item>
+        <item name="android:layout_marginRight">@dimen/view_margin_5</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Caption</item>
+        <item name="android:textColor">@color/comment_distance_text_color</item>
+    </style>
+
+
+    <!--黄色通用按钮-->
+    <style name="STYLE_YELLOW_SUMBIT_BUTTON" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Inverse</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/view_margin_45</item>
+        <item name="android:layout_marginRight">@dimen/view_margin_50</item>
+        <item name="android:layout_marginLeft">@dimen/view_margin_50</item>
+        <item name="android:background">@drawable/select_yellow</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+
+    <!--通用SWITCH按钮-->
+    <style name="STYLE_COMMON_SWITCH_BUTTON">
+        <item name="android:layout_width">@dimen/view_margin_60</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">@dimen/view_margin_10</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/view_margin_7</item>
+        <item name="android:layout_marginBottom">@dimen/view_margin_7</item>
+    </style>
+
+
+    <!--通用TextView-->
+    <style name="STYLE_COMMON_TEXT_VIEW">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/view_margin_45</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Small.Inverse
+        </item>
+        <item name="android:paddingLeft">@dimen/view_margin_10</item>
+        <item name="android:drawablePadding">@dimen/view_margin_10</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:background">?selectableItemBackground</item>
+    </style>
+
+
+    <!--关于我们-->
+    <style name="ABOUT_US_TEXT_STYLE">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Inverse</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:padding">@dimen/view_margin_10</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+
+
+    <!--个人中心-->
+    <style name="STATEION_INFO_TITLE_STYLE">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/view_margin_30</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Caption</item>
+        <item name="android:textColor">@color/B_black_50</item>
+    </style>
+
+
+    <style name="STATEION_INFO_VALUE_STYLE">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/view_margin_30</item>
+        <item name="android:paddingLeft">@dimen/view_margin_8</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Caption</item>
+        <item name="android:textColor">@color/B_black_70</item>
+    </style>
+
+    <style name="popup_window_anim">
+        <item name="android:windowEnterAnimation">@anim/top_in</item>
+        <item name="android:windowExitAnimation">@anim/top_out</item>
+    </style>
+
+
+
+    <!--个人中心-->
+    <style name="my_center_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/mine_photo_height</item>
+        <item name="android:paddingLeft">@dimen/view_margin_10</item>
+        <item name="android:drawablePadding">@dimen/view_margin_10</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingRight">@dimen/view_margin_10</item>
+    </style>
+
+
+    <!--账单统计-->
+    <style name="fund_count_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Caption</item>
+        <item name="android:background">?selectableItemBackground</item>
+        <item name="android:textColor">@color/bille_color</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+
+    <style name="fund_account_label">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Inverse</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <!--commondialog 样式-->
+    <style name="mystyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+
+    </style>
+
+
+    <!-- 自定义仿IOS的ActionSheet底部Dialog的样式 ，有模糊效果 -->
+    <style name="ActionSheetDialogStyle" parent="@android:style/Theme.Dialog">
+
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+    </style>
+    <!-- ActionSheet进出动画 -->
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/actionsheet_dialog_out</item>
+    </style>
+
+
+
+    <!--立即体验-->
+    <style name="STYLE_TIYAN_SUMBIT_BUTTON" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Inverse</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/view_margin_40</item>
+        <item name="android:paddingLeft">@dimen/view_margin_60</item>
+        <item name="android:paddingRight">@dimen/view_margin_60</item>
+        <item name="android:background">@drawable/selector_tiyan</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!--我的界面-->
+    <style name="mine_textview_3">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Inverse</item>
+        <item name="android:textColor">@color/B_black_50</item>
+        <item name="android:background">?selectableItemBackground</item>
+    </style>
+
+    <style name="AppDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+
+    <style name="custom_dialog2" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog的windowFrame框为无 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否漂现在activity上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 是否半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 去除黑色边框的关键设置项 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 屏幕背景是否变暗 -->
+        <item name="android:backgroundDimAmount">0.3</item>
+    </style>
+
+    <style name="pickerview_dialogAnim" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pickerview_dialog_scale_in</item>
+        <item name="android:windowExitAnimation">@anim/pickerview_dialog_scale_out</item>
+    </style>
+
+
+
+
+    <!--首页UI产品-->
+    <style name="STYLE_INDEX_RECOMEND">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Small.Inverse</item>
+        <item name="android:drawablePadding">@dimen/view_margin_5</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+
+    <!--通用SWITCH按钮-->
+    <style name="STYLE_TYPE_RADIO_BUTTON">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Caption</item>
+        <item name="android:color">@color/selector_type_raido_textcolor</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/selector_day_type_bg</item>
+
+    </style>
+
+
+    <style name="LetterIndexTextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">@dimen/side_letter_bar_width</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/cp_gray</item>
+    </style>
+
+    <style name="RadingStyle" parent="@android:style/Widget.RatingBar">
+        <!-- 定义星星图片 -->
+        <item name="android:progressDrawable">@drawable/rating_bar</item>
+        <!-- 根据自定义星星图片的大小,设置相应的值,否则可能显示不全 -->
+        <item name="android:minHeight">15dp</item>
+    </style>
+
+    <!--白色 底部 通用按钮-->
+    <style name="STYLE_WHITE_SUMBIT_BUTTOM_BUTTON" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Inverse</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/selector_white_buttom</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <!--白色 底部 通用按钮-->
+    <style name="STYLE_GREEN_SUMBIT_BUTTOM_BUTTON" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Inverse</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/selector_green_buttom</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="My_CheckBox" parent="@android:style/Widget.Material.CompoundButton.CheckBox">
+        <item name="android:colorControlActivated">@color/yellow_color_pressed</item>
+        <item name="android:colorControlNormal">@color/black_50</item>
+    </style>
+
+</resources>

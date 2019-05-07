@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="horizontal" >
+
+    <com.insthub.cat.android.chat.widget.ChatEditext
+        android:id="@+id/edt_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/img_add"
+        android:layout_toRightOf="@+id/tv_post"
+        android:maxHeight="110dp"
+        android:minHeight="45dp"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:id="@+id/tv_post"
+        android:layout_width="50dp"
+        android:layout_height="38dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+
+        android:clickable="true"
+        android:gravity="center"
+        android:text="发送"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/img_add"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:clickable="true"
+        android:scaleType="centerInside"
+
+        android:visibility="visible" />
+
+</RelativeLayout>

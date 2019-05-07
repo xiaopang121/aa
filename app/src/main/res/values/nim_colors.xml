@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_network_bar_bg_ee4b62">#ee4b62</color>
+    <color name="color_black_333333">#333333</color>
+    <color name="color_grey_999999">#999999</color>
+    <color name="color_grey_888888">#888888</color>
+    <color name="color_grey_666666">#666666</color>
+
+
+    <!-- session -->
+    <color name="color_message_default_bg">#e9ecf0</color>
+    <color name="input_panel_text_color_757572">#757572</color>
+    <color name="color_gray_cbd0d8">#cbd0d8</color>
+    <color name="help_color">#ff999999</color>
+
+</resources>

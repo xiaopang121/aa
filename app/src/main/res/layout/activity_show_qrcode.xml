@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/theme_color_primary"
+    android:orientation="vertical">
+
+    <com.common.android.fui.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bar_height"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/main_bg">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="3dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv_name"
+            android:layout_marginTop="@dimen/view_margin_40"
+            android:layout_marginLeft="@dimen/view_margin_20"
+            android:layout_marginRight="@dimen/view_margin_20"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@color/B_black_70"
+            android:text="开票二维码"/>
+
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_below="@+id/tv_name"
+            android:id="@+id/iv_qrcode"
+            android:layout_marginTop="@dimen/view_margin_30"
+            android:layout_centerHorizontal="true"
+            android:layout_height="200dp" />
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

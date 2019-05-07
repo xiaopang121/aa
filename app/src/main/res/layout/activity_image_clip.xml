@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/theme_color_primary"
+    android:orientation="vertical">
+
+    <com.common.android.fui.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bar_height"
+        />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#aaaaaa" >
+
+        <com.insthub.cat.android.ui.widget.ClipImageLayout
+            android:id="@+id/id_clipImageLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </com.insthub.cat.android.ui.widget.ClipImageLayout>
+
+        <Button
+            android:id="@+id/bt_photo_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:text="舍弃"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/bt_photo_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:text="选取"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

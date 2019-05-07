@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/theme_color_primary"
+    android:orientation="vertical">
+
+    <com.common.android.fui.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bar_height"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/main_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_margin_45"
+        android:background="@color/white"
+        >
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:textColor="@color/B_black_70"
+            android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+            android:paddingLeft="@dimen/view_margin_10"
+            android:gravity="left|center_vertical"
+            android:id="@+id/et_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:hint="@string/hint_input_nick"
+            android:background="@color/transparent"
+            android:layout_height="match_parent"
+            />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/icon_clean"
+            android:id="@+id/iv_clear"
+            android:paddingRight="@dimen/view_margin_10"
+            android:paddingLeft="@dimen/view_margin_10"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

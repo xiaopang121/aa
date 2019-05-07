@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/theme_color_primary"
+    android:orientation="vertical">
+
+    <com.common.android.fui.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bar_height"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_margin_1"
+        android:background="@color/white"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/gray_light">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:padding="@dimen/view_margin_5"
+            android:background="@color/B_black_20"
+            android:text="请正确填写以下信息"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@color/B_black_70"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/rll_add_bankcard"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_45"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/my_center_textview"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:layout_weight="3"
+
+                android:layout_height="match_parent"
+                android:textColor="@color/B_black_70"
+                android:text="持卡人："/>
+
+            <EditText
+                style="@style/my_center_textview"
+                android:layout_width="match_parent"
+                android:background="@color/transparent"
+                android:layout_weight="1"
+                android:id="@+id/et_name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:singleLine="true"
+                android:paddingLeft="@dimen/view_margin_10"
+                android:paddingRight="@dimen/view_margin_10"
+                android:textColor="@color/B_black_70"
+                android:hint="请输入持卡人姓名"
+                />
+
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_1"
+            android:background="@color/md_divider_black"></View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_45"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/my_center_textview"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:layout_weight="3"
+
+                android:layout_height="match_parent"
+                android:textColor="@color/B_black_70"
+                android:text="开户行："/>
+
+            <EditText
+                style="@style/my_center_textview"
+                android:layout_width="match_parent"
+                android:background="@color/transparent"
+                android:layout_weight="1"
+                android:id="@+id/et_bank"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:singleLine="true"
+                android:paddingLeft="@dimen/view_margin_10"
+                android:paddingRight="@dimen/view_margin_10"
+                android:textColor="@color/B_black_70"
+                android:hint="请输入开户行"
+                />
+
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_1"
+            android:background="@color/md_divider_black"></View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_45"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/my_center_textview"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:layout_weight="3"
+
+                android:layout_height="match_parent"
+                android:textColor="@color/B_black_70"
+                android:text="卡号："/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent">
+
+
+                <EditText
+                    style="@style/my_center_textview"
+                    android:layout_width="match_parent"
+                    android:background="@color/transparent"
+                    android:layout_weight="1"
+                    android:id="@+id/et_bankcard"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                    android:singleLine="true"
+                    android:paddingLeft="@dimen/view_margin_10"
+                    android:paddingRight="@dimen/view_margin_10"
+                    android:textColor="@color/B_black_70"
+                    android:hint="请输入银行卡号"
+                    />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="@dimen/view_margin_10"
+                    android:paddingRight="@dimen/view_margin_10"
+                    android:id="@+id/iv_clear"
+                    android:src="@drawable/icon_clean"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:padding="@dimen/view_margin_5"
+            android:text="支持的银行：中国银行、农业银行、工商银行、建设银行、交通银行"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@color/B_black_70"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/login"
+            style="@style/STYLE_LOGIN_SUMBIT_BUTTON"
+            android:layout_below="@+id/lly_input_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/view_margin_60"
+            android:text="下一步" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

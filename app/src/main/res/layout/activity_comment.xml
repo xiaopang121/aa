@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="match_parent"
+        android:background="@color/theme_color_primary"
+        android:orientation="vertical">
+
+
+    <com.common.android.fui.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bar_height"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="@dimen/view_margin_1"></View>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/ic_comment_head_bg"
+            android:layout_height="150dp">
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:id="@+id/center_view"
+                android:layout_centerInParent="true"
+                android:layout_height="@dimen/view_margin_1"></View>
+
+            <com.common.extend.roundedimageview.RoundedImageView
+                android:id="@+id/user_photo"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/view_margin_20"
+                android:layout_width="@dimen/view_margin_55"
+                android:layout_height="@dimen/view_margin_55"
+                app:riv_corner_radius="45dip"
+                app:riv_border_color="@color/B_black_10"
+                app:riv_border_width="@dimen/view_margin_5"
+                android:src="@drawable/ic_default_head" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_above="@+id/center_view"
+                android:layout_marginLeft="@dimen/view_margin_10"
+                android:layout_toRightOf="@+id/user_photo"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:textColor="@color/white"
+                android:text=""
+                android:id="@+id/tv_username"
+                android:layout_height="wrap_content" />
+
+
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="41dp">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_45"
+            android:id="@+id/menu_categrary"
+            android:background="@color/white"
+            android:orientation="horizontal">
+            <RadioButton
+                style="@style/STYLE_COMMENT_RADIO"
+                android:text="@string/title_menu_comment"
+                android:checked="true"
+                android:id="@+id/menu_has_process"/>
+
+
+            <View
+                android:layout_width="@dimen/view_margin_1"
+                android:layout_height="match_parent"
+                android:background="@color/B_black_10"/>
+
+            <RadioButton
+                style="@style/STYLE_COMMENT_RADIO"
+                android:text="@string/title_menu_order"
+                android:id="@+id/menu_no_process"/>
+
+        </RadioGroup>
+        <com.viewpagerindicator.UnderlinePageIndicator
+            android:layout_width="match_parent"
+            android:id="@+id/linepageIndicator"
+            android:layout_alignParentBottom="true"
+            android:layout_height="2dp" />
+
+    </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_1"
+            android:background="@color/md_divider_black"></View>
+
+    <com.common.android.fui.widget.CustomViewPager
+        android:layout_width="match_parent"
+        android:id="@+id/viewpager"
+        android:background="@color/white"
+        android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</LinearLayout>

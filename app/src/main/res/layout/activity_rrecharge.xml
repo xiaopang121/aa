@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_container"
+    android:background="@color/theme_color_primary"
+    android:orientation="vertical"
+    >
+
+    <com.common.android.fui.widget.CommonTitleBar
+        android:layout_width="match_parent"
+        android:id="@+id/common_title_bar"
+        android:layout_height="@dimen/common_bar_height"/>
+
+
+    <include layout="@layout/divide_v_black"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_height="@dimen/view_margin_50">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/view_margin_10"
+                android:paddingRight="@dimen/view_margin_10"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/view_margin_10"
+                android:gravity="left|center_vertical"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:textColor="@color/B_black_50"
+                android:text="@string/title_last_money"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:paddingRight="@dimen/view_margin_10"
+                android:layout_weight="2"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:textColor="@color/B_black_50"
+                android:text="0.00"
+                android:id="@+id/tv_account_amount"
+
+                />
+
+
+        </LinearLayout>
+
+        <include layout="@layout/divide_v_black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_height="@dimen/view_margin_50">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/view_margin_10"
+                android:paddingRight="@dimen/view_margin_10"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/view_margin_10"
+                android:gravity="left|center_vertical"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:textColor="@color/B_black_50"
+                android:text="@string/title_recharge_money"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_height="@dimen/view_margin_50">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/view_margin_15"
+                android:paddingRight="@dimen/view_margin_15"
+                android:gravity="left|center_vertical"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:textSize="@dimen/view_margin_30"
+                android:textColor="@color/B_black_85"
+                android:text="@string/title_unit"
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="@dimen/view_margin_10"
+                android:layout_weight="2"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/B_black_70"
+                android:text=""
+                android:background="@color/transparent"
+                android:hint="@string/hint_input_money"
+                android:inputType="numberDecimal"
+                android:id="@+id/tv_input_money"
+
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_1"
+            android:layout_marginLeft="@dimen/view_margin_15"
+            android:layout_marginRight="@dimen/view_margin_15"
+            android:background="@color/md_divider_black"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_height="@dimen/view_margin_50">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/view_margin_10"
+                android:paddingRight="@dimen/view_margin_10"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/view_margin_10"
+                android:gravity="left|center_vertical"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:textColor="@color/B_black_50"
+                android:text="@string/select_pay_type"
+                />
+
+
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:id="@+id/radio_group"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_margin_50"
+                android:drawableLeft="@drawable/ic_wx"
+                android:drawablePadding="@dimen/view_margin_10"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:textColor="@color/B_black_70"
+                android:paddingLeft="@dimen/view_margin_10"
+                android:button="@null"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:paddingRight="@dimen/view_margin_10"
+                android:drawableRight="@drawable/selector_pay_raido"
+                android:text="微信支付"
+                android:id="@+id/tv_pay_wx"/>
+
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_margin_50"
+                android:drawableLeft="@drawable/ic_alipay"
+                android:drawablePadding="@dimen/view_margin_10"
+                android:paddingRight="@dimen/view_margin_10"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:textColor="@color/B_black_70"
+                android:paddingLeft="@dimen/view_margin_10"
+                android:button="@null"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:drawableRight="@drawable/selector_pay_raido"
+                android:text="支付宝支付"
+                android:id="@+id/tv_pay_alipay"/>
+
+
+
+
+        </RadioGroup>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:padding="@dimen/view_margin_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_refund_des"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:text="@string/title_refund_des"
+                android:textColor="@color/theme_color_primary"/>
+
+
+
+            <Button
+                style="@style/STYLE_LOGIN_SUMBIT_BUTTON"
+                android:id="@+id/bt_sumbit"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/view_margin_5"
+                android:layout_above="@+id/tv_refund_des"
+                android:text="@string/recharge_title"
+                />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_above="@+id/bt_sumbit"
+                android:layout_marginBottom="@dimen/view_margin_10"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:id="@+id/tv_recharge_prompt"
+                    android:text="@string/title_recharge_des"
+                    android:textColor="@color/B_black_50"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:id="@+id/tv_recharge_protocol"
+                    android:text="@string/title_recharge_protocol"
+                    android:textColor="@color/theme_color_primary"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+    
+
+</LinearLayout>

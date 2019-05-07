@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#324968</color>
+    <color name="colorPrimaryDark">#324968</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="gloabl_bg">#ededed</color>
+    <color name="transparent">#00000000</color>
+    <color name="text_c1">#555555</color>
+    <color name="crop__button_bar">#f3f3f3</color>
+    <color name="crop__button_text">#666666</color>
+    <color name="crop__selector_pressed">#1a000000</color>
+    <color name="crop__selector_focused">#77000000</color>
+    <color name="red500">#db4437</color>
+    <color name="textlight">#546e7a</color>
+    <color name="textlight30">#4d6b8d9c</color>
+    <color name="border">#e7e7e7</color>
+    
+    <color name="main_bg">#f4f4f4</color>
+
+    <color name="common_head_bg">#eeeeee</color>
+    <color name="md_divider_white">#10ffffff</color>
+    <color name="md_divider_black">#10000000</color>
+    <color name="md_divicer_color">#f7f7f7</color>
+    <color name="mine_font__color">#219ef7</color>
+
+
+    <color name="main_background">#f7f7f7</color>
+    <color name="all_background">#f8f8f8</color>
+    <color name="common_title_background">@color/white</color>
+
+    <color name="yellow_color_normal">#f35e3e</color>
+    <color name="yellow_color_pressed">#e64e2d</color>
+    <color name="text_yellow_color">#fb5c47</color>
+    <color name="gray_66929292">#66929292</color>
+    <color name="gray_cdcdcd">#cdcdcd</color>
+    <color name="gray_efeff4">#efeff4</color>
+    
+    <color name="rect_oragion">#f35e3e</color>
+
+    <color name="rect_yellow">#ffa255</color>
+
+    <color name="rect_yellow2">#ffde59</color>
+    <color name="color_blue">#057dff</color>
+    <color name="pickerview_timebtn_nor">#057dff</color>
+    <color name="pickerview_timebtn_pre">#c2daf5</color>
+    <color name="pickerview_bg_topbar">#f5f5f5</color>
+
+    <color name="pickerview_topbar_title">#000000</color>
+    <color name="pickerview_wheelview_textcolor_out">#a8a8a8</color>
+    <color name="pickerview_wheelview_textcolor_center">#2a2a2a</color>
+    <color name="pickerview_wheelview_textcolor_divider">#d5d5d5</color>
+    <color name="pickerview_bgColor_overlay">#60000000</color>
+    <color name="pickerview_bgColor_default">#FFFFFFFF</color>
+
+
+    <color name="spalish_bg">#eeefee</color>
+    <color name="spalish_circle">#fbb176</color>
+    <color name="zjcg_bg">#F7E2DD</color>
+
+
+    <color name="button_start_color">#456cf6</color>
+    <color name="button_end_color">#4cb2fe</color>
+
+    <color name="bille_color">#e00377</color>
+    <color name="bille_des_color">#f3f3f3</color>
+    <color name="controller_value_color">#4cb2fe</color>
+
+
+    <color name="drop_down_selected">#4cb2fe</color>
+    <color name="drop_down_unselected">#111111</color>
+
+    <color name="mask_color">#88888888</color>
+    <color name="check_bg">#f2f2f2</color>
+    <color name="un_press_color">#4cb2fe</color>
+
+    <color name="color_1a1a1a">#1a1a1a</color>
+    <color name="color_555555">#555555</color>
+
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c099cc00</color> <!-- Android standard ICS color -->
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="viewfinder_laser">#ffcc0000</color> <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#60000000</color>
+
+    <color name="cp_colorAccent">#F3F3F3</color>
+    <color name="cp_colorPrimary">@color/cp_colorAccent</color>
+    <color name="cp_colorPrimaryDark">@color/cp_colorAccent</color>
+    <color name="cp_divider">#E5E5E5</color>
+    <color name="cp_shadow">#AAEBEBEB</color>
+    <color name="cp_common_bg">#FAFAFA</color>
+    <color name="cp_content_bg">@color/cp_colorAccent</color>
+    <color name="cp_gray">#8c8c8c</color>
+    <color name="cp_gray_deep">#5c5c5c</color>
+    <color name="cp_alpha_gray">#CC646464</color>
+    <color name="cp_theme_gray">#646464</color>
+    <color name="blue">#EE9A00</color>
+    <color name="yellow_pay">#efb432</color>
+    <color name="colorDialogLine">#dfdfdf</color>
+
+    <color name="color_f4f4f4">#f4f4f4</color>
+    <color name="color_f19149">#f19149</color>
+
+    <color name="color_f2f2f2">#f2f2f2</color>
+
+    <color name="color_32b16c">#32b16c</color>
+
+    <color name="color_29985c">#29985c</color>
+
+    <color name="color_f8f8f8">#f8f8f8</color>
+    <color name="dropDownContainerColor">#d32f2f</color>
+    <color name="dropDownSelectedColor">#b71c1c</color>
+    <color name="transparentGray">#99000000</color>
+
+</resources>

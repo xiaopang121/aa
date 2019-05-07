@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/theme_color_primary"
+    android:orientation="vertical">
+
+    <com.common.android.fui.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bar_height"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_state_bar"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/view_margin_20"
+            android:layout_marginRight="@dimen/view_margin_20"
+            android:layout_marginTop="@dimen/view_margin_10"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_rect_10_white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="3"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                    android:textColor="@color/B_black_70"
+                    android:gravity="center"
+                    android:text="@string/login_account"
+                    android:layout_height="match_parent" />
+
+                <EditText
+                    android:id="@+id/et_mobile"
+                    style="@style/login_edittext"
+                    android:layout_weight="1"
+                    android:hint="请输入手机号码"
+                    android:text=""
+                    android:textColor="@color/B_black_70" />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin_5"
+                android:visibility="gone"
+                android:background="@drawable/shape_rect_10_white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="3"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                    android:textColor="@color/B_black_70"
+                    android:gravity="center"
+                    android:text="@string/login_password"
+                    android:layout_height="match_parent" />
+
+                <EditText
+                    android:id="@+id/et_password"
+                    style="@style/login_edittext"
+                    android:layout_weight="1"
+                    android:hint="@string/login_hint_password"
+                    android:inputType="textPassword"
+                    android:text=""
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/bt_sumbit"
+            style="@style/STYLE_LOGIN_SUMBIT_BUTTON"
+            android:layout_below="@+id/lly_input_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/view_margin_60"
+            android:text="@string/str_sumbit" />
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

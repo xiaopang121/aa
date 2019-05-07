@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/shape_rect_10_white2"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:textColor="@color/B_black_70"
+                android:id="@+id/iv_advisor"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_default_advert"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/view_margin_5"
+                android:layout_height="@dimen/view_margin_40">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/red"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                        android:gravity="center"
+                        android:text="已领取￥0.00"
+                        android:textColor="@color/white"
+                        android:background="@color/transparent"
+                        android:id="@+id/tv_money"
+                        android:layout_height="match_parent" />
+
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/B_black_20"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                        android:gravity="center"
+                        android:text="查看详情"
+                        android:background="@color/transparent"
+                        android:textColor="@color/B_black_70"
+                        android:id="@+id/tv_detial"
+                        android:layout_height="match_parent" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/iv_close"
+            android:layout_marginTop="@dimen/view_margin_20"
+            android:src="@drawable/ic_red_close"
+            android:layout_marginBottom="@dimen/view_margin_10"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

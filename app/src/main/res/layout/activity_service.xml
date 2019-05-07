@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/theme_color_primary"
+    android:orientation="vertical">
+
+    <com.common.android.fui.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bar_height"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/main_bg">
+
+
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <com.common.extend.roundedimageview.RoundedImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="@dimen/view_margin_20"
+                android:layout_marginRight="@dimen/view_margin_20"
+                android:src="@drawable/ic_service_qrcode"
+                android:layout_marginTop="@dimen/view_margin_30"
+                android:layout_centerHorizontal="true"
+                app:riv_corner_radius="5dp"
+                app:riv_border_color="@color/white"
+                app:riv_border_width="@dimen/view_margin_1"
+                />
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                   android:layout_centerHorizontal="true"
+                android:layout_below="@+id/iv_logo"
+                android:id="@+id/tv_app_name"
+                android:text="公司微信：mdx9022"
+                android:textColor="@color/B_black_70"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:layout_marginTop="@dimen/view_margin_15"/>
+
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tv_app_name"
+                android:text="联系电话：18968856376"
+                android:textColor="@color/B_black_70"
+                android:id="@+id/phone"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:layout_marginTop="@dimen/view_margin_30"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/phone"
+                android:text="客服QQ：1207110901"
+                android:textColor="@color/B_black_70"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:layout_marginTop="@dimen/view_margin_10"/>
+        </android.support.percent.PercentRelativeLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

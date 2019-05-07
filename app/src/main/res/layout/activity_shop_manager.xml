@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/theme_color_primary"
+    android:orientation="vertical">
+
+    <com.common.android.fui.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bar_height"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/main_bg">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="为了正确配置店铺，修改店铺请到网页端操作："
+            android:gravity="center"
+            android:layout_marginTop="@dimen/view_margin_20"
+            android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+            android:singleLine="true"
+            android:textColor="@color/B_black_70"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="http://www.qitengteng.com/login.do"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/view_margin_20"
+            android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+            android:singleLine="true"
+            android:textColor="@color/B_black_70"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

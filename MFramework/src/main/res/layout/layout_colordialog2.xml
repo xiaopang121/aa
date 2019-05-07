@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loading"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <com.common.android.ftheme.themecolor.ColorPickerView
+        android:layout_width="match_parent"
+        android:id="@+id/colorpickerview"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/llBtnGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btnPositive"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+            android:text="确定"
+            android:gravity="center"
+            android:minHeight="40dp"
+            android:textColor="@color/white" />
+
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/btnNegative"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="取消"
+            android:minHeight="40dp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

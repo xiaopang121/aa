@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:background="@color/theme_color_primary"
+              android:orientation="vertical">
+
+    <com.common.android.fui.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bar_height"
+        />
+    <include layout="@layout/divide_v_black" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+
+            android:id="@+id/rll_view_head"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_60"
+            android:clickable="true"
+            android:background="?selectableItemBackground">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="match_parent">
+            <TextView
+                style="@style/my_center_textview"
+                android:layout_centerVertical="true"
+                android:text="@string/title_head_icon"/>
+
+
+            <com.common.extend.roundedimageview.RoundedImageView
+                android:id="@+id/my_center_icon"
+                android:layout_width="@dimen/view_margin_50"
+                android:layout_height="@dimen/view_margin_50"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_default_head"
+                android:layout_centerVertical="true"
+                app:riv_corner_radius="45dp"
+                android:layout_marginRight="@dimen/view_margin_20" />
+
+        </RelativeLayout>
+        </RelativeLayout>
+
+        <include layout="@layout/divide_v_black"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_5"/>
+        <include layout="@layout/divide_v_black"/>
+
+        <RelativeLayout
+            android:id="@+id/rll_real_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_45"
+            android:background="?selectableItemBackground">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="match_parent">
+
+                <TextView
+                    style="@style/my_center_textview"
+                    android:text="@string/title_realname"/>
+
+                <TextView
+                    android:id="@+id/user_realname"
+                    style="@style/my_center_textview"
+                    android:paddingRight="@dimen/view_margin_20"
+                    android:layout_alignParentRight="true"
+                    android:hint="@string/hint_noset"
+                    android:text=""/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <include layout="@layout/divide_v_black"/>
+
+        <RelativeLayout
+            android:id="@+id/rll_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_45"
+            android:background="?selectableItemBackground">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="match_parent">
+
+                <TextView
+                    style="@style/my_center_textview"
+                    android:text="@string/title_mobile"/>
+
+                <TextView
+                    android:id="@+id/user_mobile"
+                    style="@style/my_center_textview"
+                    android:paddingRight="@dimen/view_margin_20"
+                    android:layout_alignParentRight="true"
+                    android:hint="@string/hint_noset"
+                    android:text=""/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <include layout="@layout/divide_v_black"/>
+
+        <RelativeLayout
+            android:id="@+id/rll_gender"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_45"
+            android:background="?selectableItemBackground">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="match_parent">
+
+                <TextView
+                    style="@style/my_center_textview"
+                    android:text="@string/title_gender"/>
+
+                <TextView
+                    android:id="@+id/user_gender"
+                    style="@style/my_center_textview"
+                    android:paddingRight="@dimen/view_margin_20"
+                    android:layout_alignParentRight="true"
+                    android:hint="@string/hint_noset"
+                    android:text=""/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+        <include layout="@layout/divide_v_black"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_5"/>
+        <include layout="@layout/divide_v_black"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rll_hangye"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_45"
+            android:background="?selectableItemBackground">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="match_parent">
+
+                <TextView
+                    style="@style/my_center_textview"
+                    android:text="@string/title_hnagye"/>
+
+                <TextView
+                    android:id="@+id/user_hangye"
+                    style="@style/my_center_textview"
+                    android:paddingRight="@dimen/view_margin_20"
+                    android:layout_alignParentRight="true"
+                    android:hint="@string/hint_noset"
+                    android:text=""/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <include layout="@layout/divide_v_black" />
+        <RelativeLayout
+            android:id="@+id/rll_zhiwei"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_45"
+            android:background="?selectableItemBackground">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="match_parent">
+
+                <TextView
+                    style="@style/my_center_textview"
+                    android:text="@string/title_zhiwei"/>
+
+                <TextView
+                    android:id="@+id/user_zhiwei"
+                    style="@style/my_center_textview"
+                    android:paddingRight="@dimen/view_margin_20"
+                    android:layout_alignParentRight="true"
+                    android:hint="@string/hint_noset"
+                    android:text=""/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+        <include layout="@layout/divide_v_black" />
+        <RelativeLayout
+            android:id="@+id/rll_bumen"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_45"
+            android:background="?selectableItemBackground">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="match_parent">
+
+                <TextView
+                    style="@style/my_center_textview"
+                    android:text="@string/title_bumen"/>
+
+                <TextView
+                    android:id="@+id/user_bumen"
+                    style="@style/my_center_textview"
+                    android:paddingRight="@dimen/view_margin_20"
+                    android:layout_alignParentRight="true"
+                    android:hint="@string/hint_noset"
+                    android:text=""/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <include layout="@layout/divide_v_black" />
+        <RelativeLayout
+            android:id="@+id/rll_email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_45"
+            android:background="?selectableItemBackground">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="match_parent">
+
+                <TextView
+                    style="@style/my_center_textview"
+                    android:text="@string/title_email"/>
+
+                <TextView
+                    android:id="@+id/user_email"
+                    style="@style/my_center_textview"
+                    android:paddingRight="@dimen/view_margin_20"
+                    android:layout_alignParentRight="true"
+                    android:hint="@string/hint_noset"
+                    android:text=""/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/theme_color_primary"
+    android:orientation="vertical">
+
+    <com.common.android.fui.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bar_height"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_margin_1"
+        android:background="@color/white"></View>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/view_margin_45"
+                android:background="?selectableItemBackground"
+                >
+
+                <com.common.android.ftheme.widgets.TintTextView
+                    style="@style/my_center_textview"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/B_black_70"
+                    android:layout_weight="3"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    app:drawableRightTint="@color/theme_color_primary"
+                    android:text="@string/field_order_client"/>
+
+
+                <TextView
+                    style="@style/my_center_textview"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/field_order_client"
+                    android:textColor="@color/B_black_70"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    android:background="@color/transparent"
+                    android:hint=""/>
+
+            </LinearLayout>
+            <include layout="@layout/divide_v_black"/>
+
+            <LinearLayout
+                android:id="@+id/rll_select_category"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/view_margin_45"
+                android:background="?selectableItemBackground"
+                >
+
+                <com.common.android.ftheme.widgets.TintTextView
+                    style="@style/my_center_textview"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/B_black_70"
+                    android:layout_weight="3"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    app:drawableRightTint="@color/theme_color_primary"
+                    android:text="@string/field_order_call"/>
+
+
+                <TextView
+                    style="@style/my_center_textview"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/field_order_call"
+                    android:textColor="@color/B_black_70"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    android:background="@color/transparent"
+                    android:hint=""/>
+            </LinearLayout>
+
+
+
+            <include layout="@layout/divide_v_black"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/view_margin_45"
+                android:background="?selectableItemBackground"
+                >
+
+                <com.common.android.ftheme.widgets.TintTextView
+                    style="@style/my_center_textview"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/B_black_70"
+                    android:layout_weight="3"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    app:drawableRightTint="@color/theme_color_primary"
+                    android:text="@string/field_order_categary"/>
+
+
+                <TextView
+                    style="@style/my_center_textview"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/field_order_categary"
+                    android:textColor="@color/yellow_color_pressed"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    android:background="@color/transparent"
+                    android:hint=""/>
+
+            </LinearLayout>
+
+            <include layout="@layout/divide_v_black"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/lly_goodness"
+                android:layout_height="@dimen/view_margin_45"
+                android:background="?selectableItemBackground"
+                >
+
+                <com.common.android.ftheme.widgets.TintTextView
+                    style="@style/my_center_textview"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/B_black_70"
+                    android:layout_weight="3"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    app:drawableRightTint="@color/theme_color_primary"
+                    android:text="@string/field_order_money"/>
+
+                <TextView
+                    style="@style/my_center_textview"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/field_order_money"
+                    android:textColor="@color/yellow_color_pressed"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    android:background="@color/transparent"
+                    android:text=""/>
+
+            </LinearLayout>
+
+            <include layout="@layout/divide_v_black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/view_margin_45"
+                android:background="?selectableItemBackground"
+                >
+
+                <com.common.android.ftheme.widgets.TintTextView
+                    style="@style/my_center_textview"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/B_black_70"
+                    android:layout_weight="3"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    app:drawableRightTint="@color/theme_color_primary"
+                    android:text="@string/field_order_date"/>
+
+
+                <TextView
+                    style="@style/my_center_textview"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/field_order_date"
+                    android:textColor="@color/B_black_70"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    android:background="@color/transparent"
+                    android:hint=""/>
+
+            </LinearLayout>
+
+            <include layout="@layout/divide_v_black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="100dp"
+                android:gravity="top|left"
+                android:background="?selectableItemBackground"
+                >
+
+
+                <com.common.android.ftheme.widgets.TintTextView
+                    android:id="@+id/tintTextView"
+                    style="@style/my_center_textview"
+                    android:layout_width="match_parent"
+                    android:layout_weight="3"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top"
+                    android:gravity="top"
+                    android:paddingTop="@dimen/view_margin_10"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    android:text="@string/field_order_other"
+                    android:textColor="@color/B_black_70"
+                    app:drawableRightTint="@color/theme_color_primary" />
+
+                <com.common.android.ftheme.widgets.TintTextView
+                    android:id="@+id/field_order_other"
+                    style="@style/my_center_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    android:textColor="@color/B_black_70"
+                    app:drawableRightTint="@color/theme_color_primary" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_margin_5"
+                android:background="@color/md_divider_black"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/view_margin_45"
+                android:gravity="center_vertical|right"
+                android:background="?selectableItemBackground"
+                >
+
+                <com.common.android.ftheme.widgets.TintTextView
+                    style="@style/my_center_textview"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/B_black_70"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    android:id="@+id/tv_pay_state"
+                    app:drawableRightTint="@color/theme_color_primary"
+                    android:text="已付款:"/>
+
+
+                <TextView
+                    style="@style/my_center_textview"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/field_order_amount"
+                    android:textColor="@color/yellow_color_pressed"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    android:background="@color/transparent"
+                    android:text="4500"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_margin_5"
+                android:background="@color/md_divider_black"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/view_margin_45"
+                android:background="?selectableItemBackground"
+                >
+
+                <com.common.android.ftheme.widgets.TintTextView
+                    style="@style/my_center_textview"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/B_black_70"
+                    android:layout_weight="3"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    app:drawableRightTint="@color/theme_color_primary"
+                    android:text="@string/field_order_num"/>
+
+
+                <TextView
+                    style="@style/my_center_textview"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/field_order_num"
+                    android:textColor="@color/B_black_70"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    android:background="@color/transparent"
+                    android:hint=""/>
+
+            </LinearLayout>
+
+            <include layout="@layout/divide_v_black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/view_margin_45"
+                android:background="?selectableItemBackground"
+                >
+
+                <com.common.android.ftheme.widgets.TintTextView
+                    style="@style/my_center_textview"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/B_black_70"
+                    android:layout_weight="3"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    app:drawableRightTint="@color/theme_color_primary"
+                    android:text="@string/field_order_contract"/>
+
+
+                <TextView
+                    style="@style/my_center_textview"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/field_order_contract"
+                    android:textColor="@color/B_black_70"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    android:background="@color/transparent"
+                    android:hint=""/>
+
+            </LinearLayout>
+
+
+            <include layout="@layout/divide_v_black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/view_margin_45"
+                android:background="?selectableItemBackground"
+                >
+
+                <com.common.android.ftheme.widgets.TintTextView
+                    style="@style/my_center_textview"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/B_black_70"
+                    android:layout_weight="3"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    app:drawableRightTint="@color/theme_color_primary"
+                    android:text="@string/field_order_paytype"/>
+
+
+                <TextView
+                    style="@style/my_center_textview"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/field_order_paytype"
+                    android:textColor="@color/B_black_70"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    android:background="@color/transparent"
+                    android:hint=""/>
+
+            </LinearLayout>
+
+
+            <include layout="@layout/divide_v_black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/view_margin_45"
+                android:background="?selectableItemBackground"
+                >
+
+                <com.common.android.ftheme.widgets.TintTextView
+                    style="@style/my_center_textview"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/B_black_70"
+                    android:layout_weight="3"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    app:drawableRightTint="@color/theme_color_primary"
+                    android:text="@string/field_order_createtime"/>
+
+
+                <TextView
+                    style="@style/my_center_textview"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/field_order_createtime"
+                    android:textColor="@color/B_black_70"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    android:background="@color/transparent"
+                    android:hint=""/>
+
+            </LinearLayout>
+
+
+            <include layout="@layout/divide_v_black"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

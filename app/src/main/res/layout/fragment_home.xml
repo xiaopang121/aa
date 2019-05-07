@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.common.android.ftheme.widgets.TintLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color_primary"
+    android:orientation="vertical">
+
+    <com.common.android.fui.widget.CustomViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:overScrollMode="never" />
+
+    <include layout="@layout/divide_black"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu_group"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <!--地图-->
+        <com.common.android.ftheme.widgets.TintRadioButton
+            style="@style/STYLE_HOME_RADIO"
+            android:text="@string/menu_index"
+            android:checked="true"
+            android:drawableTop="@drawable/selector_menu_index"
+            android:id="@+id/menu_local"/>
+
+        <com.common.android.ftheme.widgets.TintRadioButton
+            style="@style/STYLE_HOME_RADIO"
+            android:text="@string/menu_discover"
+            android:drawableTop="@drawable/selector_menu_discover"
+            android:id="@+id/menu_discover"/>
+
+        <com.common.android.ftheme.widgets.TintRadioButton
+            style="@style/STYLE_HOME_RADIO"
+            android:text="@string/menu_msg"
+            android:drawableTop="@drawable/selector_menu_msg"
+            android:id="@+id/menu_msg"/>
+
+
+        <!--我的-->
+        <com.common.android.ftheme.widgets.TintRadioButton
+            style="@style/STYLE_HOME_RADIO"
+            android:text="@string/menu_user"
+            android:drawableTop="@drawable/selector_menu_user"
+            android:id="@+id/menu_me"/>
+
+    </RadioGroup>
+
+</com.common.android.ftheme.widgets.TintLinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color_primary"
+    android:orientation="vertical">
+    <com.common.android.fui.widget.CommonTitleBar
+        android:layout_width="match_parent"
+        android:id="@+id/common_title_bar"
+        android:layout_height="@dimen/common_bar_height"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/main_background"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/view_margin_10"
+            android:id="@+id/radio_group"
+            android:gravity="center_vertical"
+            android:layout_height="@dimen/view_margin_45">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:text="竞价"
+                android:gravity="center"
+                android:button="@null"
+                android:checked="true"
+                android:id="@+id/rb_jingjia"
+                android:textColor="@color/selector_publish_raido_textcolor"
+                android:background="@drawable/selector_public_radio"
+                android:paddingLeft="@dimen/view_margin_10"
+                android:paddingRight="@dimen/view_margin_10"
+                android:paddingTop="@dimen/view_margin_5"
+                android:paddingBottom="@dimen/view_margin_5"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:text="招标"
+                android:id="@+id/rb_zhaobiao"
+                android:button="@null"
+                android:layout_marginLeft="@dimen/view_margin_10"
+                android:layout_marginRight="@dimen/view_margin_10"
+                android:textColor="@color/selector_publish_raido_textcolor"
+                android:background="@drawable/selector_public_radio"
+                android:paddingLeft="@dimen/view_margin_10"
+                android:paddingRight="@dimen/view_margin_10"
+                android:paddingTop="@dimen/view_margin_5"
+                android:paddingBottom="@dimen/view_margin_5"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:text="创新集"
+                android:button="@null"
+                android:id="@+id/rb_zhengjie"
+                android:textColor="@color/selector_publish_raido_textcolor"
+                android:background="@drawable/selector_public_radio"
+                android:paddingLeft="@dimen/view_margin_10"
+                android:paddingRight="@dimen/view_margin_10"
+                android:paddingTop="@dimen/view_margin_5"
+                android:paddingBottom="@dimen/view_margin_5"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:layout_height="wrap_content" />
+
+        </RadioGroup>
+
+        <com.common.android.fui.widget.CustomViewPager
+            android:layout_width="match_parent"
+            android:id="@+id/viewpager"
+            android:layout_marginTop="@dimen/view_margin_5"
+            android:background="@color/white"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/theme_color_primary"
+    android:orientation="vertical">
+
+    <com.common.android.fui.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bar_height"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_45"
+            android:background="@color/white">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="抬头类型"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:textColor="@color/B_black_70" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/rb_taitou_group"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/rb_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/selector_sex_raido"
+                    android:drawablePadding="@dimen/view_margin_10"
+                    android:paddingLeft="@dimen/view_margin_20"
+                    android:paddingRight="@dimen/view_margin_20"
+                    android:text="单位"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                    android:textColor="@color/B_black_50" />
+
+
+                <RadioButton
+                    android:id="@+id/rb_person"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/selector_sex_raido"
+                    android:drawablePadding="@dimen/view_margin_10"
+                    android:paddingLeft="@dimen/view_margin_20"
+                    android:paddingRight="@dimen/view_margin_20"
+                    android:text="个人"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                    android:textColor="@color/B_black_50" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <include layout="@layout/divide_v_black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_10" />
+
+        <include layout="@layout/divide_v_black" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/lly_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+                    <TextView
+                        style="@style/my_center_textview"
+                        android:layout_width="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:text="抬头名称" />
+
+                    <EditText
+                        android:id="@+id/tv_company_taitou"
+                        style="@style/my_center_textview"
+                        android:background="@color/transparent"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_alignParentRight="true"
+                        android:hint="请输入准确的抬头名称（必填）"
+                        android:paddingRight="@dimen/view_margin_20"
+                        android:text="" />
+
+                </LinearLayout>
+                <include layout="@layout/divide_v_black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+                    <TextView
+                        style="@style/my_center_textview"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:text="企业税号" />
+
+                    <EditText
+                        android:id="@+id/tv_company_code"
+                        style="@style/my_center_textview"
+                        android:background="@color/transparent"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:hint="请输入税号或者社会信用代码"
+                        android:paddingRight="@dimen/view_margin_20"
+                        android:text="" />
+
+                </LinearLayout>
+                <TextView
+                    style="@style/my_center_textview"
+                    android:layout_weight="3"
+                    android:layout_height="@dimen/view_margin_30"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:gravity="left|center"
+                    android:paddingLeft="@dimen/view_margin_20"
+                    android:textColor="@color/B_black_70"
+                    android:layout_width="match_parent"
+                    android:text="输入完整抬头信息，以开具增值税专用发票" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+                    <TextView
+                        style="@style/my_center_textview"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:text="电话号码" />
+
+                    <EditText
+                        android:id="@+id/tv_company_phone"
+                        style="@style/my_center_textview"
+                        android:background="@color/transparent"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:hint="请输入单位电话号码"
+                        android:paddingRight="@dimen/view_margin_20"
+                        android:text="" />
+
+                </LinearLayout>
+                <include layout="@layout/divide_v_black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+                    <TextView
+                        style="@style/my_center_textview"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:text="单位地址" />
+
+                    <EditText
+                        android:id="@+id/tv_company_address"
+                        style="@style/my_center_textview"
+                        android:background="@color/transparent"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:hint="单位注册地址信息"
+                        android:paddingRight="@dimen/view_margin_20"
+                        android:text="" />
+
+                </LinearLayout>
+                <include layout="@layout/divide_v_black"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+                    <TextView
+                        style="@style/my_center_textview"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:text="开户银行" />
+
+                    <EditText
+                        android:id="@+id/tv_company_bank"
+                        style="@style/my_center_textview"
+                        android:background="@color/transparent"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:hint="单位开户行名称"
+                        android:paddingRight="@dimen/view_margin_20"
+                        android:text="" />
+
+                </LinearLayout>
+                <include layout="@layout/divide_v_black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+                    <TextView
+                        style="@style/my_center_textview"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:text="银行帐号" />
+
+                    <EditText
+                        android:id="@+id/tv_company_bank_code"
+                        style="@style/my_center_textview"
+                        android:background="@color/transparent"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:hint="单位银行帐号"
+                        android:paddingRight="@dimen/view_margin_20"
+                        android:text="" />
+
+                </LinearLayout>
+                <include layout="@layout/divide_v_black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lly_persion"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+                    <TextView
+                        style="@style/my_center_textview"
+                        android:layout_width="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:text="姓名" />
+
+                    <EditText
+                        android:id="@+id/tv_person_name"
+                        style="@style/my_center_textview"
+                        android:background="@color/transparent"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_alignParentRight="true"
+                        android:hint="请输入准确的抬头名称（必填）"
+                        android:paddingRight="@dimen/view_margin_20"
+                        android:text="" />
+
+                </LinearLayout>
+                <include layout="@layout/divide_v_black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+                    <TextView
+                        style="@style/my_center_textview"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:text="电话号码" />
+
+                    <EditText
+                        android:id="@+id/tv_person_phone"
+                        style="@style/my_center_textview"
+                        android:background="@color/transparent"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:hint="您常用的手机号码（选填）"
+                        android:paddingRight="@dimen/view_margin_20"
+                        android:text="" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+
+        <Button
+            android:id="@+id/save"
+            style="@style/STYLE_LOGIN_SUMBIT_BUTTON"
+            android:layout_below="@+id/lly_input_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/view_margin_50"
+            android:text="保存发票抬头" />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/theme_color_primary"
+    android:orientation="vertical">
+
+    <com.common.android.fui.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bar_height"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/main_bg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="100dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:id="@+id/center_view"
+                android:layout_centerInParent="true"
+                android:layout_height="@dimen/view_margin_1"></View>
+
+            <com.common.extend.roundedimageview.RoundedImageView
+                android:id="@+id/mine_photo"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/view_margin_20"
+                android:layout_width="@dimen/view_margin_55"
+                android:layout_height="@dimen/view_margin_55"
+                app:riv_corner_radius="45dip"
+                app:riv_border_color="@color/B_black_10"
+                app:riv_border_width="@dimen/view_margin_5"
+                android:src="@drawable/ic_default_head" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_above="@+id/center_view"
+                android:layout_marginLeft="@dimen/view_margin_10"
+                android:layout_toRightOf="@+id/mine_photo"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:textColor="@color/B_black_70"
+                android:text=""
+                android:id="@+id/tv_username"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/center_view"
+                android:layout_marginLeft="@dimen/view_margin_10"
+                android:layout_toRightOf="@+id/mine_photo"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:textColor="@color/B_black_50"
+                android:layout_marginTop="@dimen/view_margin_5"
+                android:text=""
+                android:id="@+id/tv_sex"
+                android:layout_height="wrap_content" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/center_view"
+                android:layout_marginLeft="@dimen/view_margin_10"
+                android:layout_toRightOf="@+id/tv_sex"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:textColor="@color/B_black_50"
+                android:layout_alignTop="@+id/tv_sex"
+                android:text=""
+                android:id="@+id/tv_age"
+                android:layout_height="wrap_content" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/center_view"
+                android:layout_marginLeft="@dimen/view_margin_10"
+                android:layout_toRightOf="@+id/tv_age"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:textColor="@color/B_black_50"
+                android:layout_alignTop="@+id/tv_age"
+                android:text=""
+                android:id="@+id/tv_address"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="@color/B_black_70"
+            android:text="填写验证消息"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="@dimen/view_margin_15"
+            android:layout_height="@dimen/view_margin_30" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:text=""
+            android:id="@+id/et_oauth_msg"
+            android:hint="请输入验证消息"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:paddingLeft="@dimen/view_margin_15"
+            android:layout_height="@dimen/view_margin_45" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="@color/B_black_70"
+            android:text="设置备注和分组"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="@dimen/view_margin_15"
+            android:layout_height="@dimen/view_margin_30" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="@dimen/view_margin_45"
+            android:background="@color/white"
+          >
+
+            <com.common.android.ftheme.widgets.TintTextView
+                style="@style/my_center_textview"
+                android:layout_width="match_parent"
+                android:textColor="@color/B_black_70"
+                android:layout_weight="3"
+                android:paddingLeft="@dimen/view_margin_15"
+                app:drawableRightTint="@color/theme_color_primary"
+                android:text="备注"/>
+
+
+            <EditText
+                style="@style/my_center_textview"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/et_remark"
+                android:textColor="@color/B_black_70"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:paddingLeft="@dimen/view_margin_15"
+                android:background="@color/transparent"
+                android:hint="请输入备注"/>
+
+        </LinearLayout>
+        <include layout="@layout/divide_v_black"/>
+        <LinearLayout
+            android:id="@+id/rll_select_group"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="@dimen/view_margin_45"
+            android:background="@color/white"
+            >
+
+            <com.common.android.ftheme.widgets.TintTextView
+                style="@style/my_center_textview"
+                android:layout_width="match_parent"
+                android:textColor="@color/B_black_70"
+                android:layout_weight="3"
+                android:paddingLeft="@dimen/view_margin_15"
+                app:drawableRightTint="@color/theme_color_primary"
+                android:text="分组"/>
+
+
+            <TextView
+                style="@style/my_center_textview"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/et_group"
+                android:textColor="@color/B_black_70"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:paddingLeft="@dimen/view_margin_15"
+                android:background="@color/transparent"
+                android:drawableRight="@drawable/ic_keyboard_arrow_right__grey_24dp"
+                android:hint="请选择分组"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

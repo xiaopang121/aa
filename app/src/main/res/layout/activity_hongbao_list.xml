@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/theme_color_primary"
+    android:orientation="vertical">
+
+
+    <com.common.android.fui.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bar_height"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="@dimen/view_margin_1"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+        <com.common.extend.pulltorefresh.PullToRefreshRecyclerView
+            android:id="@+id/pull_to_refresh_recycle"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:addStatesFromChildren="true"
+            android:layout_weight="1"
+            android:cacheColorHint="@color/transparent"
+            android:clickable="true"
+            android:divider="@color/transparent"
+            android:dividerHeight="4dp"
+            android:duplicateParentState="true"
+            android:fadingEdge="none"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:isScrollContainer="true"
+            android:listSelector="@color/transparent"
+            android:overScrollMode="never"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbars="@null"
+            android:scrollingCache="false">
+
+        </com.common.extend.pulltorefresh.PullToRefreshRecyclerView>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/md_divider_black"
+            android:layout_height="@dimen/view_margin_1">
+
+
+        </View>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/view_margin_20"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/lly_score_bar"
+                android:layout_marginLeft="@dimen/view_margin_20"
+                android:layout_marginRight="@dimen/view_margin_10"
+                android:background="@color/B_black_10"
+                android:paddingTop="@dimen/view_margin_10"
+                android:paddingBottom="@dimen/view_margin_10"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/B_black_50"
+                        android:text="获得积分"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/yellow_color_pressed"
+                        android:text="1"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/B_black_50"
+                        android:text="分"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/B_black_50"
+                    android:text="去查看"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/lly_coupon_bar"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/view_margin_10"
+                android:layout_marginRight="@dimen/view_margin_20"
+                android:paddingTop="@dimen/view_margin_10"
+                android:paddingBottom="@dimen/view_margin_10"
+                android:background="@color/B_black_10"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/B_black_50"
+                        android:text="获得优惠券"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/yellow_color_pressed"
+                        android:text="0"
+                        android:id="@+id/tv_coupon_money"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/B_black_50"
+                        android:text="元"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/B_black_50"
+                    android:text="去查看"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

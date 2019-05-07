@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/theme_color_primary"
+    android:orientation="vertical">
+
+    <com.common.android.fui.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bar_height"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/main_bg">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tl"
+            android:layout_width="match_parent"
+            app:tabSelectedTextColor="@color/yellow_color_pressed"
+            app:tabTextColor="@color/B_black_70"
+            android:visibility="gone"
+            android:layout_height="40dp"/>
+        <com.common.android.fui.widget.CustomViewPager
+            android:layout_width="match_parent"
+            android:id="@+id/customviewpage"
+            android:visibility="gone"
+            android:layout_height="@dimen/view_margin_1"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_1"
+            android:visibility="gone"
+            android:background="@color/md_divider_black"/>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+
+                <cn.lankton.flowlayout.FlowLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/flowView"
+                    app:rowSpacing="5dp"
+                    android:background="@color/white"
+                    app:lineSpacing="5dp"
+                    android:visibility="gone"
+                    app:childSpacing="@dimen/view_margin_5"
+                    android:padding="@dimen/view_margin_10"
+                    android:minHeight="@dimen/view_margin_80"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_margin_1"
+                    android:visibility="gone"
+                    android:background="@color/md_divider_black"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:id="@+id/rb_select"
+                    android:orientation="horizontal"
+                    android:layout_height="@dimen/view_margin_40">
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:paddingLeft="@dimen/view_margin_40"
+                        android:paddingRight="@dimen/view_margin_20"
+                        android:layout_height="match_parent"
+                        android:id="@+id/rb_distance"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawablePadding="@dimen/view_margin_10"
+                        android:text="距离优先"
+                        android:drawableLeft="@drawable/selector_common_raido"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                        android:textColor="@color/B_black_50"
+                        />
+
+
+
+                    <View
+                        android:layout_width="@dimen/view_margin_1"
+                        android:background="@color/md_divider_black"
+                        android:layout_height="match_parent"></View>
+
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:paddingLeft="@dimen/view_margin_40"
+                        android:paddingRight="@dimen/view_margin_20"
+                        android:layout_height="match_parent"
+                        android:id="@+id/rb_comment"
+                        android:button="@null"
+                        android:layout_weight="1"
+                        android:drawablePadding="@dimen/view_margin_10"
+                        android:text="评价优先"
+                        android:drawableLeft="@drawable/selector_common_raido"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                        android:textColor="@color/B_black_50"
+                        />
+
+                </RadioGroup>
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/md_divider_black"
+                    android:layout_height="@dimen/view_margin_10">
+
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+
+                    android:id="@+id/lly_distance"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:background="@color/white"
+                        android:layout_height="@dimen/view_margin_40">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/view_margin_15"
+                            android:textColor="@color/B_black_70"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                            android:text="选择服务范围："
+                            android:layout_height="match_parent" />
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:minWidth="70dp"
+                            android:id="@+id/et_distance"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/yellow_color_pressed"
+                            android:background="@drawable/ic_yellow_underline"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/yellow_color_pressed"
+                            android:text="km"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:background="@color/white"
+                        android:id="@+id/rb_distance_group"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="@dimen/view_margin_40">
+
+                            <RadioButton
+                                style="@style/STYLE_DISTANCE_RADIO"
+                                android:text="3km"
+                                android:id="@+id/rb_distance_3"
+                                />
+
+                            <RadioButton
+                                android:text="5km"
+                                style="@style/STYLE_DISTANCE_RADIO"
+                                android:id="@+id/rb_distance_5" />
+
+                            <RadioButton
+                                style="@style/STYLE_DISTANCE_RADIO"
+                                android:text="10km"
+                                android:id="@+id/rb_distance_10" />
+
+                            <RadioButton
+                                style="@style/STYLE_DISTANCE_RADIO"
+                                android:text="50km"
+                                android:id="@+id/rb_distance_50" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="@dimen/view_margin_40">
+
+                            <RadioButton
+                                style="@style/STYLE_DISTANCE_RADIO"
+                                android:text="100km"
+                                android:id="@+id/rb_distance_100"
+                                />
+
+                            <RadioButton
+                                style="@style/STYLE_DISTANCE_RADIO"
+                                android:text="200km"
+                                android:id="@+id/rb_distance_200"
+                                />
+
+                            <RadioButton
+                                style="@style/STYLE_DISTANCE_RADIO"
+                                android:text="500km"
+                                android:id="@+id/rb_distance_500"
+                                />
+
+                            <RadioButton
+                                style="@style/STYLE_DISTANCE_RADIO"
+                                android:text="全国"
+                                android:gravity="center"
+                                android:id="@+id/rb_distance_all" />
+                        </LinearLayout>
+
+                    </RadioGroup>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:background="@color/md_divider_black"
+                        android:layout_height="@dimen/view_margin_10">
+                    </View>
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                        android:textColor="@color/B_black_70"
+                        android:gravity="center"
+                        android:layout_marginLeft="@dimen/view_margin_15"
+                        android:text="请输入要找的产品或者服务名称"
+                        android:layout_height="@dimen/view_margin_40" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/view_margin_45"
+                        android:layout_marginLeft="@dimen/view_margin_15"
+                        android:layout_marginRight="@dimen/view_margin_15"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/view_margin_5"
+                        android:hint="请在此输入"
+                        android:background="@drawable/shape_rect_10_grey"
+                        android:text=""
+                        android:maxLength="200"
+                        android:minLines="7"
+                        android:paddingLeft="@dimen/view_margin_4"
+                        android:paddingRight="@dimen/view_margin_4"
+                        android:id="@+id/tv_content"
+                        android:textColor="@color/B_black_70"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Inverse"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                        android:textColor="@color/B_black_70"
+                        android:gravity="center"
+                        android:layout_marginLeft="@dimen/view_margin_15"
+                        android:text="请输入详情"
+                        android:layout_height="@dimen/view_margin_40" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="@dimen/view_margin_15"
+                        android:layout_marginRight="@dimen/view_margin_15"
+                        android:gravity="left|top"
+                        android:padding="@dimen/view_margin_5"
+                        android:hint="请输入详情"
+                        android:background="@drawable/shape_rect_10_grey"
+                        android:text=""
+                        android:maxLength="150"
+                        android:minLines="7"
+                        android:paddingLeft="@dimen/view_margin_4"
+                        android:paddingRight="@dimen/view_margin_4"
+                        android:id="@+id/tv_detial"
+                        android:textColor="@color/B_black_70"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Inverse"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                        android:textColor="@color/B_black_70"
+                        android:gravity="center"
+                        android:layout_marginLeft="@dimen/view_margin_15"
+                        android:text="图片"
+                        android:layout_height="@dimen/view_margin_40" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:minHeight="@dimen/view_margin_80"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content">
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:id="@+id/rv_image_list"
+                        android:layout_marginLeft="@dimen/view_margin_15"
+                        android:layout_marginRight="@dimen/view_margin_15"
+                        android:minHeight="@dimen/view_margin_80"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <Button
+            android:id="@+id/bt_sumbit"
+            style="@style/STYLE_LOGIN_SUMBIT_BUTTON"
+            android:layout_below="@+id/lly_input_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/view_margin_70"
+            android:layout_marginRight="@dimen/view_margin_70"
+            android:layout_marginTop="@dimen/view_margin_20"
+            android:layout_marginBottom="@dimen/view_margin_20"
+            android:text="确认发送" />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

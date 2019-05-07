@@ -1,0 +1,129 @@
+apply plugin: 'com.android.application'
+configurations.all {
+    resolutionStrategy.force 'com.android.support:support-annotations:25.3.1'
+}
+android {
+    useLibrary 'org.apache.http.legacy'
+    compileSdkVersion = rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        applicationId 'com.insthub.cat.android'
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionName rootProject.ext.versionName
+        versionCode rootProject.ext.versionCode
+        renderscriptTargetApi rootProject.ext.compileSdkVersion
+        renderscriptSupportModeEnabled true
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+        multiDexEnabled true
+        ndk {
+            //  abiFilters 'armeabi','x86'
+            abiFilters 'x86', 'armeabi-v7a', 'arm64-v8a', 'x86_64', 'mips', 'mips64'
+        }
+
+    }
+    signingConfigs {
+        release {
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storeFile file('/Users/guojianfeng/Desktop/debug.keystore')
+            // storeFile file('E:\\MOBILE_PROJECT\\debug.keystore')
+            //storePassword 'android'
+            //取消v2签名
+            v2SigningEnabled false
+            storePassword 'android'
+        }
+    }
+    buildTypes {
+
+        debug {
+            signingConfig signingConfigs.release
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+
+            minifyEnabled false
+        }
+
+
+        release {
+            signingConfig signingConfigs.release
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+
+            minifyEnabled false
+            //Zipalign优化
+            zipAlignEnabled false
+            // 移除无用的resource文件
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+
+
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+
+        maven { url 'https://jitpack.io' }
+
+
+    }
+
+    productFlavors {
+
+
+    }
+
+//    applicationVariants.all {
+//        variant -> variant.outputs.each {
+//            output ->
+//                def outputFile = output.outputFile
+//                if (outputFile != null && outputFile.name.endsWith('.apk')) {
+//                    def fileName = "SHIP_v${defaultConfig.versionName}.apk"
+//                    output.outputFile = new File(outputFile.parent, fileName)
+//                }
+//        }
+//    }
+
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api 'com.android.support:recyclerview-v7:25.2.0'
+    api 'com.android.support:appcompat-v7:25.2.0'
+    api 'com.android.support:design:25.2.0'
+    api 'com.android.support:percent:25.0.0'
+    api 'com.android.support:gridlayout-v7:25.0.0'
+    api 'com.android.support:mediarouter-v7:25.0.0'
+    api 'com.android.support:palette-v7:25.0.0'
+    api 'com.android.support:cardview-v7:25.0.0'
+    api 'com.android.support:support-annotations:26.0.2'
+    api 'com.android.support:support-v4:25.0.0'
+    api 'com.android.support:multidex:1.0.1'
+    api 'com.android.support.constraint:constraint-layout:1.0.0-alpha8'
+    api 'com.sothree.slidinguppanel:library:3.3.1'
+    api 'com.github.codbking:CalendarExaple:v1.0.0'
+    api 'com.yanzhenjie:recyclerview-swipe:1.1.1'
+    implementation files('libs/MiPush_SDK_Client_3_6_2.jar')
+    implementation project(':uikit')
+    implementation files('libs/nim-push-5.2.0.jar')
+    implementation files('libs/nim-rts-5.2.0.jar')
+    implementation files('libs/nrtc-sdk.jar')
+    implementation project(':toprightmenu')
+    implementation project(':update-app')
+    implementation files('libs/xUtils-2.6.14.jar')
+    implementation files('libs/commons-codec-1.9.jar')
+    implementation files('libs/core-3.0.0.jar')
+    implementation files('libs/BaiduLBS_Android.jar')
+    implementation project(':MFramework')
+    implementation project(':lm_banner_library')
+    api 'com.xingliuhua:xlhratingbar_lib:1.0.1'
+    implementation project(':library')
+    implementation files('libs/jcore-android-1.2.0.jar')
+    implementation files('libs/jpush-android-3.1.2.jar')
+    api 'cn.lankton:flowlayout:1.0.1'
+    api 'com.contrarywind:Android-PickerView:4.1.3'
+    api 'com.github.AnthonyFermin:DropDownView:1.0.1'
+    api 'es.voghdev.pdfviewpager:library:1.0.3'
+    implementation files('libs/jxmpp-core-0.4.1.jar')
+}

@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/theme_color_primary"
+    android:orientation="vertical">
+
+    <com.common.android.fui.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bar_height"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_margin_1"
+        android:background="@color/white"></View>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:padding="@dimen/view_margin_10"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:paddingTop="@dimen/view_margin_10"
+                android:paddingBottom="@dimen/view_margin_10"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/shape_circle_yellow"
+                    android:id="@+id/iv_upload_img"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_camera_alt_grey"
+                    android:layout_height="60dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/B_black_70"
+                    android:text="上传头像"
+                    android:layout_marginTop="@dimen/view_margin_10"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/iv_upload_img"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_margin_6"
+                android:background="@color/md_divider_black"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/view_margin_45"
+                android:background="?selectableItemBackground"
+                >
+
+                <com.common.android.ftheme.widgets.TintTextView
+                    style="@style/my_center_textview"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/B_black_70"
+                    android:layout_weight="3"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    app:drawableRightTint="@color/theme_color_primary"
+                    android:text="店铺名称:"/>
+
+
+                <EditText
+                    style="@style/my_center_textview"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/et_shop_name"
+                    android:textColor="@color/B_black_70"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    android:background="@color/transparent"
+                    android:hint="请输入您的店铺名称"/>
+
+            </LinearLayout>
+            <include layout="@layout/divide_v_black"/>
+
+            <LinearLayout
+                android:id="@+id/rll_select_category"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground"
+                >
+
+                <com.common.android.ftheme.widgets.TintTextView
+                    style="@style/my_center_textview"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/B_black_70"
+                    android:layout_weight="3"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    app:drawableRightTint="@color/theme_color_primary"
+                    android:text="服务类别:"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tv_service_type"
+                    android:paddingTop="@dimen/view_margin_10"
+                    android:textColor="@color/B_black_70"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                    android:paddingLeft="@dimen/view_margin_15"
+
+                    android:background="@color/transparent"
+                    android:drawableRight="@drawable/ic_keyboard_arrow_right__grey_24dp"
+                    android:text="请选择服务类型"/>
+
+            </LinearLayout>
+
+
+
+            <include layout="@layout/divide_v_black"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/view_margin_45"
+                android:background="?selectableItemBackground"
+                >
+
+                <com.common.android.ftheme.widgets.TintTextView
+                    style="@style/my_center_textview"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/B_black_70"
+                    android:layout_weight="3"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    app:drawableRightTint="@color/theme_color_primary"
+                    android:text="服务价格:"/>
+
+
+                <EditText
+                    style="@style/my_center_textview"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/et_service_price"
+                    android:textColor="@color/yellow_color_pressed"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    android:background="@color/transparent"
+                    android:hint="请输入价格"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_margin_6"
+                android:background="@color/md_divider_black"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/lly_goodness"
+                android:layout_height="@dimen/view_margin_45"
+                android:background="?selectableItemBackground"
+                >
+
+                <com.common.android.ftheme.widgets.TintTextView
+                    style="@style/my_center_textview"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/B_black_70"
+                    android:layout_weight="3"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    app:drawableRightTint="@color/theme_color_primary"
+                    android:text="服务优势:"/>
+
+                <TextView
+                    style="@style/my_center_textview"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/et_shop_goodness"
+                    android:textColor="@color/B_black_70"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    android:background="@color/transparent"
+                    android:drawableRight="@drawable/ic_keyboard_arrow_right__grey_24dp"
+                    android:text=""/>
+
+            </LinearLayout>
+
+            <include layout="@layout/divide_v_black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/view_margin_45"
+                android:background="?selectableItemBackground"
+                >
+
+                <com.common.android.ftheme.widgets.TintTextView
+                    style="@style/my_center_textview"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/B_black_70"
+                    android:layout_weight="3"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    app:drawableRightTint="@color/theme_color_primary"
+                    android:text="详细地址:"/>
+
+
+                <EditText
+                    style="@style/my_center_textview"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/et_shop_address"
+                    android:textColor="@color/B_black_70"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    android:background="@color/transparent"
+                    android:hint="请输入详细地址"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/divide_v_black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/view_margin_45"
+                android:background="?selectableItemBackground"
+                >
+
+                <com.common.android.ftheme.widgets.TintTextView
+                    style="@style/my_center_textview"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/B_black_70"
+                    android:layout_weight="3"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    app:drawableRightTint="@color/theme_color_primary"
+                    android:text="联系人:"/>
+
+
+                <EditText
+                    style="@style/my_center_textview"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/et_shop_contact"
+                    android:textColor="@color/B_black_70"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    android:background="@color/transparent"
+                    android:hint="请输入联系人"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/divide_v_black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/view_margin_45"
+                android:background="?selectableItemBackground"
+                >
+
+                <com.common.android.ftheme.widgets.TintTextView
+                    style="@style/my_center_textview"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/B_black_70"
+                    android:layout_weight="3"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    app:drawableRightTint="@color/theme_color_primary"
+                    android:text="联系电话:"/>
+
+
+                <EditText
+                    style="@style/my_center_textview"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/et_shop_phone"
+                    android:textColor="@color/B_black_70"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    android:background="@color/transparent"
+                    android:hint="请输入手机号码或固定号码"/>
+
+            </LinearLayout>
+            <include layout="@layout/divide_v_black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/view_margin_45"
+                android:background="?selectableItemBackground"
+                >
+
+                <com.common.android.ftheme.widgets.TintTextView
+                    style="@style/my_center_textview"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/B_black_70"
+                    android:layout_weight="3"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    app:drawableRightTint="@color/theme_color_primary"
+                    android:text="开户行:"/>
+
+
+                <EditText
+                    style="@style/my_center_textview"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/et_shop_bankname"
+                    android:textColor="@color/B_black_70"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    android:background="@color/transparent"
+                    android:hint="例如：中国农业储蓄卡"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/divide_v_black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/view_margin_45"
+                android:background="?selectableItemBackground"
+                >
+
+                <com.common.android.ftheme.widgets.TintTextView
+                    style="@style/my_center_textview"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/B_black_70"
+                    android:layout_weight="3"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    app:drawableRightTint="@color/theme_color_primary"
+                    android:text="银行账号:"/>
+
+
+                <EditText
+                    style="@style/my_center_textview"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/et_shop_bankcard"
+                    android:textColor="@color/B_black_70"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    android:background="@color/transparent"
+                    android:hint="请输入银行卡号"/>
+
+            </LinearLayout>
+
+
+            <include layout="@layout/divide_v_black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="@dimen/view_margin_5"
+                android:background="@color/B_black_10"
+                android:text="店铺轮播图片上传：宽度460-620，高度小于或等于960，最多5张"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/B_black_70"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:padding="@dimen/view_margin_10"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/shape_dash_grey_bg"
+                    android:id="@+id/iv_image1"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_add_grey_600"
+                    android:layout_height="70dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/shape_dash_grey_bg"
+                    android:id="@+id/iv_image2"
+                    android:layout_marginLeft="@dimen/view_margin_5"
+                    android:src="@drawable/ic_add_grey_600"
+                    android:scaleType="centerInside"
+                    android:layout_height="70dp" />
+
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_dash_grey_bg"
+                    android:id="@+id/iv_image3"
+                    android:layout_marginLeft="@dimen/view_margin_5"
+                    android:src="@drawable/ic_add_grey_600"
+                    android:scaleType="centerInside"
+                    android:layout_height="70dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/shape_dash_grey_bg"
+                    android:id="@+id/iv_image4"
+                    android:layout_marginLeft="@dimen/view_margin_5"
+                    android:src="@drawable/ic_add_grey_600"
+                    android:scaleType="centerInside"
+                    android:layout_height="70dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/shape_dash_grey_bg"
+                    android:id="@+id/iv_image5"
+                    android:layout_marginLeft="@dimen/view_margin_5"
+                    android:src="@drawable/ic_add_grey_600"
+                    android:scaleType="centerInside"
+                    android:layout_height="70dp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="@dimen/view_margin_5"
+                android:background="@color/B_black_10"
+                android:text="店铺图文详情：宽度460-620，高度小于或等于960，最多5张"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/B_black_70"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:padding="@dimen/view_margin_10"
+                android:layout_height="wrap_content">
+
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_centerInParent="true"
+
+                    android:background="@drawable/shape_dash_grey_bg"
+                    android:id="@+id/ex_image1"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_add_grey_600"
+                    android:layout_height="70dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/shape_dash_grey_bg"
+                    android:id="@+id/ex_image2"
+                    android:layout_marginLeft="@dimen/view_margin_5"
+                    android:src="@drawable/ic_add_grey_600"
+                    android:scaleType="centerInside"
+                    android:layout_height="70dp" />
+
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_dash_grey_bg"
+                    android:id="@+id/ex_image3"
+                    android:layout_marginLeft="@dimen/view_margin_5"
+                    android:src="@drawable/ic_add_grey_600"
+                    android:scaleType="centerInside"
+                    android:layout_height="70dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/shape_dash_grey_bg"
+                    android:id="@+id/ex_image4"
+                    android:layout_marginLeft="@dimen/view_margin_5"
+                    android:src="@drawable/ic_add_grey_600"
+                    android:scaleType="centerInside"
+                    android:layout_height="70dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/shape_dash_grey_bg"
+                    android:id="@+id/ex_image5"
+                    android:layout_marginLeft="@dimen/view_margin_5"
+                    android:src="@drawable/ic_add_grey_600"
+                    android:scaleType="centerInside"
+                    android:layout_height="70dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:paddingBottom="@dimen/view_margin_20"
+                android:gravity="center_vertical"
+                android:background="@color/main_bg">
+
+
+                <Button
+                    android:id="@+id/bt_preview"
+                    android:layout_alignParentBottom="true"
+                    style="@style/STYLE_LOGIN_SUMBIT_BUTTON"
+                    android:layout_weight="1"
+                    android:layout_below="@+id/lly_input_bar"
+                    android:layout_centerHorizontal="true"
+                    android:text="店铺预览" />
+
+                <Button
+                    android:id="@+id/bt_publish"
+                    android:layout_alignParentBottom="true"
+                    style="@style/STYLE_LOGIN_SUMBIT_BUTTON"
+                    android:layout_below="@+id/lly_input_bar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:text="确认发布" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

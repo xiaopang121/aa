@@ -1,0 +1,877 @@
+<resources>
+    <string name="app_name">企服星球</string>
+
+
+
+    <!--login-->
+    <string name="login">登 录</string>
+    <string name="sub_title">无人开票系统企业服务商城</string>
+    <string name="title_other_type">其他方式登录</string>
+    <string name="login_account">手机号码:</string>
+    <string name="login_password">设置密码:</string>
+    <string name="login_forget_pwd">忘记密码</string>
+    <string name="login_register_now">立即注册</string>
+    <string name="login_hint_phone">请输入手机号码</string>
+    <string name="login_hint_password">请输入密码</string>
+    <string name="login_wx">微信登录</string>
+
+
+    <!--bind phone-->
+    <string name="title_bind_phone">请绑定您的手机号，以便于服务商联系您！</string>
+
+
+    <string name="wx_pay">微信支付</string>
+
+    <string name="alipay">支付宝支付</string>
+
+    <!--找回密码-->
+    <string name="title_find">找回密码</string>
+    <string name="str_sumbit">提交</string>
+    <string name="str_email">邮箱地址:</string>
+    <string name="str_email_hint">请输入邮箱地址</string>
+
+
+    <!--注册-->
+    <string name="str_password_confign">确认密码:</string>
+    <string name="title_register">注 册</string>
+    <string name="title_scan">扫一扫</string>
+
+
+    <!--账户中心-->
+    <string name="title_account_info">个人信息</string>
+    <string name="title_head_icon">头像</string>
+    <string name="title_nickname">昵称</string>
+    <string name="title_realname">姓名</string>
+    <string name="title_gender">性别</string>
+    <string name="title_mobile">手机</string>
+    <string name="title_hnagye">行业</string>
+    <string name="title_zhiwei">职位</string>
+    <string name="title_bumen">部门</string>
+    <string name="title_email">邮件</string>
+    <string name="hint_noset">未设置</string>
+    <string name="title_edit">编辑</string>
+    <string name="title_gender_dialog">请选择性别</string>
+    <string name="title_gender_man">男</string>
+    <string name="title_gender_femal">女</string>
+
+
+    <!--历史记录-->
+    <string name="title_history">历史记录</string>
+    <string name="title_dailingqu">待领取</string>
+    <string name="title_record">收入记录</string>
+    <string name="title_width">提现记录</string>
+
+
+
+    <string name="menu_has_process">已处理</string>
+    <string name="menu_no_process">未处理</string>
+
+
+    <!--关于-->
+    <string name="title_about_soft">关于软件</string>
+    <string name="app_about">&#160;&#160;&#160;&#160;&#160;&#160;&#160;企服星球APP一款专业、快捷、高效的发票管理工具。通过扫描商家展出的二微码，即可收到电子发票的信息；解决用户电子发票归集不便、打印不便、报销繁琐的痛点。快速扫码开票，发票抬头信息预先保存，开发票时扫码即可快速将抬头信息发给商家，为商旅用户带来更多便利和快捷的体验。</string>
+
+    <!--意见反馈-->
+    <string name="feed_submit">提交</string>
+    <string name="feed_back_title">意见反馈</string>
+
+    <!--修改密码-->
+    <string name="title_modify_pwd">修改密码</string>
+    <string name="title_finish">完成</string>
+    <!--设置-->
+
+    <string name="title_setting">我的设置</string>
+
+    <!--添加抬头-->
+    <string name="title_add_taitou">添加抬头发票</string>
+
+    <string name="title_ticket_num">发票号：</string>
+    <string name="title_sure">确认</string>
+
+
+    <string name="title_clear">清空</string>
+    <string name="login_sms_login">短信验证登录</string>
+    <string name="login_pwd_login">帐号密码登录</string>
+
+
+    <string name="login_no_account">没有帐号？</string>
+
+    <string name="login_set_new_password">设定新密码</string>
+    <string name="login_set_password">请设置登录密码</string>
+    <string name="login_set_password2">请再次确认密码</string>
+    <string name="login_set_new_password_again">重复密码</string>
+    <string name="login_captcha">请输入短信验证码</string>
+    <string name="login_getsms">获取验证码</string>
+    <string name="login_sms">验证码</string>
+    <string name="login_next_step">下一步</string>
+    <string name="login_sure">确定</string>
+    <string name="login_now">立即登录</string>
+    <string name="login_find_password">找回密码</string>
+    <string name="login_find_password2">设置新密码</string>
+    <string name="login_remember_password">记住密码</string>
+    <string name="login_bind_phone">设置手机号码</string>
+
+    <!--验证手机-->
+    <string name="title_oauth_phone">验证手机</string>
+    <string name="title_input_pwd">6~12位字母和数字组成的密码</string>
+
+
+    <!--注册-->
+
+    <string name="title_to_login">立即登录</string>
+
+
+
+
+    <!--主界-->
+    <string name="menu_index">首页</string>
+    <string name="menu_discover">附近</string>
+    <string name="menu_msg">消息</string>
+    <string name="menu_user">我的</string>
+
+
+    <!--地图-->
+    <string name="title_map_dialog">请选择您需要的地图</string>
+    <string name="title_map_gaode">高德地图</string>
+    <string name="title_map_google">Google地图</string>
+
+    <string name="station_num">泊位数量：</string>
+    <string name="station_max">最大泊位：</string>
+    <string name="station_lon">经度：</string>
+    <string name="station_lat">纬度：</string>
+    <string name="station_call">联系电话：</string>
+    <string name="station_device">配套设施：</string>
+    <string name="station_detail">查看泊位</string>
+
+    <!--我的-->
+    <string name="title_recharge">余额充值</string>
+    <string name="title_recharge_record">充值纪录</string>
+    <string name="title_bill">我的账单</string>
+    <string name="title_error_report">故障报备</string>
+
+    <string name="title_about">关于软件</string>
+
+
+    <!--充水电-->
+    <string name="title_his_record">历史记录</string>
+    <string name="title_user">使用</string>
+    <string name="title_delete">删除</string>
+    <string name="title_empty_left">您未使用过水电桩，请点击</string>
+    <string name="title_empty_right">按钮进行添加</string>
+    <string name="menu_operation_list">水电桩列表</string>
+    <string name="title_unbind_title">您若需要使用%1$s号水电桩,请去解绑%2$s号水电桩</string>
+    <!--充水电-->
+    <string name="hint_serach">请输入要添加的水电桩号</string>
+    <string name="title_cancel">取消</string>
+    <string name="title_appling_ing">数据加载中</string>
+
+
+    <!--充水电控制-->
+    <string name="hint_contaoller">水电控制</string>
+    <string name="title_unbind">解绑</string>
+    <string name="title_contraller_switch">水电表总开关</string>
+    <string name="title_water_t">水表</string>
+    <string name="title_electric_t">电表</string>
+    <string name="title_water_unit">剩余水量(T)</string>
+    <string name="title_electric_unit">剩余电量(Kwh)</string>
+    <string name="title_total_open">正在开启总开关</string>
+    <string name="title_total_close">正在关闭总开关</string>
+    <string name="title_water_open">开启水表</string>
+    <string name="title_water_close">关闭水表</string>
+    <string name="title_electric_open">开启电表</string>
+    <string name="title_electric_close">关闭电表</string>
+    <string name="title_controller_first_prompt">24小时不使用的水电桩将自动解除绑定</string>
+    <string name="title_unbinding">正在解绑水电桩</string>
+
+
+
+    <!--选择用户类型-->
+    <string name="title_select_usertype">您好，请选择用户类型</string>
+    <string name="title_user_type">未知</string>
+    <string name="title_captain">船长</string>
+    <string name="title_shipowner">船东</string>
+
+    <!--修改昵称-->
+
+    <string name="title_modify_nickname">修改昵称</string>
+    <string name="title_modify_name">修改姓名</string>
+    <string name="title_sure_modify">确定</string>
+    <string name="hint_input_nick">请输入昵称</string>
+    <string name="hint_input_name">请输入名字</string>
+
+    <!--余额充值-->
+    <string name="title_recharge_2">余额充值</string>
+    <string name="title_last_money">余额充值(元)：</string>
+    <string name="title_recharge_money">充值金额(元)：</string>
+    <string name="title_unit">¥</string>
+    <string name="hint_input_money">请填写充值金额</string>
+    <string name="select_pay_type">请选择支付方式：</string>
+    <string name="title_refund_des">退款说明</string>
+    <string name="title_recharge_des">点击充值，即表示已经阅读并同意</string>
+    <string name="title_recharge_protocol">充值协议</string>
+
+    <string name="recharge_title">立即充值</string>
+
+    <!--余额记录-->
+    <string name="title_month">本月</string>
+
+    <!--关于-->
+
+    <string name="title_company">运营方信息</string>
+    <string name="title_update_verison">版本更新</string>
+    <string name="title_contact">联系我们</string>
+    <string name="title_app_protocol">有船来了使用协议</string>
+    <string name="title_copyright">Copyright@2017-2028</string>
+    <string name="title_last_version">已是最新版本</string>
+
+    <!--设备故障-->
+    <string name="title_device_error">故障报备</string>
+    <string name="title_error_prompt">发生水电故障</string>
+    <string name="title_imort_prompt">请确认您输入了正确的水电桩号码</string>
+    <string name="title_error_photo">请拍摄故障水电桩照片</string>
+    <string name="title_import_des">请输入故障描述</string>
+    <string name="title_device_sumbit">提交</string>
+    <string name="title_device_num">请输入水电桩号</string>
+
+    <!--月账单-->
+    <string name="title_user_bill">账单</string>
+    <string name="title_month_charge">月消费趋势</string>
+    <string name="title_month_statistics">月度汇总</string>
+    <string name="title_expend_total">支出总额</string>
+    <string name="title_expend_hydropower">水电费用</string>
+    <string name="title_dosage_hydropower">水电用量</string>
+
+    <string name="title_charge_total">消费总额(元):</string>
+    <string name="title_charge_water">消费水费(元):</string>
+    <string name="title_charge_electric">消费电费(元):</string>
+    <string name="title_dosage_water">消费水量(吨):</string>
+    <string name="title_dosage_electric">消费电量(度):</string>
+
+    <!--日账单-->
+    <string name="title_day_charge">日消费趋势</string>
+    <string name="title_total">总</string>
+    <string name="title_water">水</string>
+    <string name="title_electric">电</string>
+    <string name="title_charge_detial">费用明细</string>
+    <string name="title_water_data">充水(%1$s吨)</string>
+    <string name="title_elec_data">充电(%1$s度)</string>
+
+
+
+
+    <string name="error_00000"> 网络异常，无法访问</string>
+    <string name="error_999">服务端内部错误</string>
+    <string name="error_900">接口参数错误</string>
+    <string name="error_403">用户鉴权失败</string>
+    <string name="error_0">操作成功</string>
+    <string name="error_201">手机已注册</string>
+    <string name="error_202">验证码错误</string>
+    <string name="error_203">用户名或密码错误</string>
+    <string name="error_204">原密码错误</string>
+    <string name="error_210">手机号码未注册</string>
+    <string name="error_1001">游艇会id空</string>
+    <string name="error_1002">水电桩id空</string>
+    <string name="error_1003">订单号空</string>
+    <string name="error_1004">订单处理失败</string>
+    <string name="error_10005">余额不足</string>
+    <string name="error_10006">水电桩被使用</string>
+    <string name="error_10007">用户已有绑定水电桩</string>
+
+    <string name="state_logining">正在登录</string>
+    <string name="state_input_mobile">请输入手机号码</string>
+    <string name="state_input_password">请输入密码</string>
+    <string name="state_input_sms">请输入验证码</string>
+    <string name="state_sms_success">获取短信成功</string>
+    <string name="state_sms_ing">正在获取短信</string>
+    <string name="state_sms_sended">短信验证码已经发送%1$s</string>
+    <string name="state_rest_pwd">正在重置密码</string>
+    <string name="state_rest_success">密码重置成功</string>
+    <string name="state_photo_success">头像上传成功</string>
+    <string name="state_sumbit_ing">正在提交数据</string>
+    <string name="state_sumbit_success">提交数据成功</string>
+    <string name="state_input_numerror">请输入正确的水电庄号</string>
+    <string name="state_error_image">请上传故障图片</string>
+    <string name="state_error_des">请输入故障描述</string>
+    <string name="state_pro_no">未处理</string>
+    <string name="state_pro_finish">已处理</string>
+    <string name="state_input_money">请输入充值金额</string>
+    <string name="state_select_paytype">请选择充值方式</string>
+    <string name="state_creatorder_ing">正在创建充值订单</string>
+    <string name="state_register_ing">正在注册</string>
+    <string name="formate_history_reprot">%1$s号水电桩%2$s</string>
+    <string name="state_unbind_success">解绑成功</string>
+    <string name="state_bind_success">成功连接到%1$s号水电桩</string>
+
+    <string name="pre_0">本月</string>
+    <string name="pre_1">前一月</string>
+    <string name="pre_2">前二月</string>
+    <string name="pre_3">前三月</string>
+    <string name="pre_4">前四月</string>
+    <string name="pre_5">前五月</string>
+
+    <string-array name="gender">
+        <item>女</item>
+        <item>男</item>
+    </string-array>
+
+
+
+    <string-array name="user_type">
+
+    </string-array>
+
+
+
+    <string name="berth_name">泊位:%1$s</string>
+    <string name="berth_num">水电桩号:%1$s</string>
+    <string name="berth_lenth">泊位长:%1$s英尺</string>
+    <string name="berth_state_work">已租</string>
+    <string name="berth_state_empty">空闲</string>
+
+
+    <string name="change_map">正在切换地图</string>
+    <string name="title_change_protocal">充值协议</string>
+    <string name="title_refunds_protocal">退款说明</string>
+
+
+
+
+    <!--mine setting-->
+    <string name="setting_login_password">修改登录密码</string>
+    <string name="setting_deal_password">修改交易密码</string>
+    <string name="setting_gesture_password">手势密码</string>
+    <string name="setting_notice_manage">通知管理</string>
+    <string name="setting_modify_gesture">修改手势密码</string>
+    <string name="setting_realize_us">了解我们</string>
+    <string name="setting_idea_feedback">意见反馈</string>
+    <string name="setting_logout_button">退出登录</string>
+    <string name="setting_set">设置</string>
+
+
+
+    <!--充值界面-->
+
+    <string name="recharge_account_amount">账户余额:</string>
+    <string name="recharge_account_unit">元</string>
+    <string name="recharge_imput_title">充值金额:</string>
+    <string name="recharge_imput_hint">输入充值金额</string>
+    <string name="recharge_youhuiquan_start">您还有</string>
+    <string name="recharge_youhuiquan_end">个红包</string>
+    <string name="recharge_youhuiquan_go">去看看</string>
+
+
+    <!--充值说明 -->
+    <string name="recharge_expain_title">充值说明</string>
+    <string name="recharege_prompt_content">1.金陵贷充值过程不收取任何手续费。\n2.APP充值是通过第三方支付渠道支付，需要投资人绑定一张本人名下的快捷充值卡。\n3.金陵贷在收取支付的扣款通知后，将对应金额充入您的账户，具体到账时间以银行扣款成功时间为主。\n4.APP充值单笔及单日充值限额会根据银行通知有所波动如您再充值过程中遇到任何问题，可随时咨询金陵贷人工客服。
+</string>
+
+    <!--提现 -->
+    <string name="withdraw_charge_money">手续费:</string>
+    <string name="withdraw_title">提现</string>
+    <string name="withdraw_format">%1$s(尾号:%2$s)</string>
+    <string name="withdraw_amount">提现金额（元）</string>
+    <string name="withdraw_hint_input">输入提现金额</string>
+    <string name="withdraw_amount_error">账户余额不足</string>
+    <string name="withdraw_expain_title">提现说明</string>
+    <string name="withdraw_expain_content">1.投资用户每月可享受3次免费提现服务。\n2.提现次数超过3次（提现总次数-3次），每次每笔收取提现手续费5元。\n3.非回款资金申请提现，提现手续费按提现金额的0.5%收取，T+1到账。
+\n4.每月剩余免费提现次数月底归零，不累计至下月。
+\n5.单笔提现金额需一百元起。
+\n6.每日单笔提现金额最多20万，当日累计提现金额最多100万。
+\n7.提现处理时间：
+\n （1）周一到周日16:00之前提交的提现申请当天处理 
+\n （2）周一至周日16:00之后提交的提现申请次日处理【国家法定节假日，五一，国庆，春节期间本站不提供提现服务，具体事宜，本站提前公告】
+\n （3）周一到周五提现当日处理时间：14:00-18:00
+\n （4）周六、周日提现当日处理时间：14:00-22:00</string>
+
+    <!--消息通知-->
+    <string name="message_title">消息通知</string>
+    <string name="message_all_read">全部已读</string>
+    <string name="message_no_read">未读</string>
+    <string name="message_read">已读</string>
+    <string name="login_set_password_success">恭喜你，密码设置成功</string>
+
+    <!--公告通知-->
+    <string name="notice_title">平台公告</string>
+
+    <!--银行卡类型-->
+    <string name="bank_title">银行卡</string>
+    <string name="bank_gong">工商银行</string>
+    <string name="bank_nong">农业银行</string>
+    <string name="bank_zs">招商银行</string>
+    <string name="bank_jt">交通银行</string>
+    <string name="bank_js">建设银行</string>
+    <string name="bank_gd">广大银行</string>
+    <string name="bank_yd">邮政银行</string>
+    <string name="bank_ms">民生银行</string>
+
+    <!--我的资产-->
+
+    <string name="my_property">我的资产</string>
+    <string name="my_property_project">定期项目</string>
+    <string name="my_property_buy">债权认购</string>
+    <string name="my_property_manager">债权管理</string>
+    <string name="my_property_stream">账户流水</string>
+    <string name="my_property_all">全部</string>
+
+
+    <!--添加银行卡-->
+    <string name="bank_add_title">绑定银行卡</string>
+    <string name="bank_add_user">持卡人：</string>
+    <string name="bank_add_user_hint">请输入持卡人姓名</string>
+    <string name="bank_add_type">发卡银行：</string>
+    <string name="bank_add_type_hint">选择银行</string>
+    <string name="bank_add_card">银行卡号：</string>
+    <string name="bank_add_card_hint">请输入银行卡号</string>
+    <string name="bank_add_card_city">请选择地区：</string>
+    <string name="bank_add_card_city_hint">请选择城市</string>
+    <string name="bank_add_card_address">开户行地址：</string>
+    <string name="bank_add_card_address_hint">请输入开户行（支行）地址</string>
+    <string name="bank_add_phone">预留手机号：</string>
+    <string name="bank_add_phone_hint">请输入手机号</string>
+    <string name="bank_add_sms_hint">请输入验证码</string>
+    <string name="bank_add_sumbit">确认提交</string>
+    <string name="bank_add_sms">短信验证码:</string>
+
+
+    <!--实名认证-->
+    <string name="oauth_title">实名认证</string>
+    <string name="oauth_name">真实姓名：</string>
+    <string name="oauth_name_hint">请输入姓名</string>
+    <string name="oauth_identity">身份证号：</string>
+    <string name="oauth_identity_hint">请输入身份证号</string>
+    <string name="oauth_phone">手机号码：</string>
+    <string name="oauth_phone_hint">请输入手机号码</string>
+    <string name="oauth_prompt">认证实名身份信息是您投资的必要条件，为保障您的资金安全，请务必保证信息的正确有效。</string>
+    <string name="oauth_sumbit">认证</string>
+
+    <!--其他方式找回-->
+    <string name="modify_login_password_title">其他方式找回</string>
+    <string name="modify_login_password_old">请输入账号:</string>
+    <string name="modify_login_password_old_hint">请输入手机号</string>
+    <string name="modify_login_password_new">请输入交易密码:</string>
+    <string name="modify_login_password_new_hint">请输入6位密码</string>
+    <string name="modify_login_password_new2">设置新密码:</string>
+    <string name="modify_login_password_new2_hint">请输入新密码</string>
+    <string name="modify_login_password_new3">请确认新密码:</string>
+    <string name="modify_login_password_new3_hint">请输入新密码</string>
+    <string name="modify_sure">确认修改</string>
+
+    <!--修改登录密码-->
+    <string name="modify_login_psd_title">修改登录密码</string>
+    <string name="modify_login_psd_old">请输入原密码:</string>
+    <string name="modify_login_psd_old_hint">请输入原密码</string>
+    <string name="modify_login_psd_new">请输入新密码:</string>
+    <string name="modify_login_psd_new_hint">请设置8位以上密码</string>
+    <string name="modify_login_psd_new2">请确认新密码:</string>
+    <string name="modify_login_psd_new2_hint">请确认新密码</string>
+    <string name="modify_login_psd_sure">确认修改</string>
+    <!--修改交易密码-->
+    <string name="modify_trade_bank_set">银行卡后8位:</string>
+    <string name="modify_trade_bank_set_hint">请输入已绑定的银行卡后8位</string>
+    <string name="modify_trade_password_title">修改交易密码</string>
+    <string name="modify_trade_password_set">设置旧密码</string>
+    <string name="modify_trade_password_set_hint">请输入6位数字交易密码</string>
+    <string name="modify_trade_password_sure">设置新密码</string>
+    <string name="modify_trade_password_new_hint">请再次输入交易密码</string>
+    <string name="modify_trade_password_sure2">确认新密码</string>
+    <string name="modify_trade_password_new_hint2">请再次输入交易密码</string>
+    <string name="modify_trade_sms_code">设置验证码:</string>
+    <string name="modify_trade_sms_code_hint">请输入验证码</string>
+    <string name="modify_trade_sure">确认修改</string>
+    <string name="vertify_code">请输入验证码:</string>
+    <!--身份认证-->
+    <string name="identity_verify_phone">请输入手机号</string>
+    <string name="identity_verify_password">请输入交易密码</string>
+    <string name="identity_verify_button">提交</string>
+    <string name="identity_verify_titile">身份认证</string>
+
+    <!--通知设置-->
+    <string name="set_nofity_title">通知管理</string>
+    <string name="set_sys_nofity_title">系统通知</string>
+
+
+    <!--通知设置-->
+    <string name="message_des">消息详情</string>
+
+
+    <!--债权管理-->
+    <string name="creditor_right_title">债权管理</string>
+    <string name="kezhuanrang">可转让</string>
+    <string name="yizhuangrang">已转让</string>
+    <string name="zhurangzhong">转让中</string>
+
+    <!--债权认购-->
+    <string name="huankuanzhong">还款中</string>
+    <string name="yihuankuan">已还款</string>
+
+    <!--回款记录-->
+    <string name="payment_title">回款记录</string>
+    <string name="has_payment">已支付</string>
+    <string name="no_payment">未支付</string>
+
+    <!--定期项目-->
+    <string name="regular_title">定期项目</string>
+    <string name="regular_financing">融资中</string>
+    <string name="regular_repaymenting">还款中</string>
+    <string name="regular_repaymented">已还款</string>
+
+
+    <!--项目详情-->
+    <string name="project_detail_title">项目详情</string>
+    <string name="project_detail_lend_detail">出借详情</string>
+    <string name="project_detail_refund_detail">回款详情</string>
+    <string name="project_detail_message">项目信息</string>
+    <string name="project_detail_refund_plan">还款计划</string>
+
+    <!--账户流水-->
+    <string name="account_all">全部</string>
+    <string name="account_bile">账户流水</string>
+    <string name="account_recharge">充值</string>
+    <string name="account_withdraw">提现</string>
+    <string name="account_lend">出借</string>
+    <string name="account_return">回款</string>
+    <string name="account_freeze">冻结</string>
+    <string name="account_stream_balance">账户余额：1000</string>
+    <string name="account_stream_recharge">1000</string>
+    <string name="account_stream_time">2017/7/7 11:11:11</string>
+    <string name="account_withdraw_prompt">温馨提示：提现前请先阅读《提现说明》</string>
+
+
+    <string name="register_title">注册</string>
+
+
+
+    <!--个人信息-->
+    <string name="center_title">个人信息</string>
+    <string name="center_title_right_text">保存</string>
+
+    <!--关于我们-->
+    <string name="about_title">关于我们</string>
+    <string name="about_share">分享</string>
+    <string name="about_us_version">金陵贷手机客户端\nAndroid版本%1$s</string>
+    <string name="about_us_text">隶属江苏耀信经济信息咨询有限公司\n创建于2013年9月\n时国内较早的互联网P2P网络借贷平台\n\n致力于服务中国微小企业贷款融资\n致力于提高普通百姓投资理财收益\n\n为了您的投资生活\n我们一直在努力</string>
+    <string name="about_us_btn_version">检测更新</string>
+
+
+    <!--手势-->
+    <string name="forget_gesture">忘记手势</string>
+    <string name="settting_gesture">设置手势密码</string>
+    <string name="settting_gesture_reset">重新设置</string>
+    <string name="settting_gesture_prompt">设置手势密码，防止他人未经授权查看</string>
+    <string name="settting_gesture_oauth">验证手势</string>
+    <string name="settting_gesture_psw_info">密码不能少于4位</string>
+
+
+    <!--资金统计-->
+    <string name="fund_count_title">资金统计</string>
+    <string name="fund_count_curr_profit">本月收益</string>
+    <string name="fund_count_curr_return">本月回款</string>
+    <string name="fund_count_curr_yue">账户余额</string>
+    <string name="fund_count_jiaoyi">交易描述</string>
+    <string name="fund_count_zhitou">直投收益</string>
+    <string name="fund_count_zhaizhuan">债转收益</string>
+    <string name="fund_count_yue">余额收益</string>
+
+    <string name="fund_count_collection">待收本金</string>
+    <string name="fund_count_lixi">待收利息</string>
+    <string name="fund_count_allamount">账户余额</string>
+    <string name="fund_count_wanyuan">单月收益</string>
+    <string name="fund_count_nianhualilv">总收益</string>
+    <string name="fund_count_yizhou">近一周收益</string>
+    <string name="fund_count_leiji">累计收益</string>
+    <string name="fund_count_money">账户资产信息</string>
+
+    <!--收益日历-->
+
+    <string name="profit_calendar_title">收益日历</string>
+    <string name="profit_calendar_interest">利息</string>
+    <string name="profit_calendar_fund">本金</string>
+    <string name="profit_calendar_total_fund">总金额</string>
+    <string name="profit_calendar_return_num">回款笔数</string>
+
+    <!--我的奖励-->
+    <string name="my_award_title">我的奖励</string>
+    <string name="my_award_unuse">系统红包</string>
+    <string name="my_award_used">加息券</string>
+    <string name="my_award_outtime">已过期</string>
+    <string name="fund_count_all">资金总览</string>
+    <string name="fund_count_total">资金总额:</string>
+    <string name="fund_count_yesterday">项目:</string>
+    <string name="my_award_use_regular">红包详情</string>
+    <string name="fund_yuan">元</string>
+    <string name="my_award_cdkey">兑换码</string>
+    <string name="my_award_invite">邀请红包</string>
+
+
+    <!--还款计划-->
+    <string name="refund_plan_title">还款计划</string>
+    <string name="refund_plan_unrefund">未还</string>
+    <string name="refund_plan_status">状态</string>
+    <string name="refund_plan_profit">利息（元）</string>
+    <string name="refund_plan_capital">本金（元）</string>
+    <string name="refund_plan_refund_time">还款日期</string>
+    <string name="refund_plan_refund_time_value">2017</string>
+    <string name="refund_plan_capital_value">0.0</string>
+    <string name="refund_plan_profit_value">0.0</string>
+
+    <!--出借详情-->
+    <string name="lend_detail_title">出借详情</string>
+    <string name="lend_detail_web_title1">项目信息</string>
+    <string name="lend_detail_web_title2">相关内容</string>
+    <string name="lend_detail_web_title3">出借记录</string>
+    <string name="lend_detail_web_title4">还款记录</string>
+
+
+    <!--设置交易密码-->
+    <string name="set_deal_password_title">设置交易密码</string>
+
+    <!--红包描述-->
+    <string name="red_packet_register">恭喜您注册成功获得</string>
+    <string name="red_packet_register_text">感谢您对金陵贷的支持~</string>
+    <string name="red_packet_second_invest">恭喜您获得复投</string>
+    <string name="red_packet_second_invest_text">立投即送！丰厚奖品等着您~</string>
+    <string name="red_packet_first_invest">恭喜您获得首投</string>
+    <string name="red_packet_first_invest_text">复投还有更丰富的奖品等着您~</string>
+    <string name="red_packet_autonym">恭喜您实名成功获得</string>
+    <string name="red_packet_bind">恭喜您绑卡成功获得</string>
+    <string name="red_packet_btn_stroll">先逛逛</string>
+    <string name="red_packet_btn_autonym">实名领红包</string>
+    <string name="red_packet_btn_use">立即使用</string>
+    <string name="red_packet_award">奖励红包</string>
+
+
+    <!--引导页-->
+    <string name="guide_frist_title">安全</string>
+    <string name="guide_frist_subtitle">实力企业供应链金融</string>
+
+    <string name="guide_second_title">便捷</string>
+    <string name="guide_second_subtitle">随时随地安全投资,坐享收益</string>
+
+    <string name="guide_third_title">开心</string>
+    <string name="guide_third_subtitle">门槛低,收益好</string>
+
+    <string name="guide_bottom_text">国企全资控股</string>
+
+
+
+    //异常信息
+    <string name="exception_msg">数据请求失败！！</string>
+
+    <!--三级联动选择器-->
+    <string name="pickerview_cancel">取消</string>
+    <string name="pickerview_submit">确定</string>
+    <string name="pickerview_year">年</string>
+    <string name="pickerview_month">月</string>
+    <string name="pickerview_day">日</string>
+    <string name="pickerview_hours">时</string>
+    <string name="pickerview_minutes">分</string>
+    <string name="pickerview_seconds">秒</string>
+    <string name="emportance_info">注：已经完善的信息无法修改</string>
+    <string name="bind_card_prompt">注：请不要使用任何信用卡卡号进行绑定操作!</string>
+
+
+    <string name="title_comment">我的评论</string>
+
+    <string name="title_score">我的积分</string>
+    <string name="title_wallet">我的钱包</string>
+    <string name="title_withdraw">提现</string>
+
+
+
+    <!--店铺管理-->
+    <string name="title_shop">我的店铺</string>
+    <string name="title_shop_step1">填写信息</string>
+    <string name="title_shop_goodness">服务优势</string>
+    <string name="title_shop_finish">完成</string>
+
+    <!--开铺认证-->
+    <string name="title_shop_oauth">开铺认证</string>
+
+    <string name="title_coupon_qrcode">优惠券二维码</string>
+    <string name="title_my_coupon">我的优惠券</string>
+    <!--店铺订单-->
+    <string name="title_shop_order">店铺订单</string>
+    <string name="field_name">采购方名称:</string>
+    <string name="field_service">服&#160;务&#160;内&#160;容&#160;:</string>
+    <string name="field_money">金&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;额&#160;:</string>
+    <string name="field_time">下&#160;单&#160;时&#160;间&#160;:</string>
+    <string name="field_withdraw_money">提&#160;现&#160;金&#160;额&#160;:</string>
+
+    <!--店铺详情-->
+
+    <string name="field_order_client">客&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;户:</string>
+    <string name="field_order_call">联系电话:</string>
+    <string name="field_order_categary">订单详情:</string>
+    <string name="field_order_money">合同金额:</string>
+    <string name="field_order_date">服务时间:</string>
+    <string name="field_order_other">其他说明:</string>
+    <string name="field_order_num">订单编号:</string>
+    <string name="field_order_contract">合同编号:</string>
+    <string name="field_order_paytype">支付方式:</string>
+    <string name="field_order_createtime">下单时间:</string>
+
+
+
+
+    <!--店铺提现-->
+
+    <string name="title_shop_withdraw">店铺提现</string>
+    <string name="title_shop_trading">交易进行中</string>
+    <string name="title_shop_traded">交易已完成</string>
+    <string name="title_shop_total">总收益</string>
+    <string name="title_withdraw_record">提现记录</string>
+    <string name="menu_shop_has_withdraw">已提现</string>
+    <string name="menu_shop_no_withdraw">未提现</string>
+
+
+
+    <!--联系客服-->
+    <string name="title_service_msg">消息</string>
+
+
+    <!--抵用券-->
+    <string name="title_my_voucher">我的抵用券</string>
+
+
+    <!--评论-->
+    <string name="title_menu_comment">评论</string>
+    <string name="title_menu_order">订单</string>
+
+    <!--历史记录-->
+    <string name="title_history_record">历史记录</string>
+    <string name="title_menu_waitget">待领取</string>
+    <string name="title_menu_income_record">收入记录</string>
+    <string name="title_menu_withdraw_record">提现记录</string>
+
+
+    <!--我要推广-->
+    <string name="title_tuiguang">我要推广</string>
+    <string name="title_prompt">以上是推广位置，详细请留下联系电话，方便客服联系您</string>
+
+
+
+    <!--银行卡列表-->
+    <string name="title_bank_list">银行卡</string>
+    <string name="title_bank_add">添加银行卡</string>
+
+
+    <!--通讯录-->
+    <string name ="title_contract">通讯录</string>
+    <string name ="title_my_friend">我的好友</string>
+    <string name="title_my_group">我的群组</string>
+
+
+
+    <string name="state_pay_success">支付成功</string>
+    <string name="state_pay_fault">支付失败</string>
+    <string name="state_pay_cancle">取消支付</string>
+    <string name="recharge">充值</string>
+
+
+    <!--发表评价-->
+    <string name="title_publish_comment">发表评价</string>
+    <string name="domestic">国内</string>
+    <string name="abroad">国外</string>
+    <string name="cp_select_city">选择城市</string>
+    <string name="cp_hot_city">热门城市</string>
+    <string name="cp_located_city">定位城市</string>
+    <string name="cp_hint_search_box">请输入城市名或拼音</string>
+    <string name="cp_nothing_found">没有搜索结果~</string>
+    <string name="cp_locating">正在定位…</string>
+    <string name="cp_located_failed">定位失败</string>
+
+
+    <string name="str_prize_prompt">已放至您的抵用券里，可在我的抵用券里\n查看</string>
+
+    <string name="title_bid_publish">发布竞价</string>
+
+    <string name="str_bid_promit">特别提示：通过平台交易，将收取3%的平台费用(其中2%为支付宝或
+者微信的通道费用,如果服务商采用线下交易，平台不收取任何费用。)</string>
+
+
+    <string name="str_bid_protected">同意企服星球</string>
+    <string name="str_bid_agree_protected2">我已经认真阅读了竞价要求愿以____元的价格承揽此项任务\n项目完成时间从即日起到____年____月____日结束</string>
+
+    <string name="str_bid_agree_protected001">我已经认真阅读了竞价要求愿以</string>
+
+    <string name="str_eg">eg:产品规格书、样品图等（支持jpg、jpeg、gif等格式</string>
+
+    <string name="str_eg3">如需添加PDF文档，请至PC端操作,大型文档,\n可以把文件保存为图片格式，通过移动端上传,每张图片不超过3M</string>
+    <string-array name="labels2">
+        <item>发布时间</item>
+        <item></item>
+        <item>截止时间</item>
+    </string-array>
+
+
+
+    <string name="title_bid_prompt">温馨提示</string>
+    <string name="title_bid_prompt_content">甲方要求：\n\n 只有诚信会员，才有资格参与竞价</string>
+    
+    
+    <string-array name="innovate_titles">
+        <item>征集中</item>
+        <item>设计中</item>
+        <item>已完成</item>
+    </string-array>
+
+    <string name="str_innovate_right_button">发布征集</string>
+
+    <string name="offer_field_title">订单标题：</string>
+    <string name="offer_field_type">类&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;型：</string>
+    <string name="offer_field_status">状&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;态：</string>
+    <string name="offer_field_time">时&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;间：</string>
+    <string name="offer_field_money">报价金额：</string>
+
+    <string name="title_bid_tender">发布招标</string>
+
+    <string name="str_default_nodata">未知</string>
+
+
+    <string-array name="tax_array">
+        <item>包含税价</item>
+        <item>不包含税价</item>
+    </string-array>
+
+    <string-array name="freight_array">
+        <item>包含运费</item>
+        <item>不包含运费</item>
+    </string-array>
+
+    <string-array name="trans_array">
+        <item>担保交易</item>
+        <item>其他交易方式</item>
+    </string-array>
+
+
+    <string-array name="pay_array">
+        <item>资金托管到平台验收后一次性支付</item>
+        <item>分三次支付：定金20% 中间60% 验收后20%</item>
+    </string-array>
+
+    <string-array name="invoice_array">
+        <item>增值税专用发票</item>
+        <item>增值税普通发票</item>
+    </string-array>
+
+    <string-array name="business_license_array">
+        <item>营业执照不需要</item>
+        <item>营业执照需要</item>
+    </string-array>
+
+
+    <string-array name="drop_menu_array">
+        <item>营业执照不需要</item>
+        <item>营业执照需要</item>
+    </string-array>
+
+
+    <string name="str_toubiao">投标文件\n截止日期</string>
+
+    <string name="str_zhuanfa">转发朋友圈\n免费参与</string>
+
+    <string name="str_canyu"> 支付1元钱\n立即参与</string>
+    <string name="str_prompt"> 已有用户报名，不可编辑\n修改请先关闭，重新发布</string>
+    <string name="deng_lu">当前没有账号登录，请点击确定前往登录。</string>
+
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/view_margin_50"
+        android:orientation="vertical"
+        android:padding="@dimen/view_margin_15"
+        android:background="@drawable/shape_rect_10_white2"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+            android:textColor="@color/B_black_70"
+            android:gravity="center"
+            android:text="@string/title_bind_phone"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            style="@style/login_edittext"
+            android:layout_marginTop="@dimen/view_margin_15"
+            android:background="@drawable/shape_rect_10_grey"
+            android:hint="请输入您的手机号码（必填）"
+            android:text=""
+            android:layout_height="@dimen/view_margin_40"
+            android:textColor="@color/B_black_70" />
+
+        <EditText
+            android:id="@+id/et_invite_code"
+            style="@style/login_edittext"
+            android:layout_marginTop="@dimen/view_margin_15"
+            android:background="@drawable/shape_rect_10_grey"
+            android:hint="请输入邀请码（可不填）"
+            android:text=""
+            android:layout_height="@dimen/view_margin_40"
+            android:textColor="@color/B_black_70" />
+
+        <Button
+            android:id="@+id/bt_sure"
+            style="@style/STYLE_LOGIN_SUMBIT_BUTTON"
+            android:layout_below="@+id/lly_input_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/view_margin_30"
+            android:layout_height="@dimen/view_margin_40"
+            android:text="@string/login_sure" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

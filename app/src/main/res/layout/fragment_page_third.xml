@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    android:id="@+id/rootThirdPage"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ContentDescription"
+    tools:background="@android:color/holo_blue_dark">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_splash"
+        android:id="@+id/splash_iv"
+        android:scaleType="centerCrop"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:src="@drawable/ic_guide_third_cotnent"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:id="@+id/main"
+        android:text="@string/guide_third_title"
+        android:textColor="@android:color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_heightPercent="10%"
+        app:layout_marginTopPercent="10%"
+        app:layout_widthPercent="45%"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:id="@+id/sub"
+        android:text="@string/guide_third_subtitle"
+        android:textColor="@android:color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_marginTopPercent="1%"
+        app:layout_widthPercent="70%"/>
+
+
+
+    <Button
+        style="@style/STYLE_TIYAN_SUMBIT_BUTTON"
+        android:id="@+id/bt_useapp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        app:layout_marginBottomPercent="10%"
+        android:textColor="@color/white_trans90"
+        android:gravity="center"
+        android:text="立即体验"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+
+
+
+
+</android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_container"
+    android:background="@color/theme_color_primary"
+    android:orientation="vertical"
+    >
+
+    <com.common.android.fui.widget.CommonTitleBar
+        android:layout_width="match_parent"
+        android:id="@+id/common_title_bar"
+        android:layout_height="@dimen/common_bar_height"/>
+
+
+    <include layout="@layout/divide_v_black"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="@dimen/view_margin_10"
+            android:paddingBottom="@dimen/view_margin_10"
+            android:paddingLeft="@dimen/view_margin_10"
+            android:paddingRight="@dimen/view_margin_10"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:layout_alignParentLeft="true"
+                android:text="技术服务费："
+                android:layout_centerVertical="true"
+                android:id="@+id/tv_title1"
+                android:textColor="@color/B_black_85"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/view_margin_10"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:id="@+id/ic_service_money"
+                android:text="¥380.0/年"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_title1"
+                android:textColor="@color/yellow_color_pressed"
+                android:layout_height="wrap_content" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="center|left"
+                android:id="@+id/tv_service_time"
+                android:paddingLeft="@dimen/view_margin_10"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:text="(技术服务费有效期)"
+                android:layout_height="wrap_content" />
+
+
+
+
+
+
+        </LinearLayout>
+        <include layout="@layout/divide_v_black"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="@dimen/view_margin_10"
+            android:paddingBottom="@dimen/view_margin_10"
+            android:paddingLeft="@dimen/view_margin_10"
+            android:paddingRight="@dimen/view_margin_10"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:layout_alignParentLeft="true"
+                android:text="服务保证金："
+                android:layout_centerVertical="true"
+                android:id="@+id/tv_title2"
+                android:textColor="@color/B_black_85"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="center|left"
+                android:layout_toRightOf="@+id/tv_title2"
+                android:paddingLeft="@dimen/view_margin_10"
+                android:layout_centerVertical="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:id="@+id/ic_service_bond"
+                android:textColor="@color/yellow_color_pressed"
+                android:text="¥3000.0"
+                android:layout_height="wrap_content" />
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/view_margin_10"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:id="@+id/item_order_money"
+                android:text="(可退还)"
+                android:layout_height="wrap_content" />
+
+
+
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_10"
+            android:background="@color/md_divider_black"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_height="@dimen/view_margin_50">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/view_margin_10"
+                android:paddingRight="@dimen/view_margin_10"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/view_margin_10"
+                android:gravity="left|center_vertical"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:textColor="@color/B_black_50"
+                android:text="@string/select_pay_type"
+                />
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_1"
+            android:background="@color/md_divider_black"></View>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:id="@+id/radio_group"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_margin_50"
+                android:drawableLeft="@drawable/ic_wx"
+                android:drawablePadding="@dimen/view_margin_10"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:textColor="@color/B_black_70"
+                android:paddingLeft="@dimen/view_margin_10"
+                android:button="@null"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:paddingRight="@dimen/view_margin_10"
+                android:drawableRight="@drawable/selector_pay_raido"
+                android:text="微信支付"
+                android:id="@+id/tv_pay_wx"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_margin_1"
+                android:background="@color/md_divider_black"></View>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_margin_50"
+                android:drawableLeft="@drawable/ic_alipay"
+                android:drawablePadding="@dimen/view_margin_10"
+                android:paddingRight="@dimen/view_margin_10"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:textColor="@color/B_black_70"
+                android:paddingLeft="@dimen/view_margin_10"
+                android:button="@null"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:drawableRight="@drawable/selector_pay_raido"
+                android:text="支付宝支付"
+                android:id="@+id/tv_pay_alipay"/>
+        </RadioGroup>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_1"
+            android:background="@color/md_divider_black"></View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_height="@dimen/view_margin_50">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_pay_dg"
+                android:paddingLeft="@dimen/view_margin_10"
+                android:paddingRight="@dimen/view_margin_10"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/view_margin_10"
+                android:drawableLeft="@drawable/ic_dg"
+                android:gravity="left|center_vertical"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:textColor="@color/B_black_70"
+                android:text="对公账户"
+                />
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_1"
+            android:background="@color/md_divider_black"></View>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <Button
+                style="@style/STYLE_LOGIN_SUMBIT_BUTTON"
+                android:id="@+id/bt_sumbit"
+                android:background="@drawable/select_rect_theme"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_above="@+id/tv_refund_des"
+                android:text="@string/recharge_title"
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+    
+
+</LinearLayout>

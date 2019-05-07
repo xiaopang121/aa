@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/theme_color_primary"
+    android:orientation="vertical">
+
+    <com.common.android.fui.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bar_height"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="match_parent">
+
+
+            <ImageView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_add_success"
+                android:layout_marginTop="@dimen/view_margin_60"
+                android:layout_centerHorizontal="true"/>
+
+
+
+        </android.support.percent.PercentRelativeLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

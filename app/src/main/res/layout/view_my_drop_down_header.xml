@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Apache DropDownView
+  ~
+  ~ Copyright 2017 The Apache Software Foundation
+  ~ This product includes software developed at
+  ~ The Apache Software Foundation (http://www.apache.org/).
+  -->
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_margin_45"
+        android:background="@drawable/shape_rect_2_grey"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_category_content"
+            android:paddingLeft="@dimen/view_margin_10"
+            android:paddingRight="@dimen/view_margin_10"
+            android:hint="选择分类"
+            android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+            android:textColor="@color/B_black_50" />
+
+        <View
+            android:layout_width="@dimen/view_margin_1"
+            android:layout_height="match_parent"
+            android:background="@color/B_black_10" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="分类"
+            android:id="@+id/tv_drow_category"
+            android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+            android:textColor="@color/B_black_50" />
+
+
+    </LinearLayout>

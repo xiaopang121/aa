@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color_primary"
+    android:orientation="vertical">
+
+
+    <com.common.android.fui.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bar_height"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_45"
+            android:background="@color/color_f4f4f4">
+
+            <EditText
+                android:id="@+id/tv_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/view_margin_7"
+                android:layout_marginLeft="@dimen/view_margin_10"
+                android:layout_marginRight="@dimen/view_margin_10"
+                android:imeActionLabel="搜索"
+                android:imeOptions="actionSearch"
+                android:layout_marginTop="@dimen/view_margin_7"
+                android:background="@drawable/shape_rect_10_grey"
+                android:drawableLeft="@drawable/ic_search_gray_18dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="left|center"
+                android:paddingLeft="@dimen/view_margin_10"
+                android:paddingRight="@dimen/view_margin_10"
+                android:singleLine="true"
+                android:hint="搜索竞价"
+                android:textColorHint="@color/B_black_70"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:textColor="@color/B_black_70" />
+
+
+        </LinearLayout>
+
+
+        <com.common.extend.pulltorefresh.PullToRefreshRecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/pull_to_refresh_recycle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:addStatesFromChildren="true"
+            android:cacheColorHint="@color/transparent"
+            android:clickable="true"
+            android:divider="@color/transparent"
+            android:dividerHeight="4dp"
+            android:duplicateParentState="true"
+            android:fadingEdge="none"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:isScrollContainer="true"
+            android:listSelector="@color/transparent"
+            android:overScrollMode="never"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbars="@null"
+            android:scrollingCache="false">
+
+        </com.common.extend.pulltorefresh.PullToRefreshRecyclerView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

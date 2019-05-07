@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/theme_color_primary"
+    android:orientation="vertical">
+
+    <com.common.android.fui.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bar_height"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+
+       <RadioGroup
+           android:layout_width="match_parent"
+           android:orientation="horizontal"
+           android:layout_marginTop="@dimen/view_margin_15"
+           android:id="@+id/rb_check_publish_type"
+           android:gravity="center_horizontal"
+           android:layout_height="@dimen/view_margin_60">
+
+           <RadioButton
+               android:layout_width="@dimen/view_margin_60"
+               android:id="@+id/tv_publish_jingjia"
+               android:textColor="@color/white"
+               android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+               android:singleLine="true"
+               android:button="@null"
+               android:gravity="center"
+               android:background="@drawable/selector_check_jingjia"
+
+
+               android:text="竞价"
+               android:layout_height="match_parent" />
+
+           <RadioButton
+               android:layout_width="@dimen/view_margin_60"
+               android:id="@+id/tv_publish_zhaobiao"
+               android:textColor="@color/white"
+               android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+               android:singleLine="true"
+               android:text="招标"
+               android:button="@null"
+               android:background="@drawable/selector_check_zhaobiao"
+               android:layout_marginRight="@dimen/view_margin_20"
+               android:layout_marginLeft="@dimen/view_margin_20"
+               android:gravity="center"
+               android:layout_height="match_parent" />
+
+
+           <RadioButton
+               android:layout_width="@dimen/view_margin_60"
+               android:id="@+id/tv_publish_chuangxinji"
+               android:textColor="@color/white"
+               android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+               android:singleLine="true"
+               android:gravity="center"
+               android:button="@null"
+               android:background="@drawable/selector_check_zhengji"
+               android:text="创新集"
+               android:layout_height="match_parent" />
+
+
+       </RadioGroup>
+
+        <Button
+            android:id="@+id/login"
+            style="@style/STYLE_LOGIN_SUMBIT_BUTTON"
+            android:layout_below="@+id/lly_input_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/view_margin_20"
+            android:text="@string/title_sure" />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

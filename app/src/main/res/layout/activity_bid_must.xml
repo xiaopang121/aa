@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/theme_color_primary"
+    android:orientation="vertical">
+
+    <com.common.android.fui.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bar_height"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/view_margin_10"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="@color/B_black_70"
+                android:layout_marginTop="@dimen/view_margin_20"
+                android:layout_marginBottom="@dimen/view_margin_20"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:gravity="center"
+                android:text="@string/str_bid_promit"
+                android:id="@+id/tv_bid_title"
+                android:layout_height="wrap_content" />
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/view_margin_10"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/selector_checkbox"
+                    android:drawablePadding="@dimen/view_margin_5"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:text="@string/str_bid_protected"
+                    android:id="@+id/check_rule"
+                    android:textColor="@color/B_black_70"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tv_rule"
+
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:text="《需求单发布以及违规处理规则》"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/yellow_color_normal"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/view_margin_10"
+                android:layout_height="@dimen/view_margin_30">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/B_black_70"
+                    android:button="@null"
+                    android:drawablePadding="@dimen/view_margin_5"
+                    android:drawableLeft="@drawable/selector_checkbox"
+                    android:id="@+id/check_rule_2"
+                    android:text="@string/str_bid_agree_protected001"
+                    android:layout_height="match_parent" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/B_black_70"
+                    android:text=""
+                    android:maxLength="6"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:layout_marginTop="@dimen/view_margin_5"
+                    android:layout_marginBottom="@dimen/view_margin_5"
+                    android:background="@drawable/ic_underline"
+                    android:id="@+id/et_price"
+
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent"
+                    android:minEms="3"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/B_black_70"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:layout_height="match_parent"
+                    android:text="元的价格承揽此"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/view_margin_40"
+                android:layout_height="@dimen/view_margin_30">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="任务,完成时间从即日起到"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/B_black_70"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/B_black_70"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:maxLength="4"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:layout_marginTop="@dimen/view_margin_5"
+                    android:layout_marginBottom="@dimen/view_margin_5"
+                    android:background="@drawable/ic_underline"
+                    android:id="@+id/et_year"
+                    android:minEms="2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/B_black_70"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:layout_height="match_parent"
+                    android:text=" 年 "/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/B_black_70"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:maxLength="2"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:id="@+id/et_month"
+                    android:layout_marginTop="@dimen/view_margin_5"
+                    android:layout_marginBottom="@dimen/view_margin_5"
+                    android:background="@drawable/ic_underline"
+                    android:minEms="2"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/B_black_70"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:layout_height="match_parent"
+                    android:text=" 月 "/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/B_black_70"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:maxLength="2"
+                    android:inputType="number"
+                    android:id="@+id/et_day"
+                    android:layout_marginTop="@dimen/view_margin_5"
+                    android:layout_marginBottom="@dimen/view_margin_5"
+                    android:background="@drawable/ic_underline"
+                    android:minEms="2"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/B_black_70"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:layout_height="match_parent"
+                    android:text="日结束"/>
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="添加附件"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:textColor="@color/yellow_color_normal"
+                android:layout_marginTop="@dimen/view_margin_20"
+                android:layout_marginLeft="@dimen/view_margin_50"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:text="@string/str_eg"
+                android:layout_marginLeft="@dimen/view_margin_50"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:text="@string/str_eg3"
+                android:textColor="@color/yellow_color_normal"
+                android:layout_marginLeft="@dimen/view_margin_50"
+                android:layout_height="wrap_content" />
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/view_margin_50"
+                android:layout_marginTop="@dimen/view_margin_15"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:id="@+id/rv_image_list"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/view_margin_10"
+        android:paddingRight="@dimen/view_margin_10"
+        android:background="@color/white"
+        android:paddingTop="@dimen/view_margin_5"
+        android:paddingBottom="@dimen/view_margin_5"
+        android:layout_height="@dimen/view_margin_50">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="确    定"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+            android:gravity="center"
+            android:id="@+id/tv_sure"
+            android:background="@drawable/shape_rect_10_green"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

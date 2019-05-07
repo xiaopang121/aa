@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/commontitle"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+     >
+
+    <ImageView
+        android:id="@+id/iv_left"
+        android:layout_width="40dp"
+        android:layout_height="fill_parent"
+
+        android:scaleType="centerInside"
+        />
+
+    <TextView
+        android:id="@+id/titleshow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="null"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/B_black_70" />
+
+
+
+</RelativeLayout>

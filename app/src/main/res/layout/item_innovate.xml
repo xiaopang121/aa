@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2016 JustWayward Team
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingLeft="@dimen/view_margin_10"
+    android:paddingRight="@dimen/view_margin_10"
+    android:paddingTop="@dimen/view_margin_5"
+    android:paddingBottom="@dimen/view_margin_5"
+    android:background="?selectableItemBackground">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/llu_bg"
+        android:scaleType="fitXY"
+        android:layout_height="230dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_bid_title"
+        android:padding="@dimen/view_margin_15"
+        android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+        android:textColor="@color/white"
+        android:text="创新集"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_innvote_state"
+        android:padding="@dimen/view_margin_15"
+        android:layout_alignParentRight="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+        android:textColor="@color/white"
+        android:text="征集中"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+        android:text="酬金：100000元"
+        android:gravity="center"
+        android:id="@+id/tv_money"
+         android:layout_alignParentBottom="true"
+        android:layout_height="@dimen/view_margin_60" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_centerInParent="true"
+        android:text="大闸蟹包装设计"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginBottom="@dimen/view_margin_60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="120dp"
+        />
+
+</RelativeLayout>

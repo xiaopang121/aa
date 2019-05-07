@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bar_height">
+
+
+        <RelativeLayout
+            android:id="@+id/rll_left_content"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:id="@+id/iv_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_arrow_back_grey_800_24dp"
+                android:background="?selectableItemBackground"
+                android:paddingLeft="@dimen/view_margin_15"
+                android:paddingRight="@dimen/view_margin_15"
+              />
+
+            <Button
+                android:id="@+id/bt_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="?selectableItemBackground"
+                android:paddingLeft="@dimen/view_margin_5"
+                android:paddingRight="@dimen/view_margin_5"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rll_right_content"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/iv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="?selectableItemBackground"
+                android:paddingLeft="@dimen/view_margin_15"
+                android:paddingRight="@dimen/view_margin_15" />
+
+            <Button
+                android:id="@+id/bt_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="?selectableItemBackground"
+                android:paddingLeft="@dimen/view_margin_5"
+                android:paddingRight="@dimen/view_margin_5"
+                android:text="搜索"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:textColor="@color/B_black_50" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/view_margin_5"
+            android:layout_marginLeft="@dimen/view_margin_60"
+            android:layout_marginRight="@dimen/view_margin_60"
+            android:layout_marginTop="@dimen/view_margin_5"
+            android:background="@drawable/shape_rect_10_grey"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:drawableLeft="@drawable/ic_search_gray_18dp"
+                android:drawablePadding="@dimen/view_margin_5"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="left|center_vertical"
+                android:hint="请输入搜索内容"
+                android:paddingLeft="@dimen/view_margin_5"
+                android:paddingRight="@dimen/view_margin_5"
+                android:singleLine="true"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/B_black_50"
+                android:textSize="@dimen/big_small" />
+
+            <ImageView
+                android:id="@+id/iv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/view_margin_4"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_cancel"
+                android:visibility="invisible" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_margin_1"
+        android:background="@color/md_divider_black"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <com.common.extend.pulltorefresh.PullToRefreshRecyclerView
+            android:id="@+id/pull_to_refresh_recycle"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:addStatesFromChildren="true"
+            android:cacheColorHint="@color/transparent"
+            android:clickable="true"
+            android:divider="@color/transparent"
+            android:dividerHeight="4dp"
+            android:duplicateParentState="true"
+            android:fadingEdge="none"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:isScrollContainer="true"
+            android:listSelector="@color/transparent"
+            android:overScrollMode="never"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbars="@null"
+            android:scrollingCache="false">
+
+        </com.common.extend.pulltorefresh.PullToRefreshRecyclerView>
+    </LinearLayout>
+
+</LinearLayout>

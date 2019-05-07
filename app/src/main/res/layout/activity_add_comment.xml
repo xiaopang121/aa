@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/theme_color_primary"
+    android:orientation="vertical">
+
+    <com.common.android.fui.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bar_height"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/view_margin_10"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="@dimen/view_margin_50"
+                android:src="@drawable/logo"
+                android:id="@+id/iv_company_head"
+                android:layout_height="@dimen/view_margin_50" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:id="@+id/tv_company_titile"
+                android:text="东恒律师事务所"
+                android:textColor="@color/B_black_70"
+                android:layout_marginLeft="@dimen/view_margin_10"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_margin_1"
+            android:background="@color/md_divider_black"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="@dimen/view_margin_15"
+            android:layout_height="wrap_content">
+
+            <com.example.xlhratingbar_lib.XLHRatingBar
+                xmlns:xlhRatingBar="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/ratingBar"
+                android:layout_marginLeft="@dimen/view_margin_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                xlhRatingBar:canEdit="true"
+                xlhRatingBar:differentSize="false"
+                xlhRatingBar:dividerWidth="2dp"
+                xlhRatingBar:countSelected="5"
+                xlhRatingBar:starCount="5"
+                xlhRatingBar:stateResId="@drawable/comment_ratingbar_selector"
+                xlhRatingBar:widthAndHeight="25dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:id="@+id/tv_comment_evaluate"
+                android:text="非常满意"
+                android:layout_marginTop="@dimen/view_margin_15"
+                android:textColor="@color/B_black_70"
+                android:layout_marginLeft="@dimen/view_margin_10"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+           >
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_margin="@dimen/view_margin_15"
+                android:gravity="left|top"
+                android:padding="@dimen/view_margin_5"
+                android:hint="提出您的意见或建议"
+                android:background="@drawable/shape_rect_10_grey"
+                android:text=""
+                android:maxLength="200"
+                android:minLines="5"
+                android:paddingLeft="@dimen/view_margin_4"
+                android:paddingRight="@dimen/view_margin_4"
+                android:id="@+id/tv_content"
+                android:textColor="@color/B_black_70"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/B_black_50"
+                android:text="0/200"
+                android:id="@+id/tv_size"
+                android:layout_marginBottom="@dimen/view_margin_5"
+                android:layout_marginRight="@dimen/view_margin_5"
+                android:layout_alignRight="@+id/tv_content"
+                android:layout_alignBottom="@+id/tv_content"
+                android:layout_height="wrap_content" />
+
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/login"
+            style="@style/STYLE_LOGIN_SUMBIT_BUTTON"
+            android:layout_below="@+id/lly_input_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/view_margin_20"
+            android:text="@string/str_sumbit" />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

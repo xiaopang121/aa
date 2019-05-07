@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Apache DropDownView
+  ~
+  ~ Copyright 2017 The Apache Software Foundation
+  ~ This product includes software developed at
+  ~ The Apache Software Foundation (http://www.apache.org/).
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="@color/transparent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:background="@drawable/shape_rect_white0"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/view_margin_10"
+            android:paddingLeft="@dimen/view_margin_10"
+            android:paddingRight="@dimen/view_margin_10"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:hint="一级分类"
+                    android:gravity="center"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_18dp"
+                    android:id="@+id/tv_category_one"
+                    android:background="@drawable/shape_rect_2_grey"
+                    android:layout_height="@dimen/view_margin_40" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_rect_white0"
+                    android:layout_height="match_parent"
+                    android:divider="#00000000"
+                    >
+                </android.support.v7.widget.RecyclerView>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/view_margin_10"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:hint="二级分类"
+                    android:id="@+id/tv_category_two"
+                    android:gravity="center"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_18dp"
+                    android:background="@drawable/shape_rect_2_grey"
+                    android:layout_height="@dimen/view_margin_40" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/listView2"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:background="@drawable/shape_rect_white0"
+                    android:layout_height="match_parent"
+                    android:divider="#00000000"
+                    >
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

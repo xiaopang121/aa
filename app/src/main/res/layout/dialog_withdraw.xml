@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shape_rect_10_white2"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:id="@+id/tv_dialog_title"
+            android:layout_alignParentTop="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/B_black_70"
+            android:paddingTop="@dimen/view_margin_15"
+            android:paddingBottom="@dimen/view_margin_15"
+            android:gravity="center"
+            android:text="亲，满10元才可以提现哦！"
+            />
+
+
+
+        <Button
+            android:id="@+id/bt_service"
+            style="@style/STYLE_LOGIN_SUMBIT_BUTTON"
+            android:layout_below="@+id/lly_input_bar"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="@dimen/view_margin_30"
+            android:paddingRight="@dimen/view_margin_30"
+            android:layout_marginTop="@dimen/view_margin_30"
+            android:text="确认" />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

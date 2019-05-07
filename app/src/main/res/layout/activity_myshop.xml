@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/theme_color_primary"
+    android:orientation="vertical">
+
+    <com.common.android.fui.widget.CommonTitleBar
+        android:id="@+id/common_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bar_height"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/main_bg">
+        <com.common.extend.pulltorefresh.PullToRefreshRecyclerView
+            android:id="@+id/pull_to_refresh_recycle"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:addStatesFromChildren="true"
+            android:cacheColorHint="@color/transparent"
+            android:clickable="true"
+            android:divider="@color/transparent"
+            android:dividerHeight="4dp"
+            android:duplicateParentState="true"
+            android:fadingEdge="none"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:isScrollContainer="true"
+            android:listSelector="@color/transparent"
+            android:overScrollMode="never"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbars="@null"
+            android:scrollingCache="false">
+
+        </com.common.extend.pulltorefresh.PullToRefreshRecyclerView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/lly_no_shop"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <com.common.extend.roundedimageview.RoundedImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="@dimen/view_margin_80"
+                android:layout_height="@dimen/view_margin_80"
+                android:src="@mipmap/ic_launcher"
+                android:layout_marginTop="@dimen/view_margin_30"
+                android:layout_centerHorizontal="true"
+                app:riv_corner_radius="10dp"
+                app:riv_border_color="@color/white"
+                app:riv_border_width="@dimen/view_margin_1"
+                />
+
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/iv_logo"
+                android:id="@+id/tv_app_name"
+                android:text="您还没有开通店铺哦～"
+                android:textColor="@color/B_black_70"
+                android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+                android:layout_marginTop="@dimen/view_margin_50"/>
+
+
+            <Button
+                android:id="@+id/bt_open"
+                style="@style/STYLE_LOGIN_SUMBIT_BUTTON"
+                android:layout_below="@+id/lly_input_bar"
+                android:layout_centerHorizontal="true"
+                android:layout_height="@dimen/view_margin_40"
+                android:layout_width="140dp"
+                android:layout_marginTop="@dimen/view_margin_10"
+                android:text="马上开通" />
+
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
